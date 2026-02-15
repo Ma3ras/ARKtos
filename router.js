@@ -60,6 +60,10 @@ RESOURCE ROUTES:
 - "resource_location": wo gibt es? koordinaten? spots?
 - "resource_info": was ist? wozu? wie bekomme ich?
 
+CRAFTING ROUTES:
+- "crafting_recipe": wie crafte ich? rezept? was brauche ich?
+- "crafting_info": welches level? engram punkte?
+
 ANDERE:
 - "general": alles andere
 
@@ -84,6 +88,16 @@ User: "wo gibt es Metall"
 → Entity: "Metall" (Resource)
 → Frage: "wo gibt es"
 JSON: {"route": "resource_location", "lang": "de", "entity": {"type": "resource", "name": "metall"}, "confidence": 1.0}
+
+User: "wie crafte ich ein stone hatchet"
+→ Entity: "stone hatchet" (Item)
+→ Frage: "wie crafte ich"
+JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "item", "name": "stone hatchet"}, "confidence": 1.0}
+
+User: "was brauche ich für ein metal pickaxe"
+→ Entity: "metal pickaxe" (Item)
+→ Frage: "was brauche ich"
+JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "item", "name": "metal pickaxe"}, "confidence": 1.0}
 
 User: "was für kibble bevorzugen sie"
 → Pronomen: "sie", kein Entity

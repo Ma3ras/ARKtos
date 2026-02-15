@@ -14,6 +14,11 @@ import {
 } from "./creatures.js";
 import { formatCreatureFollowup } from "./creatures_followup.js";
 
+import {
+    findCraftableSmart,
+    formatCraftableRecipe,
+} from "./craftables.js";
+
 import { fetchFandomContext } from "./tools/fandom_fetch.js";
 
 import { setUserContext, getUserContext } from "./context.js";
@@ -412,6 +417,31 @@ async function main() {
 
                 // immer Quelle drunter (Fandom URL)
                 const out = `${answer}\n\nQuelle: ${c.url}`;
+                await interaction.editReply(out.slice(0, 1900));
+                return;
+            }
+
+            // ---------- CRAFTING RECIPE ----------
+            if (route.route === "crafting_recipe" || route.route === "crafting_info") {
+                console.log("🔨 CRAFTING ROUTE");
+                console.log("  route.entity:", route.entity);
+
+                const name = route.entity?.type === "item" ? route.entity.name : "";
+                const query = name ? name : frage;
+
+                console.log("  extracted name:", name);
+                console.log("  query for lookup:", query);
+
+                const item = findCraftableSmart(query);
+                console.log("  lookup result:", item ? `Found: ${item.title}` : "NOT FOUND");
+
+                if (!item) {
+                    await interaction.editReply(`Item nicht gefunden.\n\nTipp: schreibe den Item-Namen genauer.`);
+                    return;
+                }
+
+                const out = formatCraftableRecipe(item);
+                console.log("  formatted answer");
                 await interaction.editReply(out.slice(0, 1900));
                 return;
             }
