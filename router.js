@@ -28,19 +28,25 @@ ANTWORT-FORMAT (JSON):
   "route": "resource_location",
   "lang": "de",
   "entity": { "type": "resource", "name": "..." },
+  "query_type": "...",
   "confidence": 1.0
 }
 
 WICHTIG:
 - Nutze den Key "route", NICHT "response" oder "action".
 - "route" muss einer dieser Werte sein:
-  ["resource_location", "resource_info", "creature_flags", "creature_taming", "creature_breeding", "creature_spawn", "general"]
+  ["resource_location", "resource_info", "creature_flags", "creature_taming", "creature_breeding", "creature_spawn", "creature_followup", "general"]
 
 CREATURE vs RESOURCE:
 - CREATURES (Dinosaurier/Tiere): Rex, Raptor, Baryonyx, Trike, Spino, Argentavis, etc.
   → entity.type = "creature"
 - RESOURCES (Materialien): Metall, Holz, Stein, Fiber, Crystal, etc.
   → entity.type = "resource"
+
+FOLLOW-UP QUESTIONS:
+Wenn die Frage Pronomen enthält (sie, er, ihn, ihm, der, die, das) und KEIN Creature-Name erwähnt wird:
+→ route = "creature_followup"
+→ query_type = "kibble" | "equipment" | "torpor" | "food" | "taming" | "other"
 
 BEISPIELE:
 User: "Wo gibt es Metall?"
@@ -58,6 +64,21 @@ JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "
 User: "Kann man einen Spino züchten?"
 JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "spino"}, "confidence": 1.0}
 
+User: "was für kibble bevorzugen sie"
+JSON: {"route": "creature_followup", "lang": "de", "query_type": "kibble", "confidence": 1.0}
+
+User: "welches saddle braucht er"
+JSON: {"route": "creature_followup", "lang": "de", "query_type": "equipment", "confidence": 1.0}
+
+User: "ist er torpor immun"
+JSON: {"route": "creature_followup", "lang": "de", "query_type": "torpor", "confidence": 1.0}
+
+User: "was kann ich noch füttern"
+JSON: {"route": "creature_followup", "lang": "de", "query_type": "food", "confidence": 1.0}
+
+User: "wie zähme ich ihn"
+JSON: {"route": "creature_followup", "lang": "de", "query_type": "taming", "confidence": 1.0}
+
 User: "Erzähl mir was über die Story"
 JSON: {"route": "general", "lang": "de", "entity": {"type": "none", "name": ""}, "confidence": 0.9}
 
@@ -68,6 +89,7 @@ REGELN:
 - "creature_taming": zähmen / füttern / kibble / torpor (für CREATURES).
 - "creature_breeding": züchten / eier / incubation (für CREATURES).
 - "creature_spawn": wo spawnt / biome (für CREATURES).
+- "creature_followup": Follow-up Frage mit Pronomen, KEIN Creature-Name.
 - "general": alles andere.
 
 USER:

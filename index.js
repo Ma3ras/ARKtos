@@ -12,9 +12,12 @@ import {
     findCreatureSmart,
     formatCreatureAnswer,
 } from "./creatures.js";
+import { formatCreatureFollowup } from "./creatures_followup.js";
 
 import { fetchFandomContext } from "./tools/fandom_fetch.js";
+import { searchWiki } from "./wiki.js";
 
+import { setUserContext, getUserContext } from "./context.js";
 
 import {
     Client,
@@ -23,6 +26,9 @@ import {
     Routes,
     SlashCommandBuilder,
 } from "discord.js";
+import dotenv from "dotenv";
+import fs from "node:fs";
+import path from "node:path";
 
 /* ---------------- COMMAND ---------------- */
 
@@ -230,9 +236,44 @@ async function main() {
                     return;
                 }
 
+                // Store context for follow-up questions
+                setUserContext(interaction.user.id, c.key);
+
                 // zeigt standardmäßig alle 3 (zähmbar/züchtbar/reitbar)
                 const out = formatCreatureAnswer(c, { askTame: true, askBreed: true, askRide: true });
                 console.log("  formatted answer:", out);
+                await interaction.editReply(out.slice(0, 1900));
+                return;
+            }
+
+            // ---------- CREATURE FOLLOW-UP ----------
+            if (route.route === "creature_followup") {
+                console.log("🔄 CREATURE FOLLOW-UP ROUTE");
+                console.log("  query_type:", route.query_type);
+
+                // Get last mentioned creature from context
+                const lastCreatureKey = getUserContext(interaction.user.id);
+
+                if (!lastCreatureKey) {
+                    await interaction.editReply("Ich weiß nicht, über welches Creature du sprichst. 🤔\n\nTipp: Frage zuerst nach einem Creature, z.B. 'was für ein tame ist ein baryonyx'");
+                    return;
+                }
+
+                console.log("  context creature:", lastCreatureKey);
+
+                // Find the creature
+                const c = findCreatureSmart(lastCreatureKey);
+
+                if (!c) {
+                    await interaction.editReply("Ich kann das Creature nicht mehr finden. 😕");
+                    return;
+                }
+
+                // Format answer based on query type
+                const queryType = route.query_type || "other";
+                const out = formatCreatureFollowup(c, queryType);
+
+                console.log("  formatted followup answer:", out);
                 await interaction.editReply(out.slice(0, 1900));
                 return;
             }
