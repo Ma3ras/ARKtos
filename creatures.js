@@ -178,24 +178,13 @@ export function formatCreatureAnswer(c, kind = {}) {
     if (c?.taming) {
         const t = c.taming;
 
+
         if (t.taming_method) {
             lines.push(`- Taming Methode: **${t.taming_method}**`);
         }
 
-        if (t.torpor_immune !== undefined) {
-            lines.push(`- Torpor Immun: **${yn(t.torpor_immune)}**`);
-        }
-
-        if (t.preferred_kibble && t.preferred_kibble.length > 0) {
-            lines.push(`- Bevorzugtes Kibble: **${t.preferred_kibble.join(", ")}**`);
-        }
-
         if (t.preferred_food && t.preferred_food.length > 0) {
             lines.push(`- Bevorzugte Nahrung: **${t.preferred_food.join(", ")}**`);
-        }
-
-        if (t.equipment) {
-            lines.push(`- Ausrüstung: **${t.equipment}**`);
         }
     }
 
