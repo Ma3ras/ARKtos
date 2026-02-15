@@ -15,7 +15,6 @@ import {
 import { formatCreatureFollowup } from "./creatures_followup.js";
 
 import { fetchFandomContext } from "./tools/fandom_fetch.js";
-import { searchWiki } from "./wiki.js";
 
 import { setUserContext, getUserContext } from "./context.js";
 
