@@ -61,6 +61,12 @@ JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "
 User: "Was für ein Tame ist ein Baryonyx?"
 JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
 
+User: "was ist baryonyx für ein tame"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
+
+User: "was ist ein baryonyx für ein tame"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
+
 User: "Kann man einen Spino züchten?"
 JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "spino"}, "confidence": 1.0}
 
@@ -151,6 +157,7 @@ ${userText}
             type: obj.secondary?.type || "none",
             name: clampStr(obj.secondary?.name || ""),
         },
+        query_type: obj.query_type || undefined,
         confidence: Math.max(0, Math.min(1, Number(obj.confidence ?? 0))),
     };
 
