@@ -173,8 +173,40 @@ function pickSections($, intent, { maxSections = 3 } = {}) {
 
 function parseInfobox($) {
     const info = [];
-    const aside = $("aside.portable-infobox").first();
 
+    // PRIORITY 1: Extract Fandom's "info-arkitex" Domestication module
+    // This contains the critical taming data (Preferred Food, Kibble, Method, etc.)
+    const domesticationModule = $("div.info-arkitex.info-module").filter((_, el) => {
+        return $(el).text().includes("Domestication");
+    }).first();
+
+    if (domesticationModule.length) {
+        // The data is in nested divs, not tables. We need to parse the text structure.
+        const text = domesticationModule.text();
+
+        // Extract key-value pairs using regex patterns
+        const patterns = [
+            /Torpor Immune\s+([^\n]+)/gi,
+            /Taming Method\s+([^\n]+)/gi,
+            /Preferred Kibble\s+([^\n]+)/gi, // Note: may appear twice
+            /Preferred Food\s+([^\n]+)/gi,
+            /Equipment\s+([^\n]+)/gi,
+        ];
+
+        patterns.forEach(pattern => {
+            const matches = text.matchAll(pattern);
+            for (const match of matches) {
+                const value = match[1].trim();
+                if (value && value.length > 0 && value.length < 100) {
+                    const label = match[0].split(/\s+/)[0] + " " + match[0].split(/\s+/)[1]; // e.g., "Preferred Kibble"
+                    info.push(`${label.trim()}: ${value}`);
+                }
+            }
+        });
+    }
+
+    // PRIORITY 2: Try portable infobox (general creature info)
+    const aside = $("aside.portable-infobox").first();
     if (aside.length) {
         aside.find(".pi-data").each((_, el) => {
             const label = cleanText($(el).find(".pi-data-label").text());
@@ -182,6 +214,7 @@ function parseInfobox($) {
             if (label && value) info.push(`${label}: ${value}`);
         });
     } else {
+        // Fallback to standard infobox table
         const table = $("table.infobox").first();
         if (table.length) {
             table.find("tr").each((_, tr) => {
@@ -192,7 +225,7 @@ function parseInfobox($) {
         }
     }
 
-    return info.slice(0, 40);
+    return info.slice(0, 50);
 }
 
 function pickFallback($) {
@@ -227,32 +260,50 @@ export async function fetchFandomContext(
         } catch { }
     }
 
+    // URL Parsing for API
+    let domain = "";
+    let slug = "";
+    try {
+        const u = new URL(url);
+        domain = u.origin;
+        const parts = u.pathname.split("/wiki/");
+        if (parts.length < 2) throw new Error("Invalid Wiki URL");
+        slug = parts[1]; // e.g. "Baryonyx"
+    } catch (e) {
+        throw new Error(`Could not parse Wiki URL: ${url}`);
+    }
+
+    const apiUrl = `${domain}/api.php?action=parse&page=${slug}&prop=text|title&format=json&redirects=1`;
+
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), timeoutMs);
 
-    const r = await fetch(url, {
+    const r = await fetch(apiUrl, {
         signal: ctrl.signal,
         headers: {
-            "User-Agent": "ark-bot/1.0 (local; discord)",
-            "Accept-Language": "en-US,en;q=0.9,de;q=0.8",
+            "User-Agent": "Mozilla/5.0 (compatible; ARKBot/1.0; +http://example.com)",
         },
     }).finally(() => clearTimeout(t));
 
-    if (!r.ok) throw new Error(`Fetch failed ${r.status} for ${url}`);
+    if (!r.ok) throw new Error(`Wiki API Fetch failed ${r.status} for ${apiUrl}`);
 
-    const html = await r.text();
+    const data = await r.json();
+    if (data.error) throw new Error(`Wiki API Error: ${data.error.info || "Unknown error"}`);
+    if (!data.parse || !data.parse.text) throw new Error("Wiki API returned no content");
+
+    const html = data.parse.text["*"];
+    const pageTitle = data.parse.title || slug;
+
+    // Parse the HTML fragment
     const $ = cheerio.load(html);
 
-    const title =
-        cleanText($("h1.page-header__title").first().text()) ||
-        cleanText($("h1").first().text()) ||
-        url;
-
+    // Reuse existing logic (pickSections, parseInfobox)
+    // Note: API fragment does not have h1 usually, but has the content div
     const infobox = parseInfobox($);
     const sections = pickSections($, intent, { maxSections: intent === "taming" ? 3 : 2 });
     const fallback = pickFallback($);
 
-    let out = `TITLE: ${title}\nURL: ${url}\nINTENT: ${intent}\n\n`;
+    let out = `TITLE: ${pageTitle}\nURL: ${url}\nINTENT: ${intent}\n\n`;
 
     if (infobox.length) out += `INFOBOX:\n- ${infobox.join("\n- ")}\n\n`;
 
