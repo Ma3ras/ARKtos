@@ -1,0 +1,4790 @@
+{
+  "updated_at": "2026-02-15T15:18:19.105Z",
+  "count": 598,
+  "creatures": [
+    {
+      "key": "aberrant achatina",
+      "title": "Aberrant Achatina",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Achatina",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant anglerfish",
+      "title": "Aberrant Anglerfish",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Anglerfish",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant ankylosaurus",
+      "title": "Aberrant Ankylosaurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Ankylosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant araneo",
+      "title": "Aberrant Araneo",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Araneo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant arthropluera",
+      "title": "Aberrant Arthropluera",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Arthropluera",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant baryonyx",
+      "title": "Aberrant Baryonyx",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Baryonyx",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant beelzebufo",
+      "title": "Aberrant Beelzebufo",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Beelzebufo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant carbonemys",
+      "title": "Aberrant Carbonemys",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Carbonemys",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "aberrant carnotaurus",
+      "title": "Aberrant Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant cnidaria",
+      "title": "Aberrant Cnidaria",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Cnidaria",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "aberrant coelacanth",
+      "title": "Aberrant Coelacanth",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Coelacanth",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant dimetrodon",
+      "title": "Aberrant Dimetrodon",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Dimetrodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant dimorphodon",
+      "title": "Aberrant Dimorphodon",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Dimorphodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant diplocaulus",
+      "title": "Aberrant Diplocaulus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Diplocaulus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "aberrant diplodocus",
+      "title": "Aberrant Diplodocus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Diplodocus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant dire bear",
+      "title": "Aberrant Dire Bear",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Dire_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "aberrant dodo",
+      "title": "Aberrant Dodo",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Dodo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant doedicurus",
+      "title": "Aberrant Doedicurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Doedicurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant dung beetle",
+      "title": "Aberrant Dung Beetle",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Dung_Beetle",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "aberrant electrophorus",
+      "title": "Aberrant Electrophorus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Electrophorus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant equus",
+      "title": "Aberrant Equus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Equus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "aberrant gigantopithecus",
+      "title": "Aberrant Gigantopithecus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Gigantopithecus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "aberrant iguanodon",
+      "title": "Aberrant Iguanodon",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Iguanodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant lystrosaurus",
+      "title": "Aberrant Lystrosaurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Lystrosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant manta",
+      "title": "Aberrant Manta",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Manta",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "aberrant megalania",
+      "title": "Aberrant Megalania",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Megalania",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant megalosaurus",
+      "title": "Aberrant Megalosaurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Megalosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant meganeura",
+      "title": "Aberrant Meganeura",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Meganeura",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant moschops",
+      "title": "Aberrant Moschops",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Moschops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant otter",
+      "title": "Aberrant Otter",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Otter",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "aberrant ovis",
+      "title": "Aberrant Ovis",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Ovis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant paraceratherium",
+      "title": "Aberrant Paraceratherium",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Paraceratherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant parasaur",
+      "title": "Aberrant Parasaur",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant piranha",
+      "title": "Aberrant Piranha",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Piranha",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "aberrant pulmonoscorpius",
+      "title": "Aberrant Pulmonoscorpius",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Pulmonoscorpius",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant purlovia",
+      "title": "Aberrant Purlovia",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Purlovia",
+      "tameable": true,
+      "breedable": null,
+      "rideable": false
+    },
+    {
+      "key": "aberrant raptor",
+      "title": "Aberrant Raptor",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant salmon",
+      "title": "Aberrant Salmon",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Salmon",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "aberrant sarco",
+      "title": "Aberrant Sarco",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Sarco",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "aberrant spino",
+      "title": "Aberrant Spino",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Spino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant stegosaurus",
+      "title": "Aberrant Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant titanoboa",
+      "title": "Aberrant Titanoboa",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Titanoboa",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aberrant triceratops",
+      "title": "Aberrant Triceratops",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "aberrant trilobite",
+      "title": "Aberrant Trilobite",
+      "url": "https://ark.fandom.com/wiki/Aberrant_Trilobite",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "achatina",
+      "title": "Achatina",
+      "url": "https://ark.fandom.com/wiki/Achatina",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "acrocanthosaurus",
+      "title": "Acrocanthosaurus",
+      "url": "https://ark.fandom.com/wiki/Acrocanthosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "allosaurus",
+      "title": "Allosaurus",
+      "url": "https://ark.fandom.com/wiki/Allosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "alpha basilisk",
+      "title": "Alpha Basilisk",
+      "url": "https://ark.fandom.com/wiki/Alpha_Basilisk",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha blood crystal wyvern",
+      "title": "Alpha Blood Crystal Wyvern",
+      "url": "https://ark.fandom.com/wiki/Alpha_Blood_Crystal_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha carnotaurus",
+      "title": "Alpha Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/Alpha_Carnotaurus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha corrupted master controller",
+      "title": "Alpha Corrupted Master Controller",
+      "url": "https://ark.fandom.com/wiki/Alpha_Corrupted_Master_Controller",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha creatures",
+      "title": "Alpha Creatures",
+      "url": "https://ark.fandom.com/wiki/Alpha_Creatures",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha deathworm",
+      "title": "Alpha Deathworm",
+      "url": "https://ark.fandom.com/wiki/Alpha_Deathworm",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha fire wyvern",
+      "title": "Alpha Fire Wyvern",
+      "url": "https://ark.fandom.com/wiki/Alpha_Fire_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha karkinos",
+      "title": "Alpha Karkinos",
+      "url": "https://ark.fandom.com/wiki/Alpha_Karkinos",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "alpha king titan",
+      "title": "Alpha King Titan",
+      "url": "https://ark.fandom.com/wiki/Alpha_King_Titan",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "alpha leedsichthys",
+      "title": "Alpha Leedsichthys",
+      "url": "https://ark.fandom.com/wiki/Alpha_Leedsichthys",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha megalodon",
+      "title": "Alpha Megalodon",
+      "url": "https://ark.fandom.com/wiki/Alpha_Megalodon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha moeder master of the ocean",
+      "title": "Alpha Moeder, Master of the Ocean",
+      "url": "https://ark.fandom.com/wiki/Alpha_Moeder%2C_Master_of_the_Ocean",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha mosasaur",
+      "title": "Alpha Mosasaur",
+      "url": "https://ark.fandom.com/wiki/Alpha_Mosasaur",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha raptor",
+      "title": "Alpha Raptor",
+      "url": "https://ark.fandom.com/wiki/Alpha_Raptor",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha surface reaper king",
+      "title": "Alpha Surface Reaper King",
+      "url": "https://ark.fandom.com/wiki/Alpha_Surface_Reaper_King",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha t rex",
+      "title": "Alpha T-Rex",
+      "url": "https://ark.fandom.com/wiki/Alpha_T-Rex",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha tusoteuthis",
+      "title": "Alpha Tusoteuthis",
+      "url": "https://ark.fandom.com/wiki/Alpha_Tusoteuthis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "alpha x triceratops",
+      "title": "Alpha X-Triceratops",
+      "url": "https://ark.fandom.com/wiki/Alpha_X-Triceratops",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "amargasaurus",
+      "title": "Amargasaurus",
+      "url": "https://ark.fandom.com/wiki/Amargasaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "ammonite",
+      "title": "Ammonite",
+      "url": "https://ark.fandom.com/wiki/Ammonite",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "andrewsarchus",
+      "title": "Andrewsarchus",
+      "url": "https://ark.fandom.com/wiki/Andrewsarchus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "anglerfish",
+      "title": "Anglerfish",
+      "url": "https://ark.fandom.com/wiki/Anglerfish",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "ankylosaurus",
+      "title": "Ankylosaurus",
+      "url": "https://ark.fandom.com/wiki/Ankylosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "araneo",
+      "title": "Araneo",
+      "url": "https://ark.fandom.com/wiki/Araneo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "archaeopteryx",
+      "title": "Archaeopteryx",
+      "url": "https://ark.fandom.com/wiki/Archaeopteryx",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "argentavis",
+      "title": "Argentavis",
+      "url": "https://ark.fandom.com/wiki/Argentavis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "argentustus",
+      "title": "Argentustus",
+      "url": "https://ark.fandom.com/wiki/Argentustus",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "modark additionsdeinotherium",
+      "title": "Mod:ARK Additions/Deinotherium",
+      "url": "https://ark.fandom.com/wiki/Mod%3AARK_Additions%2FDeinotherium",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "arthropluera",
+      "title": "Arthropluera",
+      "url": "https://ark.fandom.com/wiki/Arthropluera",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "astrocetus",
+      "title": "Astrocetus",
+      "url": "https://ark.fandom.com/wiki/Astrocetus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "astrodelphis",
+      "title": "Astrodelphis",
+      "url": "https://ark.fandom.com/wiki/Astrodelphis",
+      "tameable": null,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "attack drone",
+      "title": "Attack Drone",
+      "url": "https://ark.fandom.com/wiki/Attack_Drone",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "aurochs",
+      "title": "Aurochs",
+      "url": "https://ark.fandom.com/wiki/Aurochs",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "baryonyx",
+      "title": "Baryonyx",
+      "url": "https://ark.fandom.com/wiki/Baryonyx",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "basilisk",
+      "title": "Basilisk",
+      "url": "https://ark.fandom.com/wiki/Basilisk",
+      "tameable": null,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "basilisk ghost",
+      "title": "Basilisk Ghost",
+      "url": "https://ark.fandom.com/wiki/Basilisk_Ghost",
+      "tameable": null,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "basilosaurus",
+      "title": "Basilosaurus",
+      "url": "https://ark.fandom.com/wiki/Basilosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "beelzebufo",
+      "title": "Beelzebufo",
+      "url": "https://ark.fandom.com/wiki/Beelzebufo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "beelzemorbus",
+      "title": "Beelzemorbus",
+      "url": "https://ark.fandom.com/wiki/Beelzemorbus",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "beta corrupted master controller",
+      "title": "Beta Corrupted Master Controller",
+      "url": "https://ark.fandom.com/wiki/Beta_Corrupted_Master_Controller",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "beta king titan",
+      "title": "Beta King Titan",
+      "url": "https://ark.fandom.com/wiki/Beta_King_Titan",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "beta moeder master of the ocean",
+      "title": "Beta Moeder, Master of the Ocean",
+      "url": "https://ark.fandom.com/wiki/Beta_Moeder%2C_Master_of_the_Ocean",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "blood crystal wyvern",
+      "title": "Blood Crystal Wyvern",
+      "url": "https://ark.fandom.com/wiki/Blood_Crystal_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "bloodstalker",
+      "title": "Bloodstalker",
+      "url": "https://ark.fandom.com/wiki/Bloodstalker",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "bone fire wyvern",
+      "title": "Bone Fire Wyvern",
+      "url": "https://ark.fandom.com/wiki/Bone_Fire_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brontosaurus",
+      "title": "Brontosaurus",
+      "url": "https://ark.fandom.com/wiki/Brontosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "broodgenetrix",
+      "title": "Broodgenetrix",
+      "url": "https://ark.fandom.com/wiki/Broodgenetrix",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "broodmother lysrix",
+      "title": "Broodmother Lysrix",
+      "url": "https://ark.fandom.com/wiki/Broodmother_Lysrix",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "broodmother lysrix alpha",
+      "title": "Broodmother Lysrix (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Broodmother_Lysrix_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "broodmother lysrix beta",
+      "title": "Broodmother Lysrix (Beta)",
+      "url": "https://ark.fandom.com/wiki/Broodmother_Lysrix_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "broodmother lysrix gamma",
+      "title": "Broodmother Lysrix (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Broodmother_Lysrix_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute araneo",
+      "title": "Brute Araneo",
+      "url": "https://ark.fandom.com/wiki/Brute_Araneo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute astrocetus",
+      "title": "Brute Astrocetus",
+      "url": "https://ark.fandom.com/wiki/Brute_Astrocetus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute basilosaurus",
+      "title": "Brute Basilosaurus",
+      "url": "https://ark.fandom.com/wiki/Brute_Basilosaurus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute bloodstalker",
+      "title": "Brute Bloodstalker",
+      "url": "https://ark.fandom.com/wiki/Brute_Bloodstalker",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute ferox",
+      "title": "Brute Ferox",
+      "url": "https://ark.fandom.com/wiki/Brute_Ferox",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute fire wyvern",
+      "title": "Brute Fire Wyvern",
+      "url": "https://ark.fandom.com/wiki/Brute_Fire_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute leedsichthys",
+      "title": "Brute Leedsichthys",
+      "url": "https://ark.fandom.com/wiki/Brute_Leedsichthys",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute magmasaur",
+      "title": "Brute Magmasaur",
+      "url": "https://ark.fandom.com/wiki/Brute_Magmasaur",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute malfunctioned tek giganotosaurus",
+      "title": "Brute Malfunctioned Tek Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Brute_Malfunctioned_Tek_Giganotosaurus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute malfunctioned tek rex",
+      "title": "Brute Malfunctioned Tek Rex",
+      "url": "https://ark.fandom.com/wiki/Brute_Malfunctioned_Tek_Rex",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute mammoth",
+      "title": "Brute Mammoth",
+      "url": "https://ark.fandom.com/wiki/Brute_Mammoth",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute megaloceros",
+      "title": "Brute Megaloceros",
+      "url": "https://ark.fandom.com/wiki/Brute_Megaloceros",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute plesiosaur",
+      "title": "Brute Plesiosaur",
+      "url": "https://ark.fandom.com/wiki/Brute_Plesiosaur",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute reaper king",
+      "title": "Brute Reaper King",
+      "url": "https://ark.fandom.com/wiki/Brute_Reaper_King",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute sarco",
+      "title": "Brute Sarco",
+      "url": "https://ark.fandom.com/wiki/Brute_Sarco",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute seeker",
+      "title": "Brute Seeker",
+      "url": "https://ark.fandom.com/wiki/Brute_Seeker",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute tusoteuthis",
+      "title": "Brute Tusoteuthis",
+      "url": "https://ark.fandom.com/wiki/Brute_Tusoteuthis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x allosaurus",
+      "title": "Brute X-Allosaurus",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Allosaurus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x megalodon",
+      "title": "Brute X-Megalodon",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Megalodon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x mosasaurus",
+      "title": "Brute X-Mosasaurus",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Mosasaurus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x raptor",
+      "title": "Brute X-Raptor",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Raptor",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x rex",
+      "title": "Brute X-Rex",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Rex",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x rock elemental",
+      "title": "Brute X-Rock Elemental",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Rock_Elemental",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x spino",
+      "title": "Brute X-Spino",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Spino",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "brute x yutyrannus",
+      "title": "Brute X-Yutyrannus",
+      "url": "https://ark.fandom.com/wiki/Brute_X-Yutyrannus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "bulbdog",
+      "title": "Bulbdog",
+      "url": "https://ark.fandom.com/wiki/Bulbdog",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "bulbdog ghost",
+      "title": "Bulbdog Ghost",
+      "url": "https://ark.fandom.com/wiki/Bulbdog_Ghost",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "bunny dodo",
+      "title": "Bunny Dodo",
+      "url": "https://ark.fandom.com/wiki/Bunny_Dodo",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "bunny oviraptor",
+      "title": "Bunny Oviraptor",
+      "url": "https://ark.fandom.com/wiki/Bunny_Oviraptor",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "carbonemys",
+      "title": "Carbonemys",
+      "url": "https://ark.fandom.com/wiki/Carbonemys",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "carcharodontosaurus",
+      "title": "Carcharodontosaurus",
+      "url": "https://ark.fandom.com/wiki/Carcharodontosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "carnotaurus",
+      "title": "Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "castoroides",
+      "title": "Castoroides",
+      "url": "https://ark.fandom.com/wiki/Castoroides",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "chalicotherium",
+      "title": "Chalicotherium",
+      "url": "https://ark.fandom.com/wiki/Chalicotherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "chalk golem",
+      "title": "Chalk Golem",
+      "url": "https://ark.fandom.com/wiki/Chalk_Golem",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "cnidaria",
+      "title": "Cnidaria",
+      "url": "https://ark.fandom.com/wiki/Cnidaria",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "coelacanth",
+      "title": "Coelacanth",
+      "url": "https://ark.fandom.com/wiki/Coelacanth",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "compy",
+      "title": "Compy",
+      "url": "https://ark.fandom.com/wiki/Compy",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted arthropluera",
+      "title": "Corrupted Arthropluera",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Arthropluera",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted avatar",
+      "title": "Corrupted Avatar",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Avatar",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted carnotaurus",
+      "title": "Corrupted Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted chalicotherium",
+      "title": "Corrupted Chalicotherium",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Chalicotherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "corrupted dilophosaur",
+      "title": "Corrupted Dilophosaur",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Dilophosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "corrupted dimorphodon",
+      "title": "Corrupted Dimorphodon",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Dimorphodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "corrupted giganotosaurus",
+      "title": "Corrupted Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted master controller",
+      "title": "Corrupted Master Controller",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Master_Controller",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted paraceratherium",
+      "title": "Corrupted Paraceratherium",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Paraceratherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted pteranodon",
+      "title": "Corrupted Pteranodon",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Pteranodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted raptor",
+      "title": "Corrupted Raptor",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted reaper king",
+      "title": "Corrupted Reaper King",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "corrupted rex",
+      "title": "Corrupted Rex",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted rock drake",
+      "title": "Corrupted Rock Drake",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Rock_Drake",
+      "tameable": false,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "corrupted spino",
+      "title": "Corrupted Spino",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Spino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted stegosaurus",
+      "title": "Corrupted Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted survivor",
+      "title": "Corrupted Survivor",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Survivor",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "corrupted triceratops",
+      "title": "Corrupted Triceratops",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "corrupted wyvern",
+      "title": "Corrupted Wyvern",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "crystal wyvern",
+      "title": "Crystal Wyvern",
+      "url": "https://ark.fandom.com/wiki/Crystal_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "crystal wyvern queen",
+      "title": "Crystal Wyvern Queen",
+      "url": "https://ark.fandom.com/wiki/Crystal_Wyvern_Queen",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "crystal wyvern queen alpha",
+      "title": "Crystal Wyvern Queen (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Crystal_Wyvern_Queen_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "crystal wyvern queen beta",
+      "title": "Crystal Wyvern Queen (Beta)",
+      "url": "https://ark.fandom.com/wiki/Crystal_Wyvern_Queen_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "crystal wyvern queen gamma",
+      "title": "Crystal Wyvern Queen (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Crystal_Wyvern_Queen_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "cubozoa multis",
+      "title": "Cubozoa Multis",
+      "url": "https://ark.fandom.com/wiki/Cubozoa_Multis",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "daeodon",
+      "title": "Daeodon",
+      "url": "https://ark.fandom.com/wiki/Daeodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "deathworm",
+      "title": "Deathworm",
+      "url": "https://ark.fandom.com/wiki/Deathworm",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "defense unit",
+      "title": "Defense Unit",
+      "url": "https://ark.fandom.com/wiki/Defense_Unit",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "deinonychus",
+      "title": "Deinonychus",
+      "url": "https://ark.fandom.com/wiki/Deinonychus",
+      "tameable": false,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "desert titan",
+      "title": "Desert Titan",
+      "url": "https://ark.fandom.com/wiki/Desert_Titan",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "desert titan flock",
+      "title": "Desert Titan Flock",
+      "url": "https://ark.fandom.com/wiki/Desert_Titan_Flock",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "desmodus",
+      "title": "Desmodus",
+      "url": "https://ark.fandom.com/wiki/Desmodus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "dilophosaur",
+      "title": "Dilophosaur",
+      "url": "https://ark.fandom.com/wiki/Dilophosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "dimetrodon",
+      "title": "Dimetrodon",
+      "url": "https://ark.fandom.com/wiki/Dimetrodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "dimorphodon",
+      "title": "Dimorphodon",
+      "url": "https://ark.fandom.com/wiki/Dimorphodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "dinopithecus",
+      "title": "Dinopithecus",
+      "url": "https://ark.fandom.com/wiki/Dinopithecus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dinopithecus king alpha",
+      "title": "Dinopithecus King (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Dinopithecus_King_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dinopithecus king beta",
+      "title": "Dinopithecus King (Beta)",
+      "url": "https://ark.fandom.com/wiki/Dinopithecus_King_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dinopithecus king gamma",
+      "title": "Dinopithecus King (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Dinopithecus_King_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "diplocaulus",
+      "title": "Diplocaulus",
+      "url": "https://ark.fandom.com/wiki/Diplocaulus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "diplodocus",
+      "title": "Diplodocus",
+      "url": "https://ark.fandom.com/wiki/Diplodocus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "dire bear",
+      "title": "Dire Bear",
+      "url": "https://ark.fandom.com/wiki/Dire_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "dire polar bear",
+      "title": "Dire Polar Bear",
+      "url": "https://ark.fandom.com/wiki/Dire_Polar_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "direwolf",
+      "title": "Direwolf",
+      "url": "https://ark.fandom.com/wiki/Direwolf",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "direwolf ghost",
+      "title": "Direwolf Ghost",
+      "url": "https://ark.fandom.com/wiki/Direwolf_Ghost",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "diseased leech",
+      "title": "Diseased Leech",
+      "url": "https://ark.fandom.com/wiki/Diseased_Leech",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "dodo",
+      "title": "Dodo",
+      "url": "https://ark.fandom.com/wiki/Dodo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "dodo wyvern",
+      "title": "Dodo Wyvern",
+      "url": "https://ark.fandom.com/wiki/Dodo_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dodobitus",
+      "title": "Dodobitus",
+      "url": "https://ark.fandom.com/wiki/Dodobitus",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "dodorex",
+      "title": "DodoRex",
+      "url": "https://ark.fandom.com/wiki/DodoRex",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "doedicurus",
+      "title": "Doedicurus",
+      "url": "https://ark.fandom.com/wiki/Doedicurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "doedicurus vastus",
+      "title": "Doedicurus Vastus",
+      "url": "https://ark.fandom.com/wiki/Doedicurus_Vastus",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "dragon",
+      "title": "Dragon",
+      "url": "https://ark.fandom.com/wiki/Dragon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dragon alpha",
+      "title": "Dragon (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Dragon_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dragon beta",
+      "title": "Dragon (Beta)",
+      "url": "https://ark.fandom.com/wiki/Dragon_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dragon gamma",
+      "title": "Dragon (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Dragon_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "dung beetle",
+      "title": "Dung Beetle",
+      "url": "https://ark.fandom.com/wiki/Dung_Beetle",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "dunkleosteus",
+      "title": "Dunkleosteus",
+      "url": "https://ark.fandom.com/wiki/Dunkleosteus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eel minion",
+      "title": "Eel Minion",
+      "url": "https://ark.fandom.com/wiki/Eel_Minion",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie achatina",
+      "title": "Eerie Achatina",
+      "url": "https://ark.fandom.com/wiki/Eerie_Achatina",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie allosaurus",
+      "title": "Eerie Allosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Allosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie alpha carno",
+      "title": "Eerie Alpha Carno",
+      "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Carno",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie alpha mosasaur",
+      "title": "Eerie Alpha Mosasaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Mosasaur",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie alpha raptor",
+      "title": "Eerie Alpha Raptor",
+      "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Raptor",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie alpha t rex",
+      "title": "Eerie Alpha T-Rex",
+      "url": "https://ark.fandom.com/wiki/Eerie_Alpha_T-Rex",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie ammonite",
+      "title": "Eerie Ammonite",
+      "url": "https://ark.fandom.com/wiki/Eerie_Ammonite",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie angler",
+      "title": "Eerie Angler",
+      "url": "https://ark.fandom.com/wiki/Eerie_Angler",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie ankylo",
+      "title": "Eerie Ankylo",
+      "url": "https://ark.fandom.com/wiki/Eerie_Ankylo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie araneo",
+      "title": "Eerie Araneo",
+      "url": "https://ark.fandom.com/wiki/Eerie_Araneo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie archaeopteryx",
+      "title": "Eerie Archaeopteryx",
+      "url": "https://ark.fandom.com/wiki/Eerie_Archaeopteryx",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie argentavis",
+      "title": "Eerie Argentavis",
+      "url": "https://ark.fandom.com/wiki/Eerie_Argentavis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie arthropluera",
+      "title": "Eerie Arthropluera",
+      "url": "https://ark.fandom.com/wiki/Eerie_Arthropluera",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie baryonyx",
+      "title": "Eerie Baryonyx",
+      "url": "https://ark.fandom.com/wiki/Eerie_Baryonyx",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie basilosaurus",
+      "title": "Eerie Basilosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Basilosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie beelzebufo",
+      "title": "Eerie Beelzebufo",
+      "url": "https://ark.fandom.com/wiki/Eerie_Beelzebufo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie bronto",
+      "title": "Eerie Bronto",
+      "url": "https://ark.fandom.com/wiki/Eerie_Bronto",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie carbonemys",
+      "title": "Eerie Carbonemys",
+      "url": "https://ark.fandom.com/wiki/Eerie_Carbonemys",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie carno",
+      "title": "Eerie Carno",
+      "url": "https://ark.fandom.com/wiki/Eerie_Carno",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie castoroides",
+      "title": "Eerie Castoroides",
+      "url": "https://ark.fandom.com/wiki/Eerie_Castoroides",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie chalicotherium",
+      "title": "Eerie Chalicotherium",
+      "url": "https://ark.fandom.com/wiki/Eerie_Chalicotherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie coelacanth",
+      "title": "Eerie Coelacanth",
+      "url": "https://ark.fandom.com/wiki/Eerie_Coelacanth",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie compy",
+      "title": "Eerie Compy",
+      "url": "https://ark.fandom.com/wiki/Eerie_Compy",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie daeodon",
+      "title": "Eerie Daeodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Daeodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie dilophosaurus",
+      "title": "Eerie Dilophosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dilophosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie dimetrodon",
+      "title": "Eerie Dimetrodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dimetrodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie dimorphodon",
+      "title": "Eerie Dimorphodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dimorphodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie diplocaulus",
+      "title": "Eerie Diplocaulus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Diplocaulus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie diplodocus",
+      "title": "Eerie Diplodocus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Diplodocus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie dire bear",
+      "title": "Eerie Dire Bear",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dire_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie dire wolf",
+      "title": "Eerie Dire Wolf",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dire_Wolf",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie diseased leech",
+      "title": "Eerie Diseased Leech",
+      "url": "https://ark.fandom.com/wiki/Eerie_Diseased_Leech",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie dodo",
+      "title": "Eerie Dodo",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dodo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie doedicurus",
+      "title": "Eerie Doedicurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Doedicurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie dung beetle",
+      "title": "Eerie Dung Beetle",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dung_Beetle",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie dunkleosteus",
+      "title": "Eerie Dunkleosteus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Dunkleosteus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie equus",
+      "title": "Eerie Equus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Equus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie eurypterid",
+      "title": "Eerie Eurypterid",
+      "url": "https://ark.fandom.com/wiki/Eerie_Eurypterid",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie gallimimus",
+      "title": "Eerie Gallimimus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Gallimimus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie giganotosaurus",
+      "title": "Eerie Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie gigantopithecus",
+      "title": "Eerie Gigantopithecus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Gigantopithecus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie griffin",
+      "title": "Eerie Griffin",
+      "url": "https://ark.fandom.com/wiki/Eerie_Griffin",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie ichthyosaurus",
+      "title": "Eerie Ichthyosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Ichthyosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie iguanodon",
+      "title": "Eerie Iguanodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Iguanodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie jerboa",
+      "title": "Eerie Jerboa",
+      "url": "https://ark.fandom.com/wiki/Eerie_Jerboa",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie kairuku",
+      "title": "Eerie Kairuku",
+      "url": "https://ark.fandom.com/wiki/Eerie_Kairuku",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie kaprosuchus",
+      "title": "Eerie Kaprosuchus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Kaprosuchus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie leech",
+      "title": "Eerie Leech",
+      "url": "https://ark.fandom.com/wiki/Eerie_Leech",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie leedsichthys",
+      "title": "Eerie Leedsichthys",
+      "url": "https://ark.fandom.com/wiki/Eerie_Leedsichthys",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie liopleurodon",
+      "title": "Eerie Liopleurodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Liopleurodon",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie lystrosaurus",
+      "title": "Eerie Lystrosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Lystrosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie mammoth",
+      "title": "Eerie Mammoth",
+      "url": "https://ark.fandom.com/wiki/Eerie_Mammoth",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie manta",
+      "title": "Eerie Manta",
+      "url": "https://ark.fandom.com/wiki/Eerie_Manta",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie megaloceros",
+      "title": "Eerie Megaloceros",
+      "url": "https://ark.fandom.com/wiki/Eerie_Megaloceros",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie megalodon",
+      "title": "Eerie Megalodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Megalodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie megalosaurus",
+      "title": "Eerie Megalosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Megalosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie meganeura",
+      "title": "Eerie Meganeura",
+      "url": "https://ark.fandom.com/wiki/Eerie_Meganeura",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie megapiranha",
+      "title": "Eerie Megapiranha",
+      "url": "https://ark.fandom.com/wiki/Eerie_Megapiranha",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie megatherium",
+      "title": "Eerie Megatherium",
+      "url": "https://ark.fandom.com/wiki/Eerie_Megatherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie mesopithecus",
+      "title": "Eerie Mesopithecus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Mesopithecus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie mosasaur",
+      "title": "Eerie Mosasaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Mosasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie moschops",
+      "title": "Eerie Moschops",
+      "url": "https://ark.fandom.com/wiki/Eerie_Moschops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie onyc",
+      "title": "Eerie Onyc",
+      "url": "https://ark.fandom.com/wiki/Eerie_Onyc",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie otter",
+      "title": "Eerie Otter",
+      "url": "https://ark.fandom.com/wiki/Eerie_Otter",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie oviraptor",
+      "title": "Eerie Oviraptor",
+      "url": "https://ark.fandom.com/wiki/Eerie_Oviraptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie pachy",
+      "title": "Eerie Pachy",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pachy",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie pachyrhinosaurus",
+      "title": "Eerie Pachyrhinosaurus",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pachyrhinosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie parasaur",
+      "title": "Eerie Parasaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie pegomastax",
+      "title": "Eerie Pegomastax",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pegomastax",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "eerie pelagornis",
+      "title": "Eerie Pelagornis",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pelagornis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie phiomia",
+      "title": "Eerie Phiomia",
+      "url": "https://ark.fandom.com/wiki/Eerie_Phiomia",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie plesiosaur",
+      "title": "Eerie Plesiosaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Plesiosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie procoptodon",
+      "title": "Eerie Procoptodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Procoptodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie pteranodon",
+      "title": "Eerie Pteranodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pteranodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie pulmonoscorpius",
+      "title": "Eerie Pulmonoscorpius",
+      "url": "https://ark.fandom.com/wiki/Eerie_Pulmonoscorpius",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie purlovia",
+      "title": "Eerie Purlovia",
+      "url": "https://ark.fandom.com/wiki/Eerie_Purlovia",
+      "tameable": true,
+      "breedable": null,
+      "rideable": false
+    },
+    {
+      "key": "eerie quetzal",
+      "title": "Eerie Quetzal",
+      "url": "https://ark.fandom.com/wiki/Eerie_Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie raptor",
+      "title": "Eerie Raptor",
+      "url": "https://ark.fandom.com/wiki/Eerie_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie rex",
+      "title": "Eerie Rex",
+      "url": "https://ark.fandom.com/wiki/Eerie_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie sabertooth",
+      "title": "Eerie Sabertooth",
+      "url": "https://ark.fandom.com/wiki/Eerie_Sabertooth",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie sabertooth salmon",
+      "title": "Eerie Sabertooth Salmon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Sabertooth_Salmon",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie sarco",
+      "title": "Eerie Sarco",
+      "url": "https://ark.fandom.com/wiki/Eerie_Sarco",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "eerie spino",
+      "title": "Eerie Spino",
+      "url": "https://ark.fandom.com/wiki/Eerie_Spino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie stego",
+      "title": "Eerie Stego",
+      "url": "https://ark.fandom.com/wiki/Eerie_Stego",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie tapejara",
+      "title": "Eerie Tapejara",
+      "url": "https://ark.fandom.com/wiki/Eerie_Tapejara",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie terror bird",
+      "title": "Eerie Terror Bird",
+      "url": "https://ark.fandom.com/wiki/Eerie_Terror_Bird",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie therizinosaur",
+      "title": "Eerie Therizinosaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Therizinosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie titanoboa",
+      "title": "Eerie Titanoboa",
+      "url": "https://ark.fandom.com/wiki/Eerie_Titanoboa",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie titanomyrma drone",
+      "title": "Eerie Titanomyrma Drone",
+      "url": "https://ark.fandom.com/wiki/Eerie_Titanomyrma_Drone",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie titanomyrma soldier",
+      "title": "Eerie Titanomyrma Soldier",
+      "url": "https://ark.fandom.com/wiki/Eerie_Titanomyrma_Soldier",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie titanosaur",
+      "title": "Eerie Titanosaur",
+      "url": "https://ark.fandom.com/wiki/Eerie_Titanosaur",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eerie triceratops",
+      "title": "Eerie Triceratops",
+      "url": "https://ark.fandom.com/wiki/Eerie_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie trilobite",
+      "title": "Eerie Trilobite",
+      "url": "https://ark.fandom.com/wiki/Eerie_Trilobite",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "eerie troodon",
+      "title": "Eerie Troodon",
+      "url": "https://ark.fandom.com/wiki/Eerie_Troodon",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "eerie tusoteuthis",
+      "title": "Eerie Tusoteuthis",
+      "url": "https://ark.fandom.com/wiki/Eerie_Tusoteuthis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie woolly rhinoceros",
+      "title": "Eerie Woolly Rhinoceros",
+      "url": "https://ark.fandom.com/wiki/Eerie_Woolly_Rhinoceros",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "eerie yeti",
+      "title": "Eerie Yeti",
+      "url": "https://ark.fandom.com/wiki/Eerie_Yeti",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "electrophorus",
+      "title": "Electrophorus",
+      "url": "https://ark.fandom.com/wiki/Electrophorus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "elemental reaper king",
+      "title": "Elemental Reaper King",
+      "url": "https://ark.fandom.com/wiki/Elemental_Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "ember crystal wyvern",
+      "title": "Ember Crystal Wyvern",
+      "url": "https://ark.fandom.com/wiki/Ember_Crystal_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "enforcer",
+      "title": "Enforcer",
+      "url": "https://ark.fandom.com/wiki/Enforcer",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "enraged corrupted rex",
+      "title": "Enraged Corrupted Rex",
+      "url": "https://ark.fandom.com/wiki/Enraged_Corrupted_Rex",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "enraged triceratops",
+      "title": "Enraged Triceratops",
+      "url": "https://ark.fandom.com/wiki/Enraged_Triceratops",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "equus",
+      "title": "Equus",
+      "url": "https://ark.fandom.com/wiki/Equus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "eurypterid",
+      "title": "Eurypterid",
+      "url": "https://ark.fandom.com/wiki/Eurypterid",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "exo mek",
+      "title": "Exo-Mek",
+      "url": "https://ark.fandom.com/wiki/Exo-Mek",
+      "tameable": false,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "experimental giganotosaurus",
+      "title": "Experimental Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Experimental_Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "featherlight",
+      "title": "Featherlight",
+      "url": "https://ark.fandom.com/wiki/Featherlight",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "fenrir",
+      "title": "Fenrir",
+      "url": "https://ark.fandom.com/wiki/Fenrir",
+      "tameable": null,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "ferox",
+      "title": "Ferox",
+      "url": "https://ark.fandom.com/wiki/Ferox",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "ferox large",
+      "title": "Ferox (Large)",
+      "url": "https://ark.fandom.com/wiki/Ferox_(Large)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "fire wyvern",
+      "title": "Fire Wyvern",
+      "url": "https://ark.fandom.com/wiki/Fire_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "fjordhawk",
+      "title": "Fjordhawk",
+      "url": "https://ark.fandom.com/wiki/Fjordhawk",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "forest titan",
+      "title": "Forest Titan",
+      "url": "https://ark.fandom.com/wiki/Forest_Titan",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "forest wyvern",
+      "title": "Forest Wyvern",
+      "url": "https://ark.fandom.com/wiki/Forest_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "gacha",
+      "title": "Gacha",
+      "url": "https://ark.fandom.com/wiki/Gacha",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "gachaclaus",
+      "title": "GachaClaus",
+      "url": "https://ark.fandom.com/wiki/GachaClaus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "gallimimus",
+      "title": "Gallimimus",
+      "url": "https://ark.fandom.com/wiki/Gallimimus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "gamma corrupted master controller",
+      "title": "Gamma Corrupted Master Controller",
+      "url": "https://ark.fandom.com/wiki/Gamma_Corrupted_Master_Controller",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "gamma king titan",
+      "title": "Gamma King Titan",
+      "url": "https://ark.fandom.com/wiki/Gamma_King_Titan",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "gamma moeder master of the ocean",
+      "title": "Gamma Moeder, Master of the Ocean",
+      "url": "https://ark.fandom.com/wiki/Gamma_Moeder%2C_Master_of_the_Ocean",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "gasbags",
+      "title": "Gasbags",
+      "url": "https://ark.fandom.com/wiki/Gasbags",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "giant bee",
+      "title": "Giant Bee",
+      "url": "https://ark.fandom.com/wiki/Giant_Bee",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "giant queen bee",
+      "title": "Giant Queen Bee",
+      "url": "https://ark.fandom.com/wiki/Giant_Queen_Bee",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "giant worker bee",
+      "title": "Giant Worker Bee",
+      "url": "https://ark.fandom.com/wiki/Giant_Worker_Bee",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "giganotosaurus",
+      "title": "Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "gigantopithecus",
+      "title": "Gigantopithecus",
+      "url": "https://ark.fandom.com/wiki/Gigantopithecus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "glowbug",
+      "title": "Glowbug",
+      "url": "https://ark.fandom.com/wiki/Glowbug",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "glowtail",
+      "title": "Glowtail",
+      "url": "https://ark.fandom.com/wiki/Glowtail",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "golden striped brute megalodon",
+      "title": "Golden Striped Brute Megalodon",
+      "url": "https://ark.fandom.com/wiki/Golden_Striped_Brute_Megalodon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "golden striped megalodon",
+      "title": "Golden Striped Megalodon",
+      "url": "https://ark.fandom.com/wiki/Golden_Striped_Megalodon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "griffin",
+      "title": "Griffin",
+      "url": "https://ark.fandom.com/wiki/Griffin",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "gula beetle",
+      "title": "Gula Beetle",
+      "url": "https://ark.fandom.com/wiki/Gula_Beetle",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "hesperornis",
+      "title": "Hesperornis",
+      "url": "https://ark.fandom.com/wiki/Hesperornis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "human",
+      "title": "Human",
+      "url": "https://ark.fandom.com/wiki/Human",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "hyaenodon",
+      "title": "Hyaenodon",
+      "url": "https://ark.fandom.com/wiki/Hyaenodon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "ice golem",
+      "title": "Ice Golem",
+      "url": "https://ark.fandom.com/wiki/Ice_Golem",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "ice titan",
+      "title": "Ice Titan",
+      "url": "https://ark.fandom.com/wiki/Ice_Titan",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "ice wyvern",
+      "title": "Ice Wyvern",
+      "url": "https://ark.fandom.com/wiki/Ice_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "iceworm male",
+      "title": "Iceworm Male",
+      "url": "https://ark.fandom.com/wiki/Iceworm_Male",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "iceworm queen",
+      "title": "Iceworm Queen",
+      "url": "https://ark.fandom.com/wiki/Iceworm_Queen",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "ichthyornis",
+      "title": "Ichthyornis",
+      "url": "https://ark.fandom.com/wiki/Ichthyornis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "ichthyosaurus",
+      "title": "Ichthyosaurus",
+      "url": "https://ark.fandom.com/wiki/Ichthyosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "iguanodon",
+      "title": "Iguanodon",
+      "url": "https://ark.fandom.com/wiki/Iguanodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "injured brute reaper king",
+      "title": "Injured Brute Reaper King",
+      "url": "https://ark.fandom.com/wiki/Injured_Brute_Reaper_King",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "insect swarm",
+      "title": "Insect Swarm",
+      "url": "https://ark.fandom.com/wiki/Insect_Swarm",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "jerboa",
+      "title": "Jerboa",
+      "url": "https://ark.fandom.com/wiki/Jerboa",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "jug bug",
+      "title": "Jug Bug",
+      "url": "https://ark.fandom.com/wiki/Jug_Bug",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "kairuku",
+      "title": "Kairuku",
+      "url": "https://ark.fandom.com/wiki/Kairuku",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "kaprosuchus",
+      "title": "Kaprosuchus",
+      "url": "https://ark.fandom.com/wiki/Kaprosuchus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "karkinos",
+      "title": "Karkinos",
+      "url": "https://ark.fandom.com/wiki/Karkinos",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "kentrosaurus",
+      "title": "Kentrosaurus",
+      "url": "https://ark.fandom.com/wiki/Kentrosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "king titan",
+      "title": "King Titan",
+      "url": "https://ark.fandom.com/wiki/King_Titan",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "lamprey",
+      "title": "Lamprey",
+      "url": "https://ark.fandom.com/wiki/Lamprey",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "lava elemental",
+      "title": "Lava Elemental",
+      "url": "https://ark.fandom.com/wiki/Lava_Elemental",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "leech",
+      "title": "Leech",
+      "url": "https://ark.fandom.com/wiki/Leech",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "leedsichthys",
+      "title": "Leedsichthys",
+      "url": "https://ark.fandom.com/wiki/Leedsichthys",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "lightning wyvern",
+      "title": "Lightning Wyvern",
+      "url": "https://ark.fandom.com/wiki/Lightning_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "liopleurodon",
+      "title": "Liopleurodon",
+      "url": "https://ark.fandom.com/wiki/Liopleurodon",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "lymantria",
+      "title": "Lymantria",
+      "url": "https://ark.fandom.com/wiki/Lymantria",
+      "tameable": null,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "lystrosaurus",
+      "title": "Lystrosaurus",
+      "url": "https://ark.fandom.com/wiki/Lystrosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "macro summoner",
+      "title": "Macro-Summoner",
+      "url": "https://ark.fandom.com/wiki/Macro-Summoner",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "macrophage",
+      "title": "Macrophage",
+      "url": "https://ark.fandom.com/wiki/Macrophage",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "maewing",
+      "title": "Maewing",
+      "url": "https://ark.fandom.com/wiki/Maewing",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "magmasaur",
+      "title": "Magmasaur",
+      "url": "https://ark.fandom.com/wiki/Magmasaur",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "malfunctioned attack drone",
+      "title": "Malfunctioned Attack Drone",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Attack_Drone",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "malfunctioned defense unit",
+      "title": "Malfunctioned Defense Unit",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Defense_Unit",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "malfunctioned enforcer",
+      "title": "Malfunctioned Enforcer",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Enforcer",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "malfunctioned mek knight",
+      "title": "Malfunctioned Mek Knight",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Mek_Knight",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek giganotosaurus",
+      "title": "Malfunctioned Tek Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek parasaur",
+      "title": "Malfunctioned Tek Parasaur",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek quetzal",
+      "title": "Malfunctioned Tek Quetzal",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek raptor",
+      "title": "Malfunctioned Tek Raptor",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek rex",
+      "title": "Malfunctioned Tek Rex",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek stegosaurus",
+      "title": "Malfunctioned Tek Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "malfunctioned tek stryder",
+      "title": "Malfunctioned Tek Stryder",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Stryder",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "malfunctioned tek triceratops",
+      "title": "Malfunctioned Tek Triceratops",
+      "url": "https://ark.fandom.com/wiki/Malfunctioned_Tek_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "mammoth",
+      "title": "Mammoth",
+      "url": "https://ark.fandom.com/wiki/Mammoth",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "managarmr",
+      "title": "Managarmr",
+      "url": "https://ark.fandom.com/wiki/Managarmr",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "manta",
+      "title": "Manta",
+      "url": "https://ark.fandom.com/wiki/Manta",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "manticore",
+      "title": "Manticore",
+      "url": "https://ark.fandom.com/wiki/Manticore",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "manticore alpha",
+      "title": "Manticore (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Manticore_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "manticore beta",
+      "title": "Manticore (Beta)",
+      "url": "https://ark.fandom.com/wiki/Manticore_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "manticore gamma",
+      "title": "Manticore (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Manticore_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "mantis",
+      "title": "Mantis",
+      "url": "https://ark.fandom.com/wiki/Mantis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "mantis ghost",
+      "title": "Mantis Ghost",
+      "url": "https://ark.fandom.com/wiki/Mantis_Ghost",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "mega mek",
+      "title": "Mega Mek",
+      "url": "https://ark.fandom.com/wiki/Mega_Mek",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "megachelon",
+      "title": "Megachelon",
+      "url": "https://ark.fandom.com/wiki/Megachelon",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megalania",
+      "title": "Megalania",
+      "url": "https://ark.fandom.com/wiki/Megalania",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "megaloceros",
+      "title": "Megaloceros",
+      "url": "https://ark.fandom.com/wiki/Megaloceros",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "megalodon",
+      "title": "Megalodon",
+      "url": "https://ark.fandom.com/wiki/Megalodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "megalosaurus",
+      "title": "Megalosaurus",
+      "url": "https://ark.fandom.com/wiki/Megalosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "meganeura",
+      "title": "Meganeura",
+      "url": "https://ark.fandom.com/wiki/Meganeura",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megapithecus",
+      "title": "Megapithecus",
+      "url": "https://ark.fandom.com/wiki/Megapithecus",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megapithecus alpha",
+      "title": "Megapithecus (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Megapithecus_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megapithecus beta",
+      "title": "Megapithecus (Beta)",
+      "url": "https://ark.fandom.com/wiki/Megapithecus_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megapithecus gamma",
+      "title": "Megapithecus (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Megapithecus_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "megapithecus pestis",
+      "title": "Megapithecus Pestis",
+      "url": "https://ark.fandom.com/wiki/Megapithecus_Pestis",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "megatherium",
+      "title": "Megatherium",
+      "url": "https://ark.fandom.com/wiki/Megatherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "mek",
+      "title": "Mek",
+      "url": "https://ark.fandom.com/wiki/Mek",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "mesopithecus",
+      "title": "Mesopithecus",
+      "url": "https://ark.fandom.com/wiki/Mesopithecus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "microraptor",
+      "title": "Microraptor",
+      "url": "https://ark.fandom.com/wiki/Microraptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "moeder master of the ocean",
+      "title": "Moeder, Master of the Ocean",
+      "url": "https://ark.fandom.com/wiki/Moeder%2C_Master_of_the_Ocean",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "morellatops",
+      "title": "Morellatops",
+      "url": "https://ark.fandom.com/wiki/Morellatops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "mosasaurus",
+      "title": "Mosasaurus",
+      "url": "https://ark.fandom.com/wiki/Mosasaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "moschops",
+      "title": "Moschops",
+      "url": "https://ark.fandom.com/wiki/Moschops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "nameless",
+      "title": "Nameless",
+      "url": "https://ark.fandom.com/wiki/Nameless",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "noctis",
+      "title": "Noctis",
+      "url": "https://ark.fandom.com/wiki/Noctis",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "noglin",
+      "title": "Noglin",
+      "url": "https://ark.fandom.com/wiki/Noglin",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "obsidioequus",
+      "title": "Obsidioequus",
+      "url": "https://ark.fandom.com/wiki/Obsidioequus",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "oil jug bug",
+      "title": "Oil Jug Bug",
+      "url": "https://ark.fandom.com/wiki/Oil_Jug_Bug",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "onyc",
+      "title": "Onyc",
+      "url": "https://ark.fandom.com/wiki/Onyc",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "otter",
+      "title": "Otter",
+      "url": "https://ark.fandom.com/wiki/Otter",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "overseer",
+      "title": "Overseer",
+      "url": "https://ark.fandom.com/wiki/Overseer",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "overseer alpha",
+      "title": "Overseer (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Overseer_(Alpha)",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "overseer beta",
+      "title": "Overseer (Beta)",
+      "url": "https://ark.fandom.com/wiki/Overseer_(Beta)",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "overseer gamma",
+      "title": "Overseer (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Overseer_(Gamma)",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "oviraptor",
+      "title": "Oviraptor",
+      "url": "https://ark.fandom.com/wiki/Oviraptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "ovis",
+      "title": "Ovis",
+      "url": "https://ark.fandom.com/wiki/Ovis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "pachy",
+      "title": "Pachy",
+      "url": "https://ark.fandom.com/wiki/Pachy",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "pachyrhinosaurus",
+      "title": "Pachyrhinosaurus",
+      "url": "https://ark.fandom.com/wiki/Pachyrhinosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "paraceratherium",
+      "title": "Paraceratherium",
+      "url": "https://ark.fandom.com/wiki/Paraceratherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "parakeet fish school",
+      "title": "Parakeet Fish School",
+      "url": "https://ark.fandom.com/wiki/Parakeet_Fish_School",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "parasaur",
+      "title": "Parasaur",
+      "url": "https://ark.fandom.com/wiki/Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "party dodo",
+      "title": "Party Dodo",
+      "url": "https://ark.fandom.com/wiki/Party_Dodo",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "pegomastax",
+      "title": "Pegomastax",
+      "url": "https://ark.fandom.com/wiki/Pegomastax",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "pelagornis",
+      "title": "Pelagornis",
+      "url": "https://ark.fandom.com/wiki/Pelagornis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "phiomia",
+      "title": "Phiomia",
+      "url": "https://ark.fandom.com/wiki/Phiomia",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "phoenix",
+      "title": "Phoenix",
+      "url": "https://ark.fandom.com/wiki/Phoenix",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "piranha",
+      "title": "Piranha",
+      "url": "https://ark.fandom.com/wiki/Piranha",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "plesiosaur",
+      "title": "Plesiosaur",
+      "url": "https://ark.fandom.com/wiki/Plesiosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "poison wyvern",
+      "title": "Poison Wyvern",
+      "url": "https://ark.fandom.com/wiki/Poison_Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "polar bear",
+      "title": "Polar Bear",
+      "url": "https://ark.fandom.com/wiki/Polar_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "polar purlovia",
+      "title": "Polar Purlovia",
+      "url": "https://ark.fandom.com/wiki/Polar_Purlovia",
+      "tameable": true,
+      "breedable": null,
+      "rideable": false
+    },
+    {
+      "key": "procoptodon",
+      "title": "Procoptodon",
+      "url": "https://ark.fandom.com/wiki/Procoptodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "pteranodon",
+      "title": "Pteranodon",
+      "url": "https://ark.fandom.com/wiki/Pteranodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "pulmonoscorpius",
+      "title": "Pulmonoscorpius",
+      "url": "https://ark.fandom.com/wiki/Pulmonoscorpius",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "purlovia",
+      "title": "Purlovia",
+      "url": "https://ark.fandom.com/wiki/Purlovia",
+      "tameable": true,
+      "breedable": null,
+      "rideable": false
+    },
+    {
+      "key": "quetzal",
+      "title": "Quetzal",
+      "url": "https://ark.fandom.com/wiki/Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r allosaurus",
+      "title": "R-Allosaurus",
+      "url": "https://ark.fandom.com/wiki/R-Allosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "r brontosaurus",
+      "title": "R-Brontosaurus",
+      "url": "https://ark.fandom.com/wiki/R-Brontosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r carbonemys",
+      "title": "R-Carbonemys",
+      "url": "https://ark.fandom.com/wiki/R-Carbonemys",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "r carnotaurus",
+      "title": "R-Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/R-Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r daeodon",
+      "title": "R-Daeodon",
+      "url": "https://ark.fandom.com/wiki/R-Daeodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r dilophosaur",
+      "title": "R-Dilophosaur",
+      "url": "https://ark.fandom.com/wiki/R-Dilophosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "r direwolf",
+      "title": "R-Direwolf",
+      "url": "https://ark.fandom.com/wiki/R-Direwolf",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r equus",
+      "title": "R-Equus",
+      "url": "https://ark.fandom.com/wiki/R-Equus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "r gasbags",
+      "title": "R-Gasbags",
+      "url": "https://ark.fandom.com/wiki/R-Gasbags",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "r giganotosaurus",
+      "title": "R-Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/R-Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r megatherium",
+      "title": "R-Megatherium",
+      "url": "https://ark.fandom.com/wiki/R-Megatherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "r parasaur",
+      "title": "R-Parasaur",
+      "url": "https://ark.fandom.com/wiki/R-Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r procoptodon",
+      "title": "R-Procoptodon",
+      "url": "https://ark.fandom.com/wiki/R-Procoptodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r quetzal",
+      "title": "R-Quetzal",
+      "url": "https://ark.fandom.com/wiki/R-Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r reaper king",
+      "title": "R-Reaper King",
+      "url": "https://ark.fandom.com/wiki/R-Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "r reaper queen",
+      "title": "R-Reaper Queen",
+      "url": "https://ark.fandom.com/wiki/R-Reaper_Queen",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "r snow owl",
+      "title": "R-Snow Owl",
+      "url": "https://ark.fandom.com/wiki/R-Snow_Owl",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "r thylacoleo",
+      "title": "R-Thylacoleo",
+      "url": "https://ark.fandom.com/wiki/R-Thylacoleo",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "r velonasaur",
+      "title": "R-Velonasaur",
+      "url": "https://ark.fandom.com/wiki/R-Velonasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "raptor",
+      "title": "Raptor",
+      "url": "https://ark.fandom.com/wiki/Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "rare x sabertooth salmon",
+      "title": "Rare X-Sabertooth Salmon",
+      "url": "https://ark.fandom.com/wiki/Rare_X-Sabertooth_Salmon",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "ravager",
+      "title": "Ravager",
+      "url": "https://ark.fandom.com/wiki/Ravager",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "reaper",
+      "title": "Reaper",
+      "url": "https://ark.fandom.com/wiki/Reaper",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "reaper king",
+      "title": "Reaper King",
+      "url": "https://ark.fandom.com/wiki/Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "reaper prince",
+      "title": "Reaper Prince",
+      "url": "https://ark.fandom.com/wiki/Reaper_Prince",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "reaper queen",
+      "title": "Reaper Queen",
+      "url": "https://ark.fandom.com/wiki/Reaper_Queen",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "rex",
+      "title": "Rex",
+      "url": "https://ark.fandom.com/wiki/Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "rex ghost",
+      "title": "Rex Ghost",
+      "url": "https://ark.fandom.com/wiki/Rex_Ghost",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "rock drake",
+      "title": "Rock Drake",
+      "url": "https://ark.fandom.com/wiki/Rock_Drake",
+      "tameable": false,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "rock elemental",
+      "title": "Rock Elemental",
+      "url": "https://ark.fandom.com/wiki/Rock_Elemental",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "rockwell",
+      "title": "Rockwell",
+      "url": "https://ark.fandom.com/wiki/Rockwell",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell alpha",
+      "title": "Rockwell (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell beta",
+      "title": "Rockwell (Beta)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell gamma",
+      "title": "Rockwell (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell node",
+      "title": "Rockwell Node",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Node",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell node alpha",
+      "title": "Rockwell Node (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Node_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell node beta",
+      "title": "Rockwell Node (Beta)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Node_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell node gamma",
+      "title": "Rockwell Node (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Node_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell prime",
+      "title": "Rockwell Prime",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Prime",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell prime alpha",
+      "title": "Rockwell Prime (Alpha)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Prime_(Alpha)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell prime beta",
+      "title": "Rockwell Prime (Beta)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Prime_(Beta)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "rockwell prime gamma",
+      "title": "Rockwell Prime (Gamma)",
+      "url": "https://ark.fandom.com/wiki/Rockwell_Prime_(Gamma)",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "roll rat",
+      "title": "Roll Rat",
+      "url": "https://ark.fandom.com/wiki/Roll_Rat",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "royal griffin",
+      "title": "Royal Griffin",
+      "url": "https://ark.fandom.com/wiki/Royal_Griffin",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "rubble golem",
+      "title": "Rubble Golem",
+      "url": "https://ark.fandom.com/wiki/Rubble_Golem",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "sabertooth",
+      "title": "Sabertooth",
+      "url": "https://ark.fandom.com/wiki/Sabertooth",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "sabertooth salmon",
+      "title": "Sabertooth Salmon",
+      "url": "https://ark.fandom.com/wiki/Sabertooth_Salmon",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "sarco",
+      "title": "Sarco",
+      "url": "https://ark.fandom.com/wiki/Sarco",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "scout",
+      "title": "Scout",
+      "url": "https://ark.fandom.com/wiki/Scout",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "seeker",
+      "title": "Seeker",
+      "url": "https://ark.fandom.com/wiki/Seeker",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "shadowmane",
+      "title": "Shadowmane",
+      "url": "https://ark.fandom.com/wiki/Shadowmane",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "shinehorn",
+      "title": "Shinehorn",
+      "url": "https://ark.fandom.com/wiki/Shinehorn",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "sinomacrops",
+      "title": "Sinomacrops",
+      "url": "https://ark.fandom.com/wiki/Sinomacrops",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "skeletal bronto",
+      "title": "Skeletal Bronto",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Bronto",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal carnotaurus",
+      "title": "Skeletal Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal giganotosaurus",
+      "title": "Skeletal Giganotosaurus",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Giganotosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal jerboa",
+      "title": "Skeletal Jerboa",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Jerboa",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "skeletal quetzal",
+      "title": "Skeletal Quetzal",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal raptor",
+      "title": "Skeletal Raptor",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal rex",
+      "title": "Skeletal Rex",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal stego",
+      "title": "Skeletal Stego",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Stego",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "skeletal trike",
+      "title": "Skeletal Trike",
+      "url": "https://ark.fandom.com/wiki/Skeletal_Trike",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "snow owl",
+      "title": "Snow Owl",
+      "url": "https://ark.fandom.com/wiki/Snow_Owl",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "snow owl ghost",
+      "title": "Snow Owl Ghost",
+      "url": "https://ark.fandom.com/wiki/Snow_Owl_Ghost",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "spino",
+      "title": "Spino",
+      "url": "https://ark.fandom.com/wiki/Spino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "spirit dire bear",
+      "title": "Spirit Dire Bear",
+      "url": "https://ark.fandom.com/wiki/Spirit_Dire_Bear",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "spirit direwolf",
+      "title": "Spirit Direwolf",
+      "url": "https://ark.fandom.com/wiki/Spirit_Direwolf",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "stegosaurus",
+      "title": "Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "subterranean reaper king",
+      "title": "Subterranean Reaper King",
+      "url": "https://ark.fandom.com/wiki/Subterranean_Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "summoner",
+      "title": "Summoner",
+      "url": "https://ark.fandom.com/wiki/Summoner",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "super turkey",
+      "title": "Super Turkey",
+      "url": "https://ark.fandom.com/wiki/Super_Turkey",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "surface reaper king",
+      "title": "Surface Reaper King",
+      "url": "https://ark.fandom.com/wiki/Surface_Reaper_King",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "surface reaper king ghost",
+      "title": "Surface Reaper King Ghost",
+      "url": "https://ark.fandom.com/wiki/Surface_Reaper_King_Ghost",
+      "tameable": true,
+      "breedable": false,
+      "rideable": true
+    },
+    {
+      "key": "tapejara",
+      "title": "Tapejara",
+      "url": "https://ark.fandom.com/wiki/Tapejara",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek parasaur",
+      "title": "Tek Parasaur",
+      "url": "https://ark.fandom.com/wiki/Tek_Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek quetzal",
+      "title": "Tek Quetzal",
+      "url": "https://ark.fandom.com/wiki/Tek_Quetzal",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek raptor",
+      "title": "Tek Raptor",
+      "url": "https://ark.fandom.com/wiki/Tek_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek rex",
+      "title": "Tek Rex",
+      "url": "https://ark.fandom.com/wiki/Tek_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek stegosaurus",
+      "title": "Tek Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/Tek_Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tek stryder",
+      "title": "Tek Stryder",
+      "url": "https://ark.fandom.com/wiki/Tek_Stryder",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "tek triceratops",
+      "title": "Tek Triceratops",
+      "url": "https://ark.fandom.com/wiki/Tek_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tekraptor",
+      "title": "TekRaptor",
+      "url": "https://ark.fandom.com/wiki/TekRaptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "terror bird",
+      "title": "Terror Bird",
+      "url": "https://ark.fandom.com/wiki/Terror_Bird",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "therizinosaur",
+      "title": "Therizinosaur",
+      "url": "https://ark.fandom.com/wiki/Therizinosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "thorny dragon",
+      "title": "Thorny Dragon",
+      "url": "https://ark.fandom.com/wiki/Thorny_Dragon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "thylacoleo",
+      "title": "Thylacoleo",
+      "url": "https://ark.fandom.com/wiki/Thylacoleo",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "titanoboa",
+      "title": "Titanoboa",
+      "url": "https://ark.fandom.com/wiki/Titanoboa",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "titanomyrma",
+      "title": "Titanomyrma",
+      "url": "https://ark.fandom.com/wiki/Titanomyrma",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "titanomyrma drone",
+      "title": "Titanomyrma Drone",
+      "url": "https://ark.fandom.com/wiki/Titanomyrma_Drone",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "titanomyrma soldier",
+      "title": "Titanomyrma Soldier",
+      "url": "https://ark.fandom.com/wiki/Titanomyrma_Soldier",
+      "tameable": false,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "titanosaur",
+      "title": "Titanosaur",
+      "url": "https://ark.fandom.com/wiki/Titanosaur",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "triceratops",
+      "title": "Triceratops",
+      "url": "https://ark.fandom.com/wiki/Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "trilobite",
+      "title": "Trilobite",
+      "url": "https://ark.fandom.com/wiki/Trilobite",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "troodon",
+      "title": "Troodon",
+      "url": "https://ark.fandom.com/wiki/Troodon",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "tropeognathus",
+      "title": "Tropeognathus",
+      "url": "https://ark.fandom.com/wiki/Tropeognathus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "tropical crystal wyvern",
+      "title": "Tropical Crystal Wyvern",
+      "url": "https://ark.fandom.com/wiki/Tropical_Crystal_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "tusoteuthis",
+      "title": "Tusoteuthis",
+      "url": "https://ark.fandom.com/wiki/Tusoteuthis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "unicorn",
+      "title": "Unicorn",
+      "url": "https://ark.fandom.com/wiki/Unicorn",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "giant monarch butterfly",
+      "title": "Giant Monarch Butterfly",
+      "url": "https://ark.fandom.com/wiki/Giant_Monarch_Butterfly",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "velonasaur",
+      "title": "Velonasaur",
+      "url": "https://ark.fandom.com/wiki/Velonasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "voidwyrm",
+      "title": "Voidwyrm",
+      "url": "https://ark.fandom.com/wiki/Voidwyrm",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr allosaurus",
+      "title": "VR Allosaurus",
+      "url": "https://ark.fandom.com/wiki/VR_Allosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "vr araneo",
+      "title": "VR Araneo",
+      "url": "https://ark.fandom.com/wiki/VR_Araneo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr argentavis",
+      "title": "VR Argentavis",
+      "url": "https://ark.fandom.com/wiki/VR_Argentavis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr astrodelphis",
+      "title": "VR Astrodelphis",
+      "url": "https://ark.fandom.com/wiki/VR_Astrodelphis",
+      "tameable": null,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "vr bloodstalker",
+      "title": "VR Bloodstalker",
+      "url": "https://ark.fandom.com/wiki/VR_Bloodstalker",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr carnotaurus",
+      "title": "VR Carnotaurus",
+      "url": "https://ark.fandom.com/wiki/VR_Carnotaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr chalicotherium",
+      "title": "VR Chalicotherium",
+      "url": "https://ark.fandom.com/wiki/VR_Chalicotherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "vr dilophosaur",
+      "title": "VR Dilophosaur",
+      "url": "https://ark.fandom.com/wiki/VR_Dilophosaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "vr dimorphodon",
+      "title": "VR Dimorphodon",
+      "url": "https://ark.fandom.com/wiki/VR_Dimorphodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "vr enforcer",
+      "title": "VR Enforcer",
+      "url": "https://ark.fandom.com/wiki/VR_Enforcer",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr ferox",
+      "title": "VR Ferox",
+      "url": "https://ark.fandom.com/wiki/VR_Ferox",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr kaprosuchus",
+      "title": "VR Kaprosuchus",
+      "url": "https://ark.fandom.com/wiki/VR_Kaprosuchus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "vr karkinos",
+      "title": "VR Karkinos",
+      "url": "https://ark.fandom.com/wiki/VR_Karkinos",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr lymantria",
+      "title": "VR Lymantria",
+      "url": "https://ark.fandom.com/wiki/VR_Lymantria",
+      "tameable": null,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "vr mantis",
+      "title": "VR Mantis",
+      "url": "https://ark.fandom.com/wiki/VR_Mantis",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr megalania",
+      "title": "VR Megalania",
+      "url": "https://ark.fandom.com/wiki/VR_Megalania",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr megatherium",
+      "title": "VR Megatherium",
+      "url": "https://ark.fandom.com/wiki/VR_Megatherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "vr onyc",
+      "title": "VR Onyc",
+      "url": "https://ark.fandom.com/wiki/VR_Onyc",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr pachy",
+      "title": "VR Pachy",
+      "url": "https://ark.fandom.com/wiki/VR_Pachy",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr parasaur",
+      "title": "VR Parasaur",
+      "url": "https://ark.fandom.com/wiki/VR_Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr pulmonoscorpius",
+      "title": "VR Pulmonoscorpius",
+      "url": "https://ark.fandom.com/wiki/VR_Pulmonoscorpius",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr raptor",
+      "title": "VR Raptor",
+      "url": "https://ark.fandom.com/wiki/VR_Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr ravager",
+      "title": "VR Ravager",
+      "url": "https://ark.fandom.com/wiki/VR_Ravager",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "vr rex",
+      "title": "VR Rex",
+      "url": "https://ark.fandom.com/wiki/VR_Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr shadowmane",
+      "title": "VR Shadowmane",
+      "url": "https://ark.fandom.com/wiki/VR_Shadowmane",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr stegosaurus",
+      "title": "VR Stegosaurus",
+      "url": "https://ark.fandom.com/wiki/VR_Stegosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr tapejara",
+      "title": "VR Tapejara",
+      "url": "https://ark.fandom.com/wiki/VR_Tapejara",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr terror bird",
+      "title": "VR Terror Bird",
+      "url": "https://ark.fandom.com/wiki/VR_Terror_Bird",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr titanoboa",
+      "title": "VR Titanoboa",
+      "url": "https://ark.fandom.com/wiki/VR_Titanoboa",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "vr triceratops",
+      "title": "VR Triceratops",
+      "url": "https://ark.fandom.com/wiki/VR_Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vr velonasaur",
+      "title": "VR Velonasaur",
+      "url": "https://ark.fandom.com/wiki/VR_Velonasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "vulture",
+      "title": "Vulture",
+      "url": "https://ark.fandom.com/wiki/Vulture",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "water jug bug",
+      "title": "Water Jug Bug",
+      "url": "https://ark.fandom.com/wiki/Water_Jug_Bug",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "woolly rhino",
+      "title": "Woolly Rhino",
+      "url": "https://ark.fandom.com/wiki/Woolly_Rhino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "wyvern",
+      "title": "Wyvern",
+      "url": "https://ark.fandom.com/wiki/Wyvern",
+      "tameable": false,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "x allosaurus",
+      "title": "X-Allosaurus",
+      "url": "https://ark.fandom.com/wiki/X-Allosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "x ankylosaurus",
+      "title": "X-Ankylosaurus",
+      "url": "https://ark.fandom.com/wiki/X-Ankylosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x argentavis",
+      "title": "X-Argentavis",
+      "url": "https://ark.fandom.com/wiki/X-Argentavis",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x basilosaurus",
+      "title": "X-Basilosaurus",
+      "url": "https://ark.fandom.com/wiki/X-Basilosaurus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "x dunkleosteus",
+      "title": "X-Dunkleosteus",
+      "url": "https://ark.fandom.com/wiki/X-Dunkleosteus",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "x ichthyosaurus",
+      "title": "X-Ichthyosaurus",
+      "url": "https://ark.fandom.com/wiki/X-Ichthyosaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "x megalodon",
+      "title": "X-Megalodon",
+      "url": "https://ark.fandom.com/wiki/X-Megalodon",
+      "tameable": true,
+      "breedable": true,
+      "rideable": null
+    },
+    {
+      "key": "x mosasaurus",
+      "title": "X-Mosasaurus",
+      "url": "https://ark.fandom.com/wiki/X-Mosasaurus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x otter",
+      "title": "X-Otter",
+      "url": "https://ark.fandom.com/wiki/X-Otter",
+      "tameable": true,
+      "breedable": true,
+      "rideable": false
+    },
+    {
+      "key": "x paraceratherium",
+      "title": "X-Paraceratherium",
+      "url": "https://ark.fandom.com/wiki/X-Paraceratherium",
+      "tameable": true,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "x parasaur",
+      "title": "X-Parasaur",
+      "url": "https://ark.fandom.com/wiki/X-Parasaur",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x raptor",
+      "title": "X-Raptor",
+      "url": "https://ark.fandom.com/wiki/X-Raptor",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x rex",
+      "title": "X-Rex",
+      "url": "https://ark.fandom.com/wiki/X-Rex",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x rock elemental",
+      "title": "X-Rock Elemental",
+      "url": "https://ark.fandom.com/wiki/X-Rock_Elemental",
+      "tameable": true,
+      "breedable": null,
+      "rideable": true
+    },
+    {
+      "key": "x sabertooth",
+      "title": "X-Sabertooth",
+      "url": "https://ark.fandom.com/wiki/X-Sabertooth",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x sabertooth salmon",
+      "title": "X-Sabertooth Salmon",
+      "url": "https://ark.fandom.com/wiki/X-Sabertooth_Salmon",
+      "tameable": true,
+      "breedable": false,
+      "rideable": false
+    },
+    {
+      "key": "x spino",
+      "title": "X-Spino",
+      "url": "https://ark.fandom.com/wiki/X-Spino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x tapejara",
+      "title": "X-Tapejara",
+      "url": "https://ark.fandom.com/wiki/X-Tapejara",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x triceratops",
+      "title": "X-Triceratops",
+      "url": "https://ark.fandom.com/wiki/X-Triceratops",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x woolly rhino",
+      "title": "X-Woolly Rhino",
+      "url": "https://ark.fandom.com/wiki/X-Woolly_Rhino",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "x yutyrannus",
+      "title": "X-Yutyrannus",
+      "url": "https://ark.fandom.com/wiki/X-Yutyrannus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "yeti",
+      "title": "Yeti",
+      "url": "https://ark.fandom.com/wiki/Yeti",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "yutyrannus",
+      "title": "Yutyrannus",
+      "url": "https://ark.fandom.com/wiki/Yutyrannus",
+      "tameable": true,
+      "breedable": true,
+      "rideable": true
+    },
+    {
+      "key": "zombie fire wyvern",
+      "title": "Zombie Fire Wyvern",
+      "url": "https://ark.fandom.com/wiki/Zombie_Fire_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "zombie lightning wyvern",
+      "title": "Zombie Lightning Wyvern",
+      "url": "https://ark.fandom.com/wiki/Zombie_Lightning_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "zombie poison wyvern",
+      "title": "Zombie Poison Wyvern",
+      "url": "https://ark.fandom.com/wiki/Zombie_Poison_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "zombie wyvern",
+      "title": "Zombie Wyvern",
+      "url": "https://ark.fandom.com/wiki/Zombie_Wyvern",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    },
+    {
+      "key": "zomdodo",
+      "title": "Zomdodo",
+      "url": "https://ark.fandom.com/wiki/Zomdodo",
+      "tameable": null,
+      "breedable": null,
+      "rideable": null
+    }
+  ]
+}

@@ -1,0 +1,1840 @@
+{
+  "updated_at": "2026-02-15T14:34:29.288Z",
+  "count": 130,
+  "resources": [
+    {
+      "key": "argentavis talon",
+      "title": "Argentavis Talon",
+      "url": "https://ark.fandom.com/wiki/Argentavis_Talon",
+      "blurb": "The Argentavis Talon can be found on a dead Argentavis by looking in its inventory before harvesting it for Raw Meat and Hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "argentavis talon",
+        "argentavis talons"
+      ]
+    },
+    {
+      "key": "anglergel",
+      "title": "AnglerGel",
+      "url": "https://ark.fandom.com/wiki/AnglerGel",
+      "blurb": "AnglerGel is an organic fuel resource that can be obtained by killing Angler, Deathworm, Corrupted creatures, or from fishing. AnglerGel is the longest lasting lighting source and can be used on the Standing Torch and Wall Torch. It also has the least weight of any lighting fuel. When used on a Standing Torch, or Wall Torch the torch's color turns blue. AnglerGel is needed to craft and repair the Night Vision Goggles and Electric Prod. After the Prod has been used once, it has to be refilled at a Fabricator with 8 AnglerGel. AnglerGel is also used to passive tame a Manta.",
+      "aliases": [
+        "anglergel",
+        "anglergels"
+      ]
+    },
+    {
+      "key": "absorbent substrate",
+      "title": "Absorbent Substrate",
+      "url": "https://ark.fandom.com/wiki/Absorbent_Substrate",
+      "blurb": "Absorbent Substrate is a resource in ARK: Survival Evolved. It can be used to craft the Gas Mask and Night Vision Goggles.",
+      "aliases": [
+        "absorbent substrate",
+        "absorbent substrates"
+      ]
+    },
+    {
+      "key": "ammonite bile",
+      "title": "Ammonite Bile",
+      "url": "https://ark.fandom.com/wiki/Ammonite_Bile",
+      "blurb": "Ammonite Bile is a naturally obtained resource. It can be harvested by killing Ammonite.",
+      "aliases": [
+        "ammonite bile",
+        "ammonite biles"
+      ]
+    },
+    {
+      "key": "alpha megalodon fin",
+      "title": "Alpha Megalodon Fin",
+      "url": "https://ark.fandom.com/wiki/Alpha_Megalodon_Fin",
+      "blurb": "The Alpha Megalodon Fin can be found on a dead Alpha Megalodon by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha megalodon fin",
+        "alpha megalodon fins"
+      ]
+    },
+    {
+      "key": "alpha carnotaurus arm",
+      "title": "Alpha Carnotaurus Arm",
+      "url": "https://ark.fandom.com/wiki/Alpha_Carnotaurus_Arm",
+      "blurb": "The Alpha Carnotaurus Arm can be found on a dead Alpha Carno by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha carnotaurus arm",
+        "alpha carnotaurus arms"
+      ]
+    },
+    {
+      "key": "alpha raptor claw",
+      "title": "Alpha Raptor Claw",
+      "url": "https://ark.fandom.com/wiki/Alpha_Raptor_Claw",
+      "blurb": "The Alpha Raptor Claw can be found on a dead Alpha Raptor by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha raptor claw",
+        "alpha raptor claws"
+      ]
+    },
+    {
+      "key": "alpha tyrannosaur tooth",
+      "title": "Alpha Tyrannosaur Tooth",
+      "url": "https://ark.fandom.com/wiki/Alpha_Tyrannosaur_Tooth",
+      "blurb": "The Alpha Tyrannosaur Tooth can be found on a dead Alpha T-Rex or Enraged Corrupted Rex by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha tyrannosaur tooth",
+        "alpha tyrannosaur tooths"
+      ]
+    },
+    {
+      "key": "alpha leedsichthys blubber",
+      "title": "Alpha Leedsichthys Blubber",
+      "url": "https://ark.fandom.com/wiki/Alpha_Leedsichthys_Blubber",
+      "blurb": "The Alpha Leedsichthys Blubber can be found on a dead Alpha Leedsichthys by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha leedsichthys blubber",
+        "alpha leedsichthys blubbers"
+      ]
+    },
+    {
+      "key": "alpha mosasaur tooth",
+      "title": "Alpha Mosasaur Tooth",
+      "url": "https://ark.fandom.com/wiki/Alpha_Mosasaur_Tooth",
+      "blurb": "The Alpha Mosasaur Tooth can be found on a dead Alpha Mosasaur by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha mosasaur tooth",
+        "alpha mosasaur tooths"
+      ]
+    },
+    {
+      "key": "alpha tusoteuthis eye",
+      "title": "Alpha Tusoteuthis Eye",
+      "url": "https://ark.fandom.com/wiki/Alpha_Tusoteuthis_Eye",
+      "blurb": "The Alpha Tusoteuthis Eye can be found on a dead Alpha Tusoteuthis by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha tusoteuthis eye",
+        "alpha tusoteuthis eyes"
+      ]
+    },
+    {
+      "key": "allosaurus brain",
+      "title": "Allosaurus Brain",
+      "url": "https://ark.fandom.com/wiki/Allosaurus_Brain",
+      "blurb": "The Allosaurus Brain can be found on a dead Allosaurus by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "allosaurus brain",
+        "allosaurus brains"
+      ]
+    },
+    {
+      "key": "basilosaurus blubber",
+      "title": "Basilosaurus Blubber",
+      "url": "https://ark.fandom.com/wiki/Basilosaurus_Blubber",
+      "blurb": "The Basilosaurus Blubber can be found on a dead Basilosaurus by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "basilosaurus blubber",
+        "basilosaurus blubbers"
+      ]
+    },
+    {
+      "key": "alpha basilisk fang aberration",
+      "title": "Alpha Basilisk Fang (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Alpha_Basilisk_Fang_(Aberration)",
+      "blurb": "The Alpha Basilisk Fang can be found on a dead Alpha Basilisk by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "alpha basilisk fang aberration",
+        "alpha basilisk fang aberrations"
+      ]
+    },
+    {
+      "key": "basilisk scale aberration",
+      "title": "Basilisk Scale (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Basilisk_Scale_(Aberration)",
+      "blurb": "The Basilisk Scale can be found on a dead Basilisk by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "basilisk scale aberration",
+        "basilisk scale aberrations"
+      ]
+    },
+    {
+      "key": "ancient amber mobile",
+      "title": "Ancient Amber (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Ancient_Amber_(Mobile)",
+      "blurb": "Ancient Amber is a very rare resource in ARK: Survival Evolved Mobile.",
+      "aliases": [
+        "ancient amber mobile",
+        "ancient amber mobiles"
+      ]
+    },
+    {
+      "key": "ambergris genesis part 1",
+      "title": "Ambergris (Genesis: Part 1)",
+      "url": "https://ark.fandom.com/wiki/Ambergris_(Genesis:_Part_1)",
+      "blurb": "Ambergris is a resource in the Genesis: Part 1 DLC obtained rarely from mining green-lined rocks in the lunar biome. It is used as ammunition to charge the Astrocetus's bomb attack, and as Food and comfort food for baby Magmasaur (or force fed to adults to replenish 300 Health). Please note, you can not get ambergris on the Lost Island DLC despite the fact you're able to get Magmasaurs, and it is one of the hand feeding options.",
+      "aliases": [
+        "ambergris genesis part 1",
+        "ambergris genesis part 1s"
+      ]
+    },
+    {
+      "key": "alpha crystal talon crystal isles",
+      "title": "Alpha Crystal Talon (Crystal Isles)",
+      "url": "https://ark.fandom.com/wiki/Alpha_Crystal_Talon_(Crystal_Isles)",
+      "blurb": "The Alpha Crystal Talon is an Item in the Expansion Map Crystal Isles.",
+      "aliases": [
+        "alpha crystal talon crystal isles",
+        "alpha crystal talon crystal isle"
+      ]
+    },
+    {
+      "key": "amargasaurus spike lost island",
+      "title": "Amargasaurus Spike (Lost Island)",
+      "url": "https://ark.fandom.com/wiki/Amargasaurus_Spike_(Lost_Island)",
+      "blurb": "Amargasaurus Spike is an item in the Lost Island DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "amargasaurus spike lost island",
+        "amargasaurus spike lost islands"
+      ]
+    },
+    {
+      "key": "cementing paste",
+      "title": "Cementing Paste",
+      "url": "https://ark.fandom.com/wiki/Cementing_Paste",
+      "blurb": "Cementing Paste is a common resource made from Chitin/ Keratin and Stone. It is used to make advanced items and structures. It can be created in a Mortar and Pestle and is used in many crafting recipes.",
+      "aliases": [
+        "cementing paste",
+        "cementing pastes"
+      ]
+    },
+    {
+      "key": "chitin",
+      "title": "Chitin",
+      "url": "https://ark.fandom.com/wiki/Chitin",
+      "blurb": "Chitin (Ky-tin) is a resource in ARK: Survival Evolved. It's a polymer and characteristic component of exoskeletons, radulae, beaks, shells and various other physical structures in organisms throughout history.",
+      "aliases": [
+        "chitin",
+        "chitins"
+      ]
+    },
+    {
+      "key": "black pearl",
+      "title": "Black Pearl",
+      "url": "https://ark.fandom.com/wiki/Black_Pearl",
+      "blurb": "Black Pearls are a resource in ARK: Survival Evolved. They can be obtained by harvesting dead Trilobite, Deathworm, Eurypterid, Ammonite, Tusoteuthis, Alpha Tusoteuthis and Alpha Mosasaur. They can also drop as rare loot when catching fish with a Fishing Rod. Gacha can also produce many items as well as black pearls depending on the gacha. A tamed Phoenix will also rarely poop them out instead of its usual Silica Pearls. Black Pearls are used in crafting and are a key component in Tek Tier crafting recipes.",
+      "aliases": [
+        "black pearl",
+        "black pearls"
+      ]
+    },
+    {
+      "key": "birthday candle",
+      "title": "Birthday Candle",
+      "url": "https://ark.fandom.com/wiki/Birthday_Candle",
+      "blurb": "The Birthday Candle is a Birthday item. It appears only during the ARK: Awesome Anniversary event. Birthday Candle can be used to craft a Birthday Cake in the Cooking Pot.",
+      "aliases": [
+        "birthday candle",
+        "birthday candles"
+      ]
+    },
+    {
+      "key": "beeswax primitive plus",
+      "title": "Beeswax (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Beeswax_(Primitive_Plus)",
+      "blurb": "The Beeswax is a Resource in the Primitive+-DLC of ARK: Survival Evolved. It is produced in a Bee Hive.",
+      "aliases": [
+        "beeswax primitive plus",
+        "beeswax primitive plu"
+      ]
+    },
+    {
+      "key": "brick primitive plus",
+      "title": "Brick (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Brick_(Primitive_Plus)",
+      "blurb": "The Brick is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "brick primitive plus",
+        "brick primitive plu"
+      ]
+    },
+    {
+      "key": "cane sugar primitive plus",
+      "title": "Cane Sugar (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Cane_Sugar_(Primitive_Plus)",
+      "blurb": "The Cane Sugar is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "cane sugar primitive plus",
+        "cane sugar primitive plu"
+      ]
+    },
+    {
+      "key": "carbon primitive plus",
+      "title": "Carbon (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Carbon_(Primitive_Plus)",
+      "blurb": "The Carbon is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "carbon primitive plus",
+        "carbon primitive plu"
+      ]
+    },
+    {
+      "key": "clay primitive plus",
+      "title": "Clay (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Clay_(Primitive_Plus)",
+      "blurb": "The Clay is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "clay primitive plus",
+        "clay primitive plu"
+      ]
+    },
+    {
+      "key": "claystone primitive plus",
+      "title": "Claystone (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Claystone_(Primitive_Plus)",
+      "blurb": "The Claystone is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "claystone primitive plus",
+        "claystone primitive plu"
+      ]
+    },
+    {
+      "key": "bread dough primitive plus",
+      "title": "Bread Dough (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Bread_Dough_(Primitive_Plus)",
+      "blurb": "The Bread Dough is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "bread dough primitive plus",
+        "bread dough primitive plu"
+      ]
+    },
+    {
+      "key": "cactus sap scorched earth",
+      "title": "Cactus Sap (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Cactus_Sap_(Scorched_Earth)",
+      "blurb": "Cactus Sap is a Consumable in the Scorched Earth-DLC of ARK: Survival Evolved. It can be consumed to sate hunger.",
+      "aliases": [
+        "cactus sap scorched earth",
+        "cactus sap scorched earths"
+      ]
+    },
+    {
+      "key": "clay scorched earth",
+      "title": "Clay (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Clay_(Scorched_Earth)",
+      "blurb": "Clay is a resource in the Scorched Earth and Ragnarok DLCs of ARK: Survival Evolved.",
+      "aliases": [
+        "clay scorched earth",
+        "clay scorched earths"
+      ]
+    },
+    {
+      "key": "bio toxin",
+      "title": "Bio Toxin",
+      "url": "https://ark.fandom.com/wiki/Bio_Toxin",
+      "blurb": "Bio Toxin is a resource in ARK: Survival Evolved. It can be harvested from Cnidaria and Spore-inducing Mushrooms (Aberration Only)",
+      "aliases": [
+        "bio toxin",
+        "bio toxins"
+      ]
+    },
+    {
+      "key": "coal primitive plus",
+      "title": "Coal (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Coal_(Primitive_Plus)",
+      "blurb": "Coal is a Resource in the Primitive+ DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "coal primitive plus",
+        "coal primitive plu"
+      ]
+    },
+    {
+      "key": "blue gem aberration",
+      "title": "Blue Gem (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Blue_Gem_(Aberration)",
+      "blurb": "Blue Gems are a resource in the Aberration DLC. They are used for crafting various items.",
+      "aliases": [
+        "blue gem aberration",
+        "blue gem aberrations"
+      ]
+    },
+    {
+      "key": "congealed gas ball aberration",
+      "title": "Congealed Gas Ball (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Congealed_Gas_Ball_(Aberration)",
+      "blurb": "Congealed Gas Balls are a resource in the Aberration DLC. They are used for crafting various items. To obtain the gas blobs, a Gas Collector has to be placed on a Gas Vein. The collector will then extract Congealed Gas Blobs over time. As an alternative gas blobs spawn near a Vein after an eruption, and can be picked up there.",
+      "aliases": [
+        "congealed gas ball aberration",
+        "congealed gas ball aberrations"
+      ]
+    },
+    {
+      "key": "blue crystalized sap extinction",
+      "title": "Blue Crystalized Sap (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Blue_Crystalized_Sap_(Extinction)",
+      "blurb": "Blue Crystalized Sap is a resource in DLC Extinction. It can be found by harvesting from Fungal Trees (Trees with white leaves) found in Wasteland around Great City.",
+      "aliases": [
+        "blue crystalized sap extinction",
+        "blue crystalized sap extinctions"
+      ]
+    },
+    {
+      "key": "condensed gas extinction",
+      "title": "Condensed Gas (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Condensed_Gas_(Extinction)",
+      "blurb": "Condensed Gas is a resource in DLC Extinction. It can be harvested from the yellow rocks in the Sulfur Fields, most efficiently when using a Metal Hatchet, or Rock Elemental. In Genesis: Part 2 condensed gas can be found in loot crates",
+      "aliases": [
+        "condensed gas extinction",
+        "condensed gas extinctions"
+      ]
+    },
+    {
+      "key": "crystal",
+      "title": "Crystal",
+      "url": "https://ark.fandom.com/wiki/Crystal",
+      "blurb": "Crystal is a resource in ARK: Survival Evolved used for crafting various items. It is especially useful in the end-game.",
+      "aliases": [
+        "crystal",
+        "crystals"
+      ]
+    },
+    {
+      "key": "fiber",
+      "title": "Fiber",
+      "url": "https://ark.fandom.com/wiki/Fiber",
+      "blurb": "Fiber is a resource in ARK: Survival Evolved. It can be acquired by harvesting plants by hand, or more effectively with a Metal Sickle, or by using a Moschops, Gigantopithecus, Dire Bear and/or a Therizinosaur. Fiber is one of the early base raw materials in Ark and is used in many crafting recipes as an ingredient. The easiest way to gain fiber is to gather it using your hands, but there are more efficient methods. Crafting a metal sickle isn't possible until the player reaches level 30, however, a Gigantopithecus can only be tamed once level 30 as well. Fiber can also be found in white and green Supply Crates.",
+      "aliases": [
+        "fiber",
+        "fibers"
+      ]
+    },
+    {
+      "key": "electronics",
+      "title": "Electronics",
+      "url": "https://ark.fandom.com/wiki/Electronics",
+      "blurb": "Electronics are a resource in ARK: Survival Evolved. They are used to make electrical devices. They are either crafted in a fabricator or can be gathered from TEK creatures.",
+      "aliases": [
+        "electronics",
+        "electronic"
+      ]
+    },
+    {
+      "key": "element",
+      "title": "Element",
+      "url": "https://ark.fandom.com/wiki/Element",
+      "blurb": "Element is a primary ingredient for equipment in the Tek Tier.",
+      "aliases": [
+        "element",
+        "elements"
+      ]
+    },
+    {
+      "key": "feathers primitive plus",
+      "title": "Feathers (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Feathers_(Primitive_Plus)",
+      "blurb": "The Feathers is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "feathers primitive plus",
+        "feathers primitive plu"
+      ]
+    },
+    {
+      "key": "dry firewood primitive plus",
+      "title": "Dry Firewood (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Dry_Firewood_(Primitive_Plus)",
+      "blurb": "The Dry Firewood is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "dry firewood primitive plus",
+        "dry firewood primitive plu"
+      ]
+    },
+    {
+      "key": "cup of malt primitive plus",
+      "title": "Cup of Malt (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Cup_of_Malt_(Primitive_Plus)",
+      "blurb": "The Cup of Malt is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "cup of malt primitive plus",
+        "cup of malt primitive plu"
+      ]
+    },
+    {
+      "key": "deathworm horn scorched earth",
+      "title": "Deathworm Horn (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Deathworm_Horn_(Scorched_Earth)",
+      "blurb": "Deathworm Horn is an item in the Scorched Earth-DLC of ARK: Survival Evolved. You can obtain it by killing a Deathworm.",
+      "aliases": [
+        "deathworm horn scorched earth",
+        "deathworm horn scorched earths"
+      ]
+    },
+    {
+      "key": "element shard",
+      "title": "Element Shard",
+      "url": "https://ark.fandom.com/wiki/Element_Shard",
+      "blurb": "Element Shards are a resource used to power the Tek Cloning Chamber and the Tek Light. Also used as fuel for the Tek Turret, Tek Generator and the Tek Bow (Genesis: Part 2)",
+      "aliases": [
+        "element shard",
+        "element shards"
+      ]
+    },
+    {
+      "key": "element ore aberration",
+      "title": "Element Ore (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Element_Ore_(Aberration)",
+      "blurb": "Element Ore is a resource in the Aberration DLC. It is used for crafting Element at a Charge Node and as alternative fuel for the Hover Skiff. Element Ore can be mined from small, dark rocks with a purple crystal inside. These rocks can be found on the surface and in the Grave of the Lost. They can also be found in Crystal Isles by going into the large bee cave, then going down into the water near the back of the cave, and swimming down to a hidden cave. The nodes are the same as the ones on Aberration. You will need SCUBA Armor and/or a cryopoded water tame or a omni-tame such as Baryonyx.",
+      "aliases": [
+        "element ore aberration",
+        "element ore aberrations"
+      ]
+    },
+    {
+      "key": "dinosaur bone",
+      "title": "Dinosaur Bone",
+      "url": "https://ark.fandom.com/wiki/Dinosaur_Bone",
+      "blurb": "The Dinosaur Bone can be found in Fossil Piles during the ARK: ARKaeology, ARK: Fear Evolved 3 and only by killing skeletal dinos in ARK: Fear Evolved 4 event. It can be used to create various skins and costumes.",
+      "aliases": [
+        "dinosaur bone",
+        "dinosaur bones"
+      ]
+    },
+    {
+      "key": "corrupted nodule extinction",
+      "title": "Corrupted Nodule (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Nodule_(Extinction)",
+      "blurb": "The eater is a resource in Extinction. It can be obtained from killing Corrupted Creatures. Corrupted Nodules act as a substitute for both Polymer and is functionally identical to Organic Polymer. Unlike the latter however, the Corrupted Nodule drops at a lower rate and can only be harvested from the bodies of Corrupted Creatures.",
+      "aliases": [
+        "corrupted nodule extinction",
+        "corrupted nodule extinctions"
+      ]
+    },
+    {
+      "key": "corrupt heart extinction",
+      "title": "Corrupt Heart (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Corrupt_Heart_(Extinction)",
+      "blurb": "The Corrupt Heart is a resource in ARK: Survival Evolved's DLC Extinction.",
+      "aliases": [
+        "corrupt heart extinction",
+        "corrupt heart extinctions"
+      ]
+    },
+    {
+      "key": "element dust",
+      "title": "Element Dust",
+      "url": "https://ark.fandom.com/wiki/Element_Dust",
+      "blurb": "The Element Dust is a resource in ARK: Survival Evolved.",
+      "aliases": [
+        "element dust",
+        "element dusts"
+      ]
+    },
+    {
+      "key": "corrupted wood extinction",
+      "title": "Corrupted Wood (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Corrupted_Wood_(Extinction)",
+      "blurb": "Corrupted Wood is an easily obtainable resource in the Extinction DLC. It can be used in place of Fungal Wood .",
+      "aliases": [
+        "corrupted wood extinction",
+        "corrupted wood extinctions"
+      ]
+    },
+    {
+      "key": "dodo feather mobile",
+      "title": "Dodo Feather (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Dodo_Feather_(Mobile)",
+      "blurb": "The Dodo Feather is a resource in ARK: Survival Evolved Mobile.",
+      "aliases": [
+        "dodo feather mobile",
+        "dodo feather mobiles"
+      ]
+    },
+    {
+      "key": "eery element mobile",
+      "title": "Eery Element (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Eery_Element_(Mobile)",
+      "blurb": "Eery Element is a resource in ARK: Survival Evolved Mobile.",
+      "aliases": [
+        "eery element mobile",
+        "eery element mobiles"
+      ]
+    },
+    {
+      "key": "crystal talon crystal isles",
+      "title": "Crystal Talon (Crystal Isles)",
+      "url": "https://ark.fandom.com/wiki/Crystal_Talon_(Crystal_Isles)",
+      "blurb": "The Crystal Talon is an Item in the Expansion Map Crystal Isles. It is dropped by Crystal Wyverns and used to summon the Crystal Wyvern Queen, costing 5 for gamma, 10 for beta and 15 for alpha.",
+      "aliases": [
+        "crystal talon crystal isles",
+        "crystal talon crystal isle"
+      ]
+    },
+    {
+      "key": "hide",
+      "title": "Hide",
+      "url": "https://ark.fandom.com/wiki/Hide",
+      "blurb": "Hide is a resource that can be acquired by harvesting corpses with most tools and dinosaurs. It is dropped by most Creatures that aren't Fish or Invertebrates.",
+      "aliases": [
+        "hide",
+        "hides"
+      ]
+    },
+    {
+      "key": "gunpowder",
+      "title": "Gunpowder",
+      "url": "https://ark.fandom.com/wiki/Gunpowder",
+      "blurb": "Gunpowder is a resource in ARK: Survival Evolved. It is created in a Mortar and Pestle, the Chemistry Bench and in the Equus Saddle. It is used for crafting weapons and ammunition.",
+      "aliases": [
+        "gunpowder",
+        "gunpowders"
+      ]
+    },
+    {
+      "key": "gasoline",
+      "title": "Gasoline",
+      "url": "https://ark.fandom.com/wiki/Gasoline",
+      "blurb": "Gasoline is a resource used to power the Fabricator, Electrical Generator, Industrial Grill, Chemistry Bench, Industrial Forge, Motorboat, the Industrial Grinder, the Zip-Line Motor Attachment , the Chainsaw and the Mining Drill .",
+      "aliases": [
+        "gasoline",
+        "gasolines"
+      ]
+    },
+    {
+      "key": "fresh cement primitive plus",
+      "title": "Fresh Cement (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Fresh_Cement_(Primitive_Plus)",
+      "blurb": "The Fresh Cement is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "fresh cement primitive plus",
+        "fresh cement primitive plu"
+      ]
+    },
+    {
+      "key": "fresh firewood primitive plus",
+      "title": "Fresh Firewood (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Fresh_Firewood_(Primitive_Plus)",
+      "blurb": "The Fresh Firewood is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "fresh firewood primitive plus",
+        "fresh firewood primitive plu"
+      ]
+    },
+    {
+      "key": "fresh fat primitive plus",
+      "title": "Fresh Fat (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Fresh_Fat_(Primitive_Plus)",
+      "blurb": "The Fresh Fat is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "fresh fat primitive plus",
+        "fresh fat primitive plu"
+      ]
+    },
+    {
+      "key": "glass primitive plus",
+      "title": "Glass (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Glass_(Primitive_Plus)",
+      "blurb": "The Glass is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "glass primitive plus",
+        "glass primitive plu"
+      ]
+    },
+    {
+      "key": "fresh sugar juice bucket primitive plus",
+      "title": "Fresh Sugar Juice Bucket (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Fresh_Sugar_Juice_Bucket_(Primitive_Plus)",
+      "blurb": "The Fresh Sugar Juice Bucket is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "fresh sugar juice bucket primitive plus",
+        "fresh sugar juice bucket primitive plu"
+      ]
+    },
+    {
+      "key": "giant bee honey",
+      "title": "Giant Bee Honey",
+      "url": "https://ark.fandom.com/wiki/Giant_Bee_Honey",
+      "blurb": "Giant Bee Honey is a resource in ARK: Survival Evolved.",
+      "aliases": [
+        "giant bee honey",
+        "giant bee honeys"
+      ]
+    },
+    {
+      "key": "giganotosaurus heart",
+      "title": "Giganotosaurus Heart",
+      "url": "https://ark.fandom.com/wiki/Giganotosaurus_Heart",
+      "blurb": "The Giganotosaurus Heart can be found on a dead Giganotosaurus by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "giganotosaurus heart",
+        "giganotosaurus hearts"
+      ]
+    },
+    {
+      "key": "green gem aberration",
+      "title": "Green Gem (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Green_Gem_(Aberration)",
+      "blurb": "Green Gems are a resource in the Aberration DLC. They are used for crafting various items.",
+      "aliases": [
+        "green gem aberration",
+        "green gem aberrations"
+      ]
+    },
+    {
+      "key": "fungal wood aberration",
+      "title": "Fungal Wood (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Fungal_Wood_(Aberration)",
+      "blurb": "Fungal Wood is an easily obtainable resource in the Aberration and Valguero. On Extinction it is substituted by Corrupted Wood .",
+      "aliases": [
+        "fungal wood aberration",
+        "fungal wood aberrations"
+      ]
+    },
+    {
+      "key": "gas vein aberration",
+      "title": "Gas Vein (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Gas_Vein_(Aberration)",
+      "blurb": "The Gas Vein is a resource node in Aberration that produces Congealed Gas Balls over time. Its appearance is that of a breach in the ground from which pink gas spews forth. Occasionally, Congealed Gas Balls can appear on the ground next to a Gas Vein. By using a Gas Collector, the Congealed Gas Balls can be gathered in its inventory, and the rate of gathering increased.",
+      "aliases": [
+        "gas vein aberration",
+        "gas vein aberrations"
+      ]
+    },
+    {
+      "key": "frog legs mobile",
+      "title": "Frog Legs (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Frog_Legs_(Mobile)",
+      "blurb": "Frog Legs are a Resource in ARK: Survival Evolved Mobile",
+      "aliases": [
+        "frog legs mobile",
+        "frog legs mobiles"
+      ]
+    },
+    {
+      "key": "fragmented green gem extinction",
+      "title": "Fragmented Green Gem (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Fragmented_Green_Gem_(Extinction)",
+      "blurb": "The Fragmented Green Gem is a resource in Extinction.",
+      "aliases": [
+        "fragmented green gem extinction",
+        "fragmented green gem extinctions"
+      ]
+    },
+    {
+      "key": "gacha crystal extinction",
+      "title": "Gacha Crystal (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Gacha_Crystal_(Extinction)",
+      "blurb": "The Gacha Crystal is a resource in ARK: Survival Evolved's DLC Extinction. It is dropped by the Gacha, and in Winter Wonderland event, by GachaClaus. When consumed in the Inventory, it will give whatever item the Gacha was told to make.",
+      "aliases": [
+        "gacha crystal extinction",
+        "gacha crystal extinctions"
+      ]
+    },
+    {
+      "key": "gasbags bladder extinction",
+      "title": "Gasbags bladder (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Gasbags_bladder_(Extinction)",
+      "blurb": "The Gasbags bladder is an item in ARK: Survival Evolved's DLC Extinction. It can be obtained by killing Gasbags, giving 1 per creature killed.",
+      "aliases": [
+        "gasbags bladder extinction",
+        "gasbags bladder extinctions"
+      ]
+    },
+    {
+      "key": "geopolymer cement mobile",
+      "title": "Geopolymer Cement (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Geopolymer_Cement_(Mobile)",
+      "blurb": "Geopolymer Cement is a resource in ARK: Survival Evolved Mobile.",
+      "aliases": [
+        "geopolymer cement mobile",
+        "geopolymer cement mobiles"
+      ]
+    },
+    {
+      "key": "golden nugget genesis part 1",
+      "title": "Golden Nugget (Genesis: Part 1)",
+      "url": "https://ark.fandom.com/wiki/Golden_Nugget_(Genesis:_Part_1)",
+      "blurb": "Golden Nugget is a Mission Resource in the Genesis: Part 1 DLC's mission Mound Over Matter.",
+      "aliases": [
+        "golden nugget genesis part 1",
+        "golden nugget genesis part 1s"
+      ]
+    },
+    {
+      "key": "high quality pollen genesis part 1",
+      "title": "High Quality Pollen (Genesis: Part 1)",
+      "url": "https://ark.fandom.com/wiki/High_Quality_Pollen_(Genesis:_Part_1)",
+      "blurb": "High Quality Pollen is a Mission Resource in the Genesis: Part 1 DLC.",
+      "aliases": [
+        "high quality pollen genesis part 1",
+        "high quality pollen genesis part 1s"
+      ]
+    },
+    {
+      "key": "metal",
+      "title": "Metal",
+      "url": "https://ark.fandom.com/wiki/Metal",
+      "blurb": "Metal is an important resource in ARK: Survival Evolved. It is used to craft many different tools and structures, but must be refined into ingots for most of these.",
+      "aliases": [
+        "metal",
+        "metals",
+        "metal ore",
+        "metal ores"
+      ]
+    },
+    {
+      "key": "obsidian",
+      "title": "Obsidian",
+      "url": "https://ark.fandom.com/wiki/Obsidian",
+      "blurb": "Obsidian is a resource in ARK: Survival Evolved. It is found in caves and on mountains in smooth, black rocks. Whitesky Peak and Volcano have rich amounts of obsidian rocks at and around the summit. However smaller amounts of black obsidian rocks can be found in numerous peaks around The Island. On Scorched Earth it can be found in the artifact caves.",
+      "aliases": [
+        "obsidian",
+        "obsidians",
+        "obs"
+      ]
+    },
+    {
+      "key": "keratin",
+      "title": "Keratin",
+      "url": "https://ark.fandom.com/wiki/Keratin",
+      "blurb": "Keratin is a resource in ARK: Survival Evolved. It is the main material of claws, hooves, horns, scales and the outer armor of reptiles. Keratin in most cases can be used as an alternative to Chitin.",
+      "aliases": [
+        "keratin",
+        "keratins"
+      ]
+    },
+    {
+      "key": "oil",
+      "title": "Oil",
+      "url": "https://ark.fandom.com/wiki/Oil",
+      "blurb": "Oil is a resource in ARK: Survival Evolved. It can be harvested from dark stones near oil patches in the ocean by using a Pickaxe. It can also be obtained from above-water oil deposits found in and around Whitesky Peak on the island, the top left snow mountain on Ragnarok, or by killing Basilosaurus, Trilobite, Leech, and Enforcer. Another way to acquire Oil is to tame creatures that produce Oil, such as the Dung Beetle. Oil can also be obtained by harvesting tek creatures.",
+      "aliases": [
+        "oil",
+        "oils",
+        "crude oil",
+        "crude oils"
+      ]
+    },
+    {
+      "key": "metal ingot",
+      "title": "Metal Ingot",
+      "url": "https://ark.fandom.com/wiki/Metal_Ingot",
+      "blurb": "The Metal Ingot is a resource in ARK: Survival Evolved. It's an essential ingredient for most mid-game and late-game equipment. The Industrial Forge can produce up to 40 Metal Ingots at once if enough raw materials are available.",
+      "aliases": [
+        "metal ingot",
+        "metal ingots"
+      ]
+    },
+    {
+      "key": "megalodon tooth",
+      "title": "Megalodon Tooth",
+      "url": "https://ark.fandom.com/wiki/Megalodon_Tooth",
+      "blurb": "The Megalodon Tooth can be found on a dead Megalodon (in a stack of 4) by looking in its inventory before harvesting it for meat. The Megalodon Tooth is also dropped by Liopleurodon.",
+      "aliases": [
+        "megalodon tooth",
+        "megalodon tooths"
+      ]
+    },
+    {
+      "key": "organic polymer",
+      "title": "Organic Polymer",
+      "url": "https://ark.fandom.com/wiki/Organic_Polymer",
+      "blurb": "Organic Polymer is a naturally obtained resource that can be used as a direct substitute of Polymer for the purposes of crafting. Polymer is consumed before Organic Polymer in the Fabricator and Tek Replicator. Though Organic Polymer is not used to craft Ghillie Armor in Primitive Plus, instead Feathers are used. It can be harvested by killing Kairuku, Mantis, Hesperornis and Karkinos. It can also be acquired as a loot drop from Deathworm and by gathering from specific plants on Aberration. It spoils in thirty minutes. The Wooden Club and the Sword also increase the yield of Organic Polymer. With the addition of the Achatina to the tamable creatures, you can harvest Organic Polymer from the ",
+      "aliases": [
+        "organic polymer",
+        "organic polymers",
+        "org polymer",
+        "org polymers"
+      ]
+    },
+    {
+      "key": "mistletoe",
+      "title": "Mistletoe",
+      "url": "https://ark.fandom.com/wiki/Mistletoe",
+      "blurb": "Mistletoe is a resource used to craft the various items added in ARK: Winter Wonderland. It is found in gift pack styled Supply Crates dropped by Raptor Claus.",
+      "aliases": [
+        "mistletoe",
+        "mistletoes"
+      ]
+    },
+    {
+      "key": "leech blood",
+      "title": "Leech Blood",
+      "url": "https://ark.fandom.com/wiki/Leech_Blood",
+      "blurb": "Leech Blood is a naturally obtained resource. It can be harvested by killing Leech, Deathworm and Lamprey. Leech Blood is an ingredient of Lesser Antidote.",
+      "aliases": [
+        "leech blood",
+        "leech bloods"
+      ]
+    },
+    {
+      "key": "leather primitive plus",
+      "title": "Leather (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Leather_(Primitive_Plus)",
+      "blurb": "The Leather is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "leather primitive plus",
+        "leather primitive plu"
+      ]
+    },
+    {
+      "key": "limestone primitive plus",
+      "title": "Limestone (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Limestone_(Primitive_Plus)",
+      "blurb": "The Limestone is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "limestone primitive plus",
+        "limestone primitive plu"
+      ]
+    },
+    {
+      "key": "organic oil primitive plus",
+      "title": "Organic Oil (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Organic_Oil_(Primitive_Plus)",
+      "blurb": "The Organic Oil is a Resource in the Primitive+-DLC of ARK: Survival Evolved. It is made from either Seeds or Fresh Fat and used as an alternative to Crude Oil. It is also used to make jerky in the Meat Preserving Shed.",
+      "aliases": [
+        "organic oil primitive plus",
+        "organic oil primitive plu"
+      ]
+    },
+    {
+      "key": "natural yeast primitive plus",
+      "title": "Natural Yeast (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Natural_Yeast_(Primitive_Plus)",
+      "blurb": "The Yeast is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "natural yeast primitive plus",
+        "natural yeast primitive plu"
+      ]
+    },
+    {
+      "key": "oil vein scorched earth",
+      "title": "Oil Vein (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Oil_Vein_(Scorched_Earth)",
+      "blurb": "Oil Veins are a strategic resource in ARK:Survival Evolved. It allows the placement of an Oil Pump on top of it for the extraction of Oil. They are found throughout the Low Desert and Badlands locations in the Scorched Earth DLC. There are 22 Oil Veins located in 16 distinct locations.",
+      "aliases": [
+        "oil vein scorched earth",
+        "oil vein scorched earths"
+      ]
+    },
+    {
+      "key": "human hair",
+      "title": "Human Hair",
+      "url": "https://ark.fandom.com/wiki/Human_Hair",
+      "blurb": "Human Hair is a resource that can be acquired by cutting the hair of human players with Scissors.",
+      "aliases": [
+        "human hair",
+        "human hairs"
+      ]
+    },
+    {
+      "key": "megalania toxin",
+      "title": "Megalania Toxin",
+      "url": "https://ark.fandom.com/wiki/Megalania_Toxin",
+      "blurb": "The Megalania Toxin can be found in inventory of a dead or tranquilized Megalania, or in a bag left on the ground if its body is harvested before accessing the inventory or when eaten by other predators. You can also find 2 Megalania Toxin in the inventory of all newborn Megalania babies or newly tamed adult Megalania. Repeatedly knocking out a Megalania will result in 2 Megalania Toxin generating in its inventory each time. This allows the player to farm the toxin by repeatedly knocking it out, and grabbing the toxin before it wakes up.",
+      "aliases": [
+        "megalania toxin",
+        "megalania toxins"
+      ]
+    },
+    {
+      "key": "neura husk mobile",
+      "title": "Neura Husk (Mobile)",
+      "url": "https://ark.fandom.com/wiki/Neura_Husk_(Mobile)",
+      "blurb": "The Neura Husk is a resource in ARK: Survival Evolved Mobile.",
+      "aliases": [
+        "neura husk mobile",
+        "neura husk mobiles"
+      ]
+    },
+    {
+      "key": "mutagen genesis part 2",
+      "title": "Mutagen (Genesis: Part 2)",
+      "url": "https://ark.fandom.com/wiki/Mutagen_(Genesis:_Part_2)",
+      "blurb": "The Mutagen is a resource in the Genesis: Part 2 DLC. It enables the survivor to further evolve their existing tames, can be used to tame the Voidwyrm, and used to start Terminus mission.",
+      "aliases": [
+        "mutagen genesis part 2",
+        "mutagen genesis part 2s"
+      ]
+    },
+    {
+      "key": "mutagel genesis part 2",
+      "title": "Mutagel (Genesis: Part 2)",
+      "url": "https://ark.fandom.com/wiki/Mutagel_(Genesis:_Part_2)",
+      "blurb": "The Mutagel is a resource in the Genesis: Part 2 DLC. It can be gathered and crafted into a Mutagen , or used to tame Tek Stryders.",
+      "aliases": [
+        "mutagel genesis part 2",
+        "mutagel genesis part 2s"
+      ]
+    },
+    {
+      "key": "polymer",
+      "title": "Polymer",
+      "url": "https://ark.fandom.com/wiki/Polymer",
+      "blurb": "Polymer is a resource in ARK: Survival Evolved. It is used to make durable tools, weapons and armor (and a couple other Misc Items).",
+      "aliases": [
+        "polymer",
+        "polymers"
+      ]
+    },
+    {
+      "key": "rare mushroom",
+      "title": "Rare Mushroom",
+      "url": "https://ark.fandom.com/wiki/Rare_Mushroom",
+      "blurb": "The Rare Mushroom is a crafting ingredient in ARK: Survival Evolved.",
+      "aliases": [
+        "rare mushroom",
+        "rare mushrooms"
+      ]
+    },
+    {
+      "key": "silica pearls",
+      "title": "Silica Pearls",
+      "url": "https://ark.fandom.com/wiki/Silica_Pearls",
+      "blurb": "Silica Pearls are a resource in ARK: Survival Evolved. They can be found in the deepest areas of the ocean, in more shallow areas along the icy shores of the snow biome, in the Underwater Caves, in Giant Beaver Dam, and when harvesting corpses of Trilobite, Leech, Eurypterid and Ammonite. They are also obtained from Phoenix after defecation as silica pearls instead of feces. Being one of the base Ingredients for Electronics, Silica Pearls get very important for the technical side of the game.",
+      "aliases": [
+        "silica pearls",
+        "silica pearl"
+      ]
+    },
+    {
+      "key": "pelt",
+      "title": "Pelt",
+      "url": "https://ark.fandom.com/wiki/Pelt",
+      "blurb": "Pelt is a resource that can be acquired by harvesting corpses with most tools and dinosaurs. Pelt is used to craft fur gear, which provides excellent cold protection.",
+      "aliases": [
+        "pelt",
+        "pelts"
+      ]
+    },
+    {
+      "key": "sap",
+      "title": "Sap",
+      "url": "https://ark.fandom.com/wiki/Sap",
+      "blurb": "Sap is a resource in ARK: Survival Evolved. It is obtained by using a Tree Sap Tap on a Redwood Tree. It is used in some crafting recipes.",
+      "aliases": [
+        "sap",
+        "saps"
+      ]
+    },
+    {
+      "key": "sack of flour primitive plus",
+      "title": "Sack of Flour (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Sack_of_Flour_(Primitive_Plus)",
+      "blurb": "The Sack of Flour is a Resource in the Primitive+-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "sack of flour primitive plus",
+        "sack of flour primitive plu"
+      ]
+    },
+    {
+      "key": "sand scorched earth",
+      "title": "Sand (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Sand_(Scorched_Earth)",
+      "blurb": "Sand is a resource in the Scorched Earth-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "sand scorched earth",
+        "sand scorched earths"
+      ]
+    },
+    {
+      "key": "raw salt scorched earth",
+      "title": "Raw Salt (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Raw_Salt_(Scorched_Earth)",
+      "blurb": "Raw Salt is a resource introduced in the Scorched Earth-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "raw salt scorched earth",
+        "raw salt scorched earths"
+      ]
+    },
+    {
+      "key": "propellant scorched earth",
+      "title": "Propellant (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Propellant_(Scorched_Earth)",
+      "blurb": "Propellant is an item in the Scorched Earth-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "propellant scorched earth",
+        "propellant scorched earths"
+      ]
+    },
+    {
+      "key": "preserving salt scorched earth",
+      "title": "Preserving Salt (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Preserving_Salt_(Scorched_Earth)",
+      "blurb": "Preserving Salt is an item in the Scorched Earth-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "preserving salt scorched earth",
+        "preserving salt scorched earths"
+      ]
+    },
+    {
+      "key": "sarcosuchus skin",
+      "title": "Sarcosuchus Skin",
+      "url": "https://ark.fandom.com/wiki/Sarcosuchus_Skin",
+      "blurb": "The Sarcosuchus Skin can be found on a dead sarco by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "sarcosuchus skin",
+        "sarcosuchus skins"
+      ]
+    },
+    {
+      "key": "red gem aberration",
+      "title": "Red Gem (Aberration)",
+      "url": "https://ark.fandom.com/wiki/Red_Gem_(Aberration)",
+      "blurb": "Red Gems are a resource in the Aberration DLC. They are used for crafting various items.",
+      "aliases": [
+        "red gem aberration",
+        "red gem aberrations"
+      ]
+    },
+    {
+      "key": "scrap metal",
+      "title": "Scrap Metal",
+      "url": "https://ark.fandom.com/wiki/Scrap_Metal",
+      "blurb": "Scrap Metal is a resource in ARK: Survival Evolved.",
+      "aliases": [
+        "scrap metal",
+        "scrap metals"
+      ]
+    },
+    {
+      "key": "scrap metal ingot",
+      "title": "Scrap Metal Ingot",
+      "url": "https://ark.fandom.com/wiki/Scrap_Metal_Ingot",
+      "blurb": "Scrap Metal Ingot is a resource in ARK: Survival Evolved.",
+      "aliases": [
+        "scrap metal ingot",
+        "scrap metal ingots"
+      ]
+    },
+    {
+      "key": "red crystalized sap extinction",
+      "title": "Red Crystalized Sap (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Red_Crystalized_Sap_(Extinction)",
+      "blurb": "The Red Crystalized Sap is a resource in Extinction.",
+      "aliases": [
+        "red crystalized sap extinction",
+        "red crystalized sap extinctions"
+      ]
+    },
+    {
+      "key": "silicate extinction",
+      "title": "Silicate (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Silicate_(Extinction)",
+      "blurb": "The Silicate is a resource in ARK: Survival Evolved's DLC Extinction and can be used in recipes as a replacement for Silica Pearls.",
+      "aliases": [
+        "silicate extinction",
+        "silicate extinctions"
+      ]
+    },
+    {
+      "key": "shell fragment genesis part 1",
+      "title": "Shell Fragment (Genesis: Part 1)",
+      "url": "https://ark.fandom.com/wiki/Shell_Fragment_(Genesis:_Part_1)",
+      "blurb": "Shell Fragment is a resource in the Genesis: Part 1 DLC. It can be obtained from a Megachelon.",
+      "aliases": [
+        "shell fragment genesis part 1",
+        "shell fragment genesis part 1s"
+      ]
+    },
+    {
+      "key": "primal crystal crystal isles",
+      "title": "Primal Crystal (Crystal Isles)",
+      "url": "https://ark.fandom.com/wiki/Primal_Crystal_(Crystal_Isles)",
+      "blurb": "The Primal Crystal is a Resource in the Expansion Map Crystal Isles.",
+      "aliases": [
+        "primal crystal crystal isles",
+        "primal crystal crystal isle"
+      ]
+    },
+    {
+      "key": "thatch",
+      "title": "Thatch",
+      "url": "https://ark.fandom.com/wiki/Thatch",
+      "blurb": "Thatch is an easily obtainable resource harvested from trees, either by punching them or by using tools. Thatch is used for crafting many items, especially in the early-game. It can also be used as fuel source for a fire, and is needed to create Fertilizer in a Compost Bin. It can be found in white, green and blue supply drops. When harvesting Thatch, Picks are more efficient than Hatchets. Many dinosaurs can also harvest it by attacking trees, with the Brontosaurus, Gacha, and Mantis being the most efficient.",
+      "aliases": [
+        "thatch",
+        "thatchs"
+      ]
+    },
+    {
+      "key": "wood",
+      "title": "Wood",
+      "url": "https://ark.fandom.com/wiki/Wood",
+      "blurb": "Wood is an easily obtainable resource in ARK: Survival Evolved that can be harvested from trees using tools, dinosaurs, or your bare hands, but is most efficiently harvested with a Chainsaw, Castoroides, Gacha, Roll Rat, Thorny Dragon, and Therizinosaur. Wood is a very valuable resource due to its many uses and the high quantities of it required in crafting. It can be found in white, green and blue Supply Crates as well as in Giant Beaver Dam. Every time Wood is consumed as a fuel source it creates Charcoal.",
+      "aliases": [
+        "wood",
+        "woods"
+      ]
+    },
+    {
+      "key": "stone",
+      "title": "Stone",
+      "url": "https://ark.fandom.com/wiki/Stone",
+      "blurb": "Stone is one of the resources in ARK: Survival Evolved used for crafting and as ammunition for the Slingshot.",
+      "aliases": [
+        "stone",
+        "stones"
+      ]
+    },
+    {
+      "key": "sparkpowder",
+      "title": "Sparkpowder",
+      "url": "https://ark.fandom.com/wiki/Sparkpowder",
+      "blurb": "Sparkpowder is a resource in ARK: Survival Evolved. It can be created by grinding Flint with Stone in the Mortar and Pestle, each grind will yield 2 sparkpowders. Sparkpowder can be used as a fuel source, and is the primary fuel for the Preserving Bin. It is also a crafting ingredient for various items including Gunpowder, which is needed to make ammunition for firearms.",
+      "aliases": [
+        "sparkpowder",
+        "sparkpowders"
+      ]
+    },
+    {
+      "key": "woolly rhino horn",
+      "title": "Woolly Rhino Horn",
+      "url": "https://ark.fandom.com/wiki/Woolly_Rhino_Horn",
+      "blurb": "The Woolly Rhino Horn is a resource in ARK: Survival Evolved. It can be obtained by killing Woolly Rhinos and looting their corpses.",
+      "aliases": [
+        "woolly rhino horn",
+        "woolly rhino horns"
+      ]
+    },
+    {
+      "key": "steel ingot primitive plus",
+      "title": "Steel Ingot (Primitive Plus)",
+      "url": "https://ark.fandom.com/wiki/Steel_Ingot_(Primitive_Plus)",
+      "blurb": "The Steel Ingot is a Resource in the Primitive+-DLC of ARK: Survival Evolved. To craft a Steel Ingot place one Iron Ingot and two Carbon into a Refining Forge.",
+      "aliases": [
+        "steel ingot primitive plus",
+        "steel ingot primitive plu"
+      ]
+    },
+    {
+      "key": "sulfur scorched earth",
+      "title": "Sulfur (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Sulfur_(Scorched_Earth)",
+      "blurb": "Sulfur is a resource in the Scorched Earth-DLC of ARK: Survival Evolved. It is also present on the Extinction and Valguero maps.",
+      "aliases": [
+        "sulfur scorched earth",
+        "sulfur scorched earths"
+      ]
+    },
+    {
+      "key": "silk scorched earth",
+      "title": "Silk (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Silk_(Scorched_Earth)",
+      "blurb": "Silk is a resource in the Scorched Earth-DLC of ARK: Survival Evolved.",
+      "aliases": [
+        "silk scorched earth",
+        "silk scorched earths"
+      ]
+    },
+    {
+      "key": "tusoteuthis tentacle",
+      "title": "Tusoteuthis Tentacle",
+      "url": "https://ark.fandom.com/wiki/Tusoteuthis_Tentacle",
+      "blurb": "The Tusoteuthis Tentacle can be found on a dead Tusoteuthis or Alpha Tusoteuthis by looking in its inventory before harvesting it.",
+      "aliases": [
+        "tusoteuthis tentacle",
+        "tusoteuthis tentacles"
+      ]
+    },
+    {
+      "key": "wool",
+      "title": "Wool",
+      "url": "https://ark.fandom.com/wiki/Wool",
+      "blurb": "Wool is a resource that can be acquired by shearing Ovis with Scissors. Wool grows back over time.",
+      "aliases": [
+        "wool",
+        "wools"
+      ]
+    },
+    {
+      "key": "therizino claws",
+      "title": "Therizino Claws",
+      "url": "https://ark.fandom.com/wiki/Therizino_Claws",
+      "blurb": "The Therizino Claws can be found on a dead Therizinosaur by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "therizino claws",
+        "therizino claw"
+      ]
+    },
+    {
+      "key": "thylacoleo hook claw",
+      "title": "Thylacoleo Hook-Claw",
+      "url": "https://ark.fandom.com/wiki/Thylacoleo_Hook-Claw",
+      "blurb": "The Thylacoleo Hook-Claws can be found on a dead Thylacoleo (in a stack of 2) by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "thylacoleo hook claw",
+        "thylacoleo hook claws"
+      ]
+    },
+    {
+      "key": "yutyrannus lungs",
+      "title": "Yutyrannus Lungs",
+      "url": "https://ark.fandom.com/wiki/Yutyrannus_Lungs",
+      "blurb": "The Yutyrannus Lungs can be found on a dead Yutyrannus by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "yutyrannus lungs",
+        "yutyrannus lung"
+      ]
+    },
+    {
+      "key": "titanoboa venom",
+      "title": "Titanoboa Venom",
+      "url": "https://ark.fandom.com/wiki/Titanoboa_Venom",
+      "blurb": "The Titanoboa Venom can be found on a knocked out/dead Titanoboa in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "titanoboa venom",
+        "titanoboa venoms"
+      ]
+    },
+    {
+      "key": "spinosaurus sail",
+      "title": "Spinosaurus Sail",
+      "url": "https://ark.fandom.com/wiki/Spinosaurus_Sail",
+      "blurb": "The Spinosaurus Sail can be found on a dead Spino by looking in its inventory before harvesting it for meat and hide or in a bag left on the ground if harvested before accessing the inventory or when eaten by other predators.",
+      "aliases": [
+        "spinosaurus sail",
+        "spinosaurus sails"
+      ]
+    },
+    {
+      "key": "wyvern talon scorched earth",
+      "title": "Wyvern Talon (Scorched Earth)",
+      "url": "https://ark.fandom.com/wiki/Wyvern_Talon_(Scorched_Earth)",
+      "blurb": "The Wyvern Talon is an item from the Scorched Earth-DLC of ARK: Survival Evolved. Specific talons are obtained by killing specific Wyverns. It can be obtained by killing Fire Wyverns, Lightning Wyverns, or Poison Wyverns for their respective talon. Corrupted Wyverns also drop Fire Talons.",
+      "aliases": [
+        "wyvern talon scorched earth",
+        "wyvern talon scorched earths"
+      ]
+    },
+    {
+      "key": "unstable element shard extinction",
+      "title": "Unstable Element Shard (Extinction)",
+      "url": "https://ark.fandom.com/wiki/Unstable_Element_Shard_(Extinction)",
+      "blurb": "The Unstable Element Shard is a resource in Extinction",
+      "aliases": [
+        "unstable element shard extinction",
+        "unstable element shard extinctions"
+      ]
+    }
+  ],
+  "aliasToKey": {
+    "argentavis talon": "argentavis talon",
+    "argentavis talons": "argentavis talon",
+    "anglergel": "anglergel",
+    "anglergels": "anglergel",
+    "absorbent substrate": "absorbent substrate",
+    "absorbent substrates": "absorbent substrate",
+    "ammonite bile": "ammonite bile",
+    "ammonite biles": "ammonite bile",
+    "alpha megalodon fin": "alpha megalodon fin",
+    "alpha megalodon fins": "alpha megalodon fin",
+    "alpha carnotaurus arm": "alpha carnotaurus arm",
+    "alpha carnotaurus arms": "alpha carnotaurus arm",
+    "alpha raptor claw": "alpha raptor claw",
+    "alpha raptor claws": "alpha raptor claw",
+    "alpha tyrannosaur tooth": "alpha tyrannosaur tooth",
+    "alpha tyrannosaur tooths": "alpha tyrannosaur tooth",
+    "alpha leedsichthys blubber": "alpha leedsichthys blubber",
+    "alpha leedsichthys blubbers": "alpha leedsichthys blubber",
+    "alpha mosasaur tooth": "alpha mosasaur tooth",
+    "alpha mosasaur tooths": "alpha mosasaur tooth",
+    "alpha tusoteuthis eye": "alpha tusoteuthis eye",
+    "alpha tusoteuthis eyes": "alpha tusoteuthis eye",
+    "allosaurus brain": "allosaurus brain",
+    "allosaurus brains": "allosaurus brain",
+    "basilosaurus blubber": "basilosaurus blubber",
+    "basilosaurus blubbers": "basilosaurus blubber",
+    "alpha basilisk fang aberration": "alpha basilisk fang aberration",
+    "alpha basilisk fang aberrations": "alpha basilisk fang aberration",
+    "basilisk scale aberration": "basilisk scale aberration",
+    "basilisk scale aberrations": "basilisk scale aberration",
+    "ancient amber mobile": "ancient amber mobile",
+    "ancient amber mobiles": "ancient amber mobile",
+    "ambergris genesis part 1": "ambergris genesis part 1",
+    "ambergris genesis part 1s": "ambergris genesis part 1",
+    "alpha crystal talon crystal isles": "alpha crystal talon crystal isles",
+    "alpha crystal talon crystal isle": "alpha crystal talon crystal isles",
+    "amargasaurus spike lost island": "amargasaurus spike lost island",
+    "amargasaurus spike lost islands": "amargasaurus spike lost island",
+    "cementing paste": "cementing paste",
+    "cementing pastes": "cementing paste",
+    "chitin": "chitin",
+    "chitins": "chitin",
+    "black pearl": "black pearl",
+    "black pearls": "black pearl",
+    "birthday candle": "birthday candle",
+    "birthday candles": "birthday candle",
+    "beeswax primitive plus": "beeswax primitive plus",
+    "beeswax primitive plu": "beeswax primitive plus",
+    "brick primitive plus": "brick primitive plus",
+    "brick primitive plu": "brick primitive plus",
+    "cane sugar primitive plus": "cane sugar primitive plus",
+    "cane sugar primitive plu": "cane sugar primitive plus",
+    "carbon primitive plus": "carbon primitive plus",
+    "carbon primitive plu": "carbon primitive plus",
+    "clay primitive plus": "clay primitive plus",
+    "clay primitive plu": "clay primitive plus",
+    "claystone primitive plus": "claystone primitive plus",
+    "claystone primitive plu": "claystone primitive plus",
+    "bread dough primitive plus": "bread dough primitive plus",
+    "bread dough primitive plu": "bread dough primitive plus",
+    "cactus sap scorched earth": "cactus sap scorched earth",
+    "cactus sap scorched earths": "cactus sap scorched earth",
+    "clay scorched earth": "clay scorched earth",
+    "clay scorched earths": "clay scorched earth",
+    "bio toxin": "bio toxin",
+    "bio toxins": "bio toxin",
+    "coal primitive plus": "coal primitive plus",
+    "coal primitive plu": "coal primitive plus",
+    "blue gem aberration": "blue gem aberration",
+    "blue gem aberrations": "blue gem aberration",
+    "congealed gas ball aberration": "congealed gas ball aberration",
+    "congealed gas ball aberrations": "congealed gas ball aberration",
+    "blue crystalized sap extinction": "blue crystalized sap extinction",
+    "blue crystalized sap extinctions": "blue crystalized sap extinction",
+    "condensed gas extinction": "condensed gas extinction",
+    "condensed gas extinctions": "condensed gas extinction",
+    "crystal": "crystal",
+    "crystals": "crystal",
+    "fiber": "fiber",
+    "fibers": "fiber",
+    "electronics": "electronics",
+    "electronic": "electronics",
+    "element": "element",
+    "elements": "element",
+    "feathers primitive plus": "feathers primitive plus",
+    "feathers primitive plu": "feathers primitive plus",
+    "dry firewood primitive plus": "dry firewood primitive plus",
+    "dry firewood primitive plu": "dry firewood primitive plus",
+    "cup of malt primitive plus": "cup of malt primitive plus",
+    "cup of malt primitive plu": "cup of malt primitive plus",
+    "deathworm horn scorched earth": "deathworm horn scorched earth",
+    "deathworm horn scorched earths": "deathworm horn scorched earth",
+    "element shard": "element shard",
+    "element shards": "element shard",
+    "element ore aberration": "element ore aberration",
+    "element ore aberrations": "element ore aberration",
+    "dinosaur bone": "dinosaur bone",
+    "dinosaur bones": "dinosaur bone",
+    "corrupted nodule extinction": "corrupted nodule extinction",
+    "corrupted nodule extinctions": "corrupted nodule extinction",
+    "corrupt heart extinction": "corrupt heart extinction",
+    "corrupt heart extinctions": "corrupt heart extinction",
+    "element dust": "element dust",
+    "element dusts": "element dust",
+    "corrupted wood extinction": "corrupted wood extinction",
+    "corrupted wood extinctions": "corrupted wood extinction",
+    "dodo feather mobile": "dodo feather mobile",
+    "dodo feather mobiles": "dodo feather mobile",
+    "eery element mobile": "eery element mobile",
+    "eery element mobiles": "eery element mobile",
+    "crystal talon crystal isles": "crystal talon crystal isles",
+    "crystal talon crystal isle": "crystal talon crystal isles",
+    "hide": "hide",
+    "hides": "hide",
+    "gunpowder": "gunpowder",
+    "gunpowders": "gunpowder",
+    "gasoline": "gasoline",
+    "gasolines": "gasoline",
+    "fresh cement primitive plus": "fresh cement primitive plus",
+    "fresh cement primitive plu": "fresh cement primitive plus",
+    "fresh firewood primitive plus": "fresh firewood primitive plus",
+    "fresh firewood primitive plu": "fresh firewood primitive plus",
+    "fresh fat primitive plus": "fresh fat primitive plus",
+    "fresh fat primitive plu": "fresh fat primitive plus",
+    "glass primitive plus": "glass primitive plus",
+    "glass primitive plu": "glass primitive plus",
+    "fresh sugar juice bucket primitive plus": "fresh sugar juice bucket primitive plus",
+    "fresh sugar juice bucket primitive plu": "fresh sugar juice bucket primitive plus",
+    "giant bee honey": "giant bee honey",
+    "giant bee honeys": "giant bee honey",
+    "giganotosaurus heart": "giganotosaurus heart",
+    "giganotosaurus hearts": "giganotosaurus heart",
+    "green gem aberration": "green gem aberration",
+    "green gem aberrations": "green gem aberration",
+    "fungal wood aberration": "fungal wood aberration",
+    "fungal wood aberrations": "fungal wood aberration",
+    "gas vein aberration": "gas vein aberration",
+    "gas vein aberrations": "gas vein aberration",
+    "frog legs mobile": "frog legs mobile",
+    "frog legs mobiles": "frog legs mobile",
+    "fragmented green gem extinction": "fragmented green gem extinction",
+    "fragmented green gem extinctions": "fragmented green gem extinction",
+    "gacha crystal extinction": "gacha crystal extinction",
+    "gacha crystal extinctions": "gacha crystal extinction",
+    "gasbags bladder extinction": "gasbags bladder extinction",
+    "gasbags bladder extinctions": "gasbags bladder extinction",
+    "geopolymer cement mobile": "geopolymer cement mobile",
+    "geopolymer cement mobiles": "geopolymer cement mobile",
+    "golden nugget genesis part 1": "golden nugget genesis part 1",
+    "golden nugget genesis part 1s": "golden nugget genesis part 1",
+    "high quality pollen genesis part 1": "high quality pollen genesis part 1",
+    "high quality pollen genesis part 1s": "high quality pollen genesis part 1",
+    "metal": "metal",
+    "metals": "metal",
+    "metal ore": "metal",
+    "metal ores": "metal",
+    "obsidian": "obsidian",
+    "obsidians": "obsidian",
+    "obs": "obsidian",
+    "keratin": "keratin",
+    "keratins": "keratin",
+    "oil": "oil",
+    "oils": "oil",
+    "crude oil": "oil",
+    "crude oils": "oil",
+    "metal ingot": "metal ingot",
+    "metal ingots": "metal ingot",
+    "megalodon tooth": "megalodon tooth",
+    "megalodon tooths": "megalodon tooth",
+    "organic polymer": "organic polymer",
+    "organic polymers": "organic polymer",
+    "org polymer": "organic polymer",
+    "org polymers": "organic polymer",
+    "mistletoe": "mistletoe",
+    "mistletoes": "mistletoe",
+    "leech blood": "leech blood",
+    "leech bloods": "leech blood",
+    "leather primitive plus": "leather primitive plus",
+    "leather primitive plu": "leather primitive plus",
+    "limestone primitive plus": "limestone primitive plus",
+    "limestone primitive plu": "limestone primitive plus",
+    "organic oil primitive plus": "organic oil primitive plus",
+    "organic oil primitive plu": "organic oil primitive plus",
+    "natural yeast primitive plus": "natural yeast primitive plus",
+    "natural yeast primitive plu": "natural yeast primitive plus",
+    "oil vein scorched earth": "oil vein scorched earth",
+    "oil vein scorched earths": "oil vein scorched earth",
+    "human hair": "human hair",
+    "human hairs": "human hair",
+    "megalania toxin": "megalania toxin",
+    "megalania toxins": "megalania toxin",
+    "neura husk mobile": "neura husk mobile",
+    "neura husk mobiles": "neura husk mobile",
+    "mutagen genesis part 2": "mutagen genesis part 2",
+    "mutagen genesis part 2s": "mutagen genesis part 2",
+    "mutagel genesis part 2": "mutagel genesis part 2",
+    "mutagel genesis part 2s": "mutagel genesis part 2",
+    "polymer": "polymer",
+    "polymers": "polymer",
+    "rare mushroom": "rare mushroom",
+    "rare mushrooms": "rare mushroom",
+    "silica pearls": "silica pearls",
+    "silica pearl": "silica pearls",
+    "pelt": "pelt",
+    "pelts": "pelt",
+    "sap": "sap",
+    "saps": "sap",
+    "sack of flour primitive plus": "sack of flour primitive plus",
+    "sack of flour primitive plu": "sack of flour primitive plus",
+    "sand scorched earth": "sand scorched earth",
+    "sand scorched earths": "sand scorched earth",
+    "raw salt scorched earth": "raw salt scorched earth",
+    "raw salt scorched earths": "raw salt scorched earth",
+    "propellant scorched earth": "propellant scorched earth",
+    "propellant scorched earths": "propellant scorched earth",
+    "preserving salt scorched earth": "preserving salt scorched earth",
+    "preserving salt scorched earths": "preserving salt scorched earth",
+    "sarcosuchus skin": "sarcosuchus skin",
+    "sarcosuchus skins": "sarcosuchus skin",
+    "red gem aberration": "red gem aberration",
+    "red gem aberrations": "red gem aberration",
+    "scrap metal": "scrap metal",
+    "scrap metals": "scrap metal",
+    "scrap metal ingot": "scrap metal ingot",
+    "scrap metal ingots": "scrap metal ingot",
+    "red crystalized sap extinction": "red crystalized sap extinction",
+    "red crystalized sap extinctions": "red crystalized sap extinction",
+    "silicate extinction": "silicate extinction",
+    "silicate extinctions": "silicate extinction",
+    "shell fragment genesis part 1": "shell fragment genesis part 1",
+    "shell fragment genesis part 1s": "shell fragment genesis part 1",
+    "primal crystal crystal isles": "primal crystal crystal isles",
+    "primal crystal crystal isle": "primal crystal crystal isles",
+    "thatch": "thatch",
+    "thatchs": "thatch",
+    "wood": "wood",
+    "woods": "wood",
+    "stone": "stone",
+    "stones": "stone",
+    "sparkpowder": "sparkpowder",
+    "sparkpowders": "sparkpowder",
+    "woolly rhino horn": "woolly rhino horn",
+    "woolly rhino horns": "woolly rhino horn",
+    "steel ingot primitive plus": "steel ingot primitive plus",
+    "steel ingot primitive plu": "steel ingot primitive plus",
+    "sulfur scorched earth": "sulfur scorched earth",
+    "sulfur scorched earths": "sulfur scorched earth",
+    "silk scorched earth": "silk scorched earth",
+    "silk scorched earths": "silk scorched earth",
+    "tusoteuthis tentacle": "tusoteuthis tentacle",
+    "tusoteuthis tentacles": "tusoteuthis tentacle",
+    "wool": "wool",
+    "wools": "wool",
+    "therizino claws": "therizino claws",
+    "therizino claw": "therizino claws",
+    "thylacoleo hook claw": "thylacoleo hook claw",
+    "thylacoleo hook claws": "thylacoleo hook claw",
+    "yutyrannus lungs": "yutyrannus lungs",
+    "yutyrannus lung": "yutyrannus lungs",
+    "titanoboa venom": "titanoboa venom",
+    "titanoboa venoms": "titanoboa venom",
+    "spinosaurus sail": "spinosaurus sail",
+    "spinosaurus sails": "spinosaurus sail",
+    "wyvern talon scorched earth": "wyvern talon scorched earth",
+    "wyvern talon scorched earths": "wyvern talon scorched earth",
+    "unstable element shard extinction": "unstable element shard extinction",
+    "unstable element shard extinctions": "unstable element shard extinction",
+    "absorbierendes substrat": "absorbent substrate",
+    "absorbierendes substrats": "absorbent substrate",
+    "absorptionssubstrat": "absorbent substrate",
+    "absorptionssubstrats": "absorbent substrate",
+    "allosaurus gehirn": "allosaurus brain",
+    "allosaurus gehirns": "allosaurus brain",
+    "alpha basiliskenzahn": "alpha basilisk fang aberration",
+    "alpha basiliskenzahns": "alpha basilisk fang aberration",
+    "alpha kristallkralle": "alpha crystal talon crystal isles",
+    "alpha kristallkralles": "alpha crystal talon crystal isles",
+    "alpha leedsichthys fett": "alpha leedsichthys blubber",
+    "alpha leedsichthys fetts": "alpha leedsichthys blubber",
+    "alpha megalodonflosse": "alpha megalodon fin",
+    "alpha megalodonflosses": "alpha megalodon fin",
+    "alpha mosasauruszahn": "alpha mosasaur tooth",
+    "alpha mosasauruszahns": "alpha mosasaur tooth",
+    "alpha raptorklaue": "alpha raptor claw",
+    "alpha raptorklaues": "alpha raptor claw",
+    "alpha tusoteuthis auge": "alpha tusoteuthis eye",
+    "alpha tusoteuthis auges": "alpha tusoteuthis eye",
+    "alpha tyrannosauruszahn": "alpha tyrannosaur tooth",
+    "alpha tyrannosauruszahns": "alpha tyrannosaur tooth",
+    "amargasaurus stachel": "amargasaurus spike lost island",
+    "amargasaurus stachels": "amargasaurus spike lost island",
+    "ambergris": "ambergris genesis part 1",
+    "ambergri": "ambergris genesis part 1",
+    "ammoniten galle": "ammonite bile",
+    "ammoniten galles": "ammonite bile",
+    "uralter bernstein": "ancient amber mobile",
+    "uralter bernsteins": "ancient amber mobile",
+    "argentavis kralle": "argentavis talon",
+    "argentavis kralles": "argentavis talon",
+    "basiliskenschuppe": "basilisk scale aberration",
+    "basiliskenschuppes": "basilisk scale aberration",
+    "basilosaurus fett": "basilosaurus blubber",
+    "basilosaurus fetts": "basilosaurus blubber",
+    "bienenwachs": "beeswax primitive plus",
+    "bienenwach": "beeswax primitive plus",
+    "biotoxin": "bio toxin",
+    "biotoxins": "bio toxin",
+    "geburtstagskerze": "birthday candle",
+    "geburtstagskerzes": "birthday candle",
+    "schwarze perle": "black pearl",
+    "schwarze perles": "black pearl",
+    "schwarze perlen": "black pearl",
+    "schwarze perlens": "black pearl",
+    "blaues kristallisiertes harz": "blue crystalized sap extinction",
+    "blaues kristallisiertes harzs": "blue crystalized sap extinction",
+    "blauer edelstein": "blue gem aberration",
+    "blauer edelsteins": "blue gem aberration",
+    "brotteig": "bread dough primitive plus",
+    "brotteigs": "bread dough primitive plus",
+    "ziegel": "brick primitive plus",
+    "ziegels": "brick primitive plus",
+    "kaktussaft": "cactus sap scorched earth",
+    "kaktussafts": "cactus sap scorched earth",
+    "rohrzucker": "cane sugar primitive plus",
+    "rohrzuckers": "cane sugar primitive plus",
+    "kohlenstoff": "carbon primitive plus",
+    "kohlenstoffs": "carbon primitive plus",
+    "zementpaste": "cementing paste",
+    "zementpastes": "cementing paste",
+    "lehm": "clay primitive plus",
+    "lehms": "clay primitive plus",
+    "tonstein": "claystone primitive plus",
+    "tonsteins": "claystone primitive plus",
+    "kohle": "coal primitive plus",
+    "kohles": "coal primitive plus",
+    "kondensiertes gas": "condensed gas extinction",
+    "kondensiertes ga": "condensed gas extinction",
+    "verklumpte gaskugel": "congealed gas ball aberration",
+    "verklumpte gaskugels": "congealed gas ball aberration",
+    "verderbtes herz": "corrupt heart extinction",
+    "verderbtes herzs": "corrupt heart extinction",
+    "verderbter knoten": "corrupted nodule extinction",
+    "verderbter knotens": "corrupted nodule extinction",
+    "verderbtes holz": "corrupted wood extinction",
+    "verderbtes holzs": "corrupted wood extinction",
+    "kristall": "crystal",
+    "kristalls": "crystal",
+    "kristallkralle": "crystal talon crystal isles",
+    "kristallkralles": "crystal talon crystal isles",
+    "becher malz": "cup of malt primitive plus",
+    "becher malzs": "cup of malt primitive plus",
+    "todeswurmhorn": "deathworm horn scorched earth",
+    "todeswurmhorns": "deathworm horn scorched earth",
+    "dinosaurierknochen": "dinosaur bone",
+    "dinosaurierknochens": "dinosaur bone",
+    "dodo feder": "dodo feather mobile",
+    "dodo feders": "dodo feather mobile",
+    "trockenes brennholz": "dry firewood primitive plus",
+    "trockenes brennholzs": "dry firewood primitive plus",
+    "unheimliches element": "eery element mobile",
+    "unheimliches elements": "eery element mobile",
+    "elektronik": "electronics",
+    "elektroniks": "electronics",
+    "elementstaub": "element dust",
+    "elementstaubs": "element dust",
+    "elementerz": "element ore aberration",
+    "elementerzs": "element ore aberration",
+    "elementsplitter": "element shard",
+    "elementsplitters": "element shard",
+    "federn": "feathers primitive plus",
+    "federns": "feathers primitive plus",
+    "fasern": "fiber",
+    "faserns": "fiber",
+    "faser": "fiber",
+    "fasers": "fiber",
+    "fragmentierter grüner edelstein": "fragmented green gem extinction",
+    "fragmentierter grüner edelsteins": "fragmented green gem extinction",
+    "frischer zement": "fresh cement primitive plus",
+    "frischer zements": "fresh cement primitive plus",
+    "frisches fett": "fresh fat primitive plus",
+    "frisches fetts": "fresh fat primitive plus",
+    "frisches brennholz": "fresh firewood primitive plus",
+    "frisches brennholzs": "fresh firewood primitive plus",
+    "eimer frischer zuckerrohrsaft": "fresh sugar juice bucket primitive plus",
+    "eimer frischer zuckerrohrsafts": "fresh sugar juice bucket primitive plus",
+    "froschschenkel": "frog legs mobile",
+    "froschschenkels": "frog legs mobile",
+    "pilzholz": "fungal wood aberration",
+    "pilzholzs": "fungal wood aberration",
+    "gacha kristall": "gacha crystal extinction",
+    "gacha kristalls": "gacha crystal extinction",
+    "gasader": "gas vein aberration",
+    "gasaders": "gas vein aberration",
+    "gasbeutel blase": "gasbags bladder extinction",
+    "gasbeutel blases": "gasbags bladder extinction",
+    "benzin": "gasoline",
+    "benzins": "gasoline",
+    "geopolymerzement": "geopolymer cement mobile",
+    "geopolymerzements": "geopolymer cement mobile",
+    "riesenbienenhonig": "giant bee honey",
+    "riesenbienenhonigs": "giant bee honey",
+    "giganotosaurus herz": "giganotosaurus heart",
+    "giganotosaurus herzs": "giganotosaurus heart",
+    "glas": "glass primitive plus",
+    "gla": "glass primitive plus",
+    "goldnugget": "golden nugget genesis part 1",
+    "goldnuggets": "golden nugget genesis part 1",
+    "grüner edelstein": "green gem aberration",
+    "grüner edelsteins": "green gem aberration",
+    "schießpulver": "gunpowder",
+    "schießpulvers": "gunpowder",
+    "lederhaut": "hide",
+    "lederhauts": "hide",
+    "hochwertiger pollen": "high quality pollen genesis part 1",
+    "hochwertiger pollens": "high quality pollen genesis part 1",
+    "menschenhaar": "human hair",
+    "menschenhaars": "human hair",
+    "leder": "leather primitive plus",
+    "leders": "leather primitive plus",
+    "blutegelblut": "leech blood",
+    "blutegelbluts": "leech blood",
+    "kalkstein": "limestone primitive plus",
+    "kalksteins": "limestone primitive plus",
+    "megalania gift": "megalania toxin",
+    "megalania gifts": "megalania toxin",
+    "megalodon zahn": "megalodon tooth",
+    "megalodon zahns": "megalodon tooth",
+    "metall": "metal",
+    "metalls": "metal",
+    "metallerz": "metal",
+    "metallerzs": "metal",
+    "metallbarren": "metal ingot",
+    "metallbarrens": "metal ingot",
+    "mistelzweig": "mistletoe",
+    "mistelzweigs": "mistletoe",
+    "mutagel": "mutagel genesis part 2",
+    "mutagels": "mutagel genesis part 2",
+    "mutagen": "mutagen genesis part 2",
+    "mutagens": "mutagen genesis part 2",
+    "natürliche hefe": "natural yeast primitive plus",
+    "natürliche hefes": "natural yeast primitive plus",
+    "neura hülle": "neura husk mobile",
+    "neura hülles": "neura husk mobile",
+    "öl": "oil",
+    "öls": "oil",
+    "rohol": "oil",
+    "rohols": "oil",
+    "rohöl": "oil",
+    "rohöls": "oil",
+    "ölader": "oil vein scorched earth",
+    "öladers": "oil vein scorched earth",
+    "organisches öl": "organic oil primitive plus",
+    "organisches öls": "organic oil primitive plus",
+    "organisches polymer": "organic polymer",
+    "organisches polymers": "organic polymer",
+    "fell": "pelt",
+    "fells": "pelt",
+    "konservierungssalz": "preserving salt scorched earth",
+    "konservierungssalzs": "preserving salt scorched earth",
+    "urkristall": "primal crystal crystal isles",
+    "urkristalls": "primal crystal crystal isles",
+    "treibmittel": "propellant scorched earth",
+    "treibmittels": "propellant scorched earth",
+    "seltener pilz": "rare mushroom",
+    "seltener pilzs": "rare mushroom",
+    "seltene pilze": "rare mushroom",
+    "seltene pilzes": "rare mushroom",
+    "rohsalz": "raw salt scorched earth",
+    "rohsalzs": "raw salt scorched earth",
+    "rotes kristallisiertes harz": "red crystalized sap extinction",
+    "rotes kristallisiertes harzs": "red crystalized sap extinction",
+    "roter edelstein": "red gem aberration",
+    "roter edelsteins": "red gem aberration",
+    "mehlsack": "sack of flour primitive plus",
+    "mehlsacks": "sack of flour primitive plus",
+    "sand": "sand scorched earth",
+    "sands": "sand scorched earth",
+    "harz": "sap",
+    "harzs": "sap",
+    "sarcosuchus haut": "sarcosuchus skin",
+    "sarcosuchus hauts": "sarcosuchus skin",
+    "altmetall": "scrap metal",
+    "altmetalls": "scrap metal",
+    "altmetallbarren": "scrap metal ingot",
+    "altmetallbarrens": "scrap metal ingot",
+    "schalenfragment": "shell fragment genesis part 1",
+    "schalenfragments": "shell fragment genesis part 1",
+    "siliziumperlen": "silica pearls",
+    "siliziumperlens": "silica pearls",
+    "silikat": "silicate extinction",
+    "silikats": "silicate extinction",
+    "seide": "silk scorched earth",
+    "seides": "silk scorched earth",
+    "zündpulver": "sparkpowder",
+    "zündpulvers": "sparkpowder",
+    "spinosaurus segel": "spinosaurus sail",
+    "spinosaurus segels": "spinosaurus sail",
+    "stahlbarren": "steel ingot primitive plus",
+    "stahlbarrens": "steel ingot primitive plus",
+    "stein": "stone",
+    "steins": "stone",
+    "schwefel": "sulfur scorched earth",
+    "schwefels": "sulfur scorched earth",
+    "stroh": "thatch",
+    "strohs": "thatch",
+    "therizino klauen": "therizino claws",
+    "therizino klauens": "therizino claws",
+    "thylacoleo hakenkralle": "thylacoleo hook claw",
+    "thylacoleo hakenkralles": "thylacoleo hook claw",
+    "titanoboa gift": "titanoboa venom",
+    "titanoboa gifts": "titanoboa venom",
+    "tusoteuthis tentakel": "tusoteuthis tentacle",
+    "tusoteuthis tentakels": "tusoteuthis tentacle",
+    "instabiler elementsplitter": "unstable element shard extinction",
+    "instabiler elementsplitters": "unstable element shard extinction",
+    "holz": "wood",
+    "holzs": "wood",
+    "wolle": "wool",
+    "wolles": "wool",
+    "wollnashorn horn": "woolly rhino horn",
+    "wollnashorn horns": "woolly rhino horn",
+    "wyvern kralle": "wyvern talon scorched earth",
+    "wyvern kralles": "wyvern talon scorched earth",
+    "yutyrannus lungen": "yutyrannus lungs",
+    "yutyrannus lungens": "yutyrannus lungs"
+  }
+}
