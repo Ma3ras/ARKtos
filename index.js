@@ -338,20 +338,39 @@ async function main() {
                 const hasTamingData = c.taming && (c.taming.taming_method || c.taming.preferred_food || c.taming.preferred_kibble);
 
                 if (hasTamingData) {
-                    // Answer from DB
+                    // Answer from DB - show only requested info based on query_type
+                    const queryType = route.query_type || "taming";
                     const lines = [`**${c.title}**`];
                     const t = c.taming;
 
-                    if (t.taming_method) {
-                        lines.push(`- Taming Methode: **${t.taming_method}**`);
-                    }
-
-                    if (t.preferred_kibble && t.preferred_kibble.length > 0) {
-                        lines.push(`- Bevorzugtes Kibble: **${t.preferred_kibble.join(", ")}**`);
-                    }
-
-                    if (t.preferred_food && t.preferred_food.length > 0) {
-                        lines.push(`- Bevorzugte Nahrung: **${t.preferred_food.join(", ")}**`);
+                    // Show specific info based on query type
+                    if (queryType === "kibble") {
+                        if (t.preferred_kibble && t.preferred_kibble.length > 0) {
+                            lines.push(`- Bevorzugtes Kibble: **${t.preferred_kibble.join(", ")}**`);
+                        } else {
+                            lines.push("Keine Kibble-Information verfügbar.");
+                        }
+                    } else if (queryType === "food") {
+                        if (t.preferred_food && t.preferred_food.length > 0) {
+                            lines.push(`- Bevorzugte Nahrung: **${t.preferred_food.join(", ")}**`);
+                        }
+                        if (t.other_foods && t.other_foods.length > 0) {
+                            lines.push(`- Alternative Nahrung: **${t.other_foods.join(", ")}**`);
+                        }
+                        if (!t.preferred_food && !t.other_foods) {
+                            lines.push("Keine Nahrungs-Information verfügbar.");
+                        }
+                    } else {
+                        // Default: show all taming info
+                        if (t.taming_method) {
+                            lines.push(`- Taming Methode: **${t.taming_method}**`);
+                        }
+                        if (t.preferred_kibble && t.preferred_kibble.length > 0) {
+                            lines.push(`- Bevorzugtes Kibble: **${t.preferred_kibble.join(", ")}**`);
+                        }
+                        if (t.preferred_food && t.preferred_food.length > 0) {
+                            lines.push(`- Bevorzugte Nahrung: **${t.preferred_food.join(", ")}**`);
+                        }
                     }
 
                     if (c.url) lines.push(`Quelle: ${c.url}`);
