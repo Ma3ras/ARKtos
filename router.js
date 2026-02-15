@@ -36,6 +36,12 @@ WICHTIG:
 - "route" muss einer dieser Werte sein:
   ["resource_location", "resource_info", "creature_flags", "creature_taming", "creature_breeding", "creature_spawn", "general"]
 
+CREATURE vs RESOURCE:
+- CREATURES (Dinosaurier/Tiere): Rex, Raptor, Baryonyx, Trike, Spino, Argentavis, etc.
+  → entity.type = "creature"
+- RESOURCES (Materialien): Metall, Holz, Stein, Fiber, Crystal, etc.
+  → entity.type = "resource"
+
 BEISPIELE:
 User: "Wo gibt es Metall?"
 JSON: {"route": "resource_location", "lang": "de", "entity": {"type": "resource", "name": "metall"}, "confidence": 1.0}
@@ -46,16 +52,22 @@ JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", 
 User: "Ist der Raptor reitbar?"
 JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "raptor"}, "confidence": 1.0}
 
+User: "Was für ein Tame ist ein Baryonyx?"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
+
+User: "Kann man einen Spino züchten?"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "spino"}, "confidence": 1.0}
+
 User: "Erzähl mir was über die Story"
 JSON: {"route": "general", "lang": "de", "entity": {"type": "none", "name": ""}, "confidence": 0.9}
 
 REGELN:
-- "resource_location": WO / Koordinaten / Spots.
-- "resource_info": WAS IST / WOZU / WIE BEKOMME.
-- "creature_flags": zähmbar? reitbar? züchtbar?
-- "creature_taming": zähmen / füttern / kibble / torpor.
-- "creature_breeding": züchten / eier / incubation.
-- "creature_spawn": wo spawnt / biome.
+- "resource_location": WO / Koordinaten / Spots (für RESOURCES).
+- "resource_info": WAS IST / WOZU / WIE BEKOMME (für RESOURCES).
+- "creature_flags": zähmbar? reitbar? züchtbar? was für ein tame? (für CREATURES).
+- "creature_taming": zähmen / füttern / kibble / torpor (für CREATURES).
+- "creature_breeding": züchten / eier / incubation (für CREATURES).
+- "creature_spawn": wo spawnt / biome (für CREATURES).
 - "general": alles andere.
 
 USER:

@@ -185,7 +185,9 @@ async function main() {
 
         try {
             // 1) LLM ROUTER
+            console.log("📥 User question:", frage);
             const route = await routeQuery(frage);
+            console.log("🎯 Router result:", JSON.stringify(route, null, 2));
 
             // 2) ROUTED EXECUTION
 
@@ -211,10 +213,18 @@ async function main() {
 
             // ---------- CREATURE FLAGS ----------
             if (route.route === "creature_flags") {
+                console.log("🔍 CREATURE FLAGS ROUTE");
+                console.log("  route.entity:", route.entity);
+
                 const name = route.entity?.type === "creature" ? route.entity.name : "";
                 const query = name ? name : frage;
 
+                console.log("  extracted name:", name);
+                console.log("  query for lookup:", query);
+
                 const c = findCreatureSmart(query);
+                console.log("  lookup result:", c ? `Found: ${c.title}` : "NOT FOUND");
+
                 if (!c) {
                     await interaction.editReply(`Unklar.\n\nTipp: schreibe den Dino-Namen genauer.`);
                     return;
@@ -222,6 +232,7 @@ async function main() {
 
                 // zeigt standardmäßig alle 3 (zähmbar/züchtbar/reitbar)
                 const out = formatCreatureAnswer(c, { askTame: true, askBreed: true, askRide: true });
+                console.log("  formatted answer:", out);
                 await interaction.editReply(out.slice(0, 1900));
                 return;
             }
