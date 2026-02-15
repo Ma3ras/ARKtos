@@ -25,78 +25,76 @@ Klassifiziere die Frage in GENAU EINE Route.
 
 ANTWORT-FORMAT (JSON):
 {
-  "route": "resource_location",
+  "route": "creature_flags",
   "lang": "de",
-  "entity": { "type": "resource", "name": "..." },
-  "query_type": "...",
+  "entity": { "type": "creature", "name": "rex" },
+  "query_type": "kibble",
   "confidence": 1.0
 }
 
-WICHTIG:
-- Nutze den Key "route", NICHT "response" oder "action".
-- "route" muss einer dieser Werte sein:
-  ["resource_location", "resource_info", "creature_flags", "creature_taming", "creature_breeding", "creature_spawn", "creature_followup", "general"]
+SCHRITT 1: ENTITY EXTRACTION
+Extrahiere IMMER den Creature/Resource-Namen aus der Frage:
+- "was ist ein REX für ein tame" → entity.name = "rex"
+- "welches Kibble benötigt ein GIGA" → entity.name = "giga"
+- "wie zähme ich einen BARYONYX" → entity.name = "baryonyx"
+- "wo gibt es METALL" → entity.name = "metall"
 
-CREATURE vs RESOURCE:
-- CREATURES (Dinosaurier/Tiere): Rex, Raptor, Baryonyx, Trike, Spino, Argentavis, etc.
+SCHRITT 2: TYPE BESTIMMUNG
+Ist es ein Creature oder Resource?
+- CREATURES: Rex, Raptor, Baryonyx, Giga, Giganotosaurus, Spino, Trike, Argentavis, etc.
   → entity.type = "creature"
-- RESOURCES (Materialien): Metall, Holz, Stein, Fiber, Crystal, etc.
+- RESOURCES: Metall, Holz, Stein, Fiber, Crystal, etc.
   → entity.type = "resource"
 
-FOLLOW-UP QUESTIONS:
-Wenn die Frage Pronomen enthält (sie, er, ihn, ihm, der, die, das) und KEIN Creature-Name erwähnt wird:
-→ route = "creature_followup"
-→ query_type = "kibble" | "equipment" | "torpor" | "food" | "taming" | "other"
+SCHRITT 3: ROUTE BESTIMMUNG
+Wähle die passende Route basierend auf der Frage:
+
+CREATURE ROUTES:
+- "creature_flags": was für ein tame? zähmbar? reitbar? züchtbar?
+- "creature_taming": wie zähme ich? welches kibble? welche nahrung?
+- "creature_breeding": züchten? eier? incubation?
+- "creature_spawn": wo spawnt? welches biome?
+- "creature_followup": Pronomen (sie/er/ihn) OHNE Creature-Name
+
+RESOURCE ROUTES:
+- "resource_location": wo gibt es? koordinaten? spots?
+- "resource_info": was ist? wozu? wie bekomme ich?
+
+ANDERE:
+- "general": alles andere
 
 BEISPIELE:
-User: "Wo gibt es Metall?"
+
+User: "was ist ein Rex für ein tame"
+→ Entity: "Rex" (Creature)
+→ Frage: "was für ein tame"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "rex"}, "confidence": 1.0}
+
+User: "welches Kibble benötigt ein Giga"
+→ Entity: "Giga" (Creature)
+→ Frage: "welches Kibble"
+JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+
+User: "wie tame ich einen Baryonyx"
+→ Entity: "Baryonyx" (Creature)
+→ Frage: "wie tame ich"
+JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
+
+User: "wo gibt es Metall"
+→ Entity: "Metall" (Resource)
+→ Frage: "wo gibt es"
 JSON: {"route": "resource_location", "lang": "de", "entity": {"type": "resource", "name": "metall"}, "confidence": 1.0}
 
-User: "Wie zähme ich einen Rex?"
-JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "rex"}, "confidence": 1.0}
-
-User: "Ist der Raptor reitbar?"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "raptor"}, "confidence": 1.0}
-
-User: "Was für ein Tame ist ein Baryonyx?"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
-
-User: "was ist baryonyx für ein tame"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
-
-User: "was ist ein baryonyx für ein tame"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
-
-User: "Kann man einen Spino züchten?"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "spino"}, "confidence": 1.0}
-
 User: "was für kibble bevorzugen sie"
+→ Pronomen: "sie", kein Entity
+→ Follow-up Frage
 JSON: {"route": "creature_followup", "lang": "de", "query_type": "kibble", "confidence": 1.0}
 
-User: "welches saddle braucht er"
-JSON: {"route": "creature_followup", "lang": "de", "query_type": "equipment", "confidence": 1.0}
-
-User: "ist er torpor immun"
-JSON: {"route": "creature_followup", "lang": "de", "query_type": "torpor", "confidence": 1.0}
-
-User: "was kann ich noch füttern"
-JSON: {"route": "creature_followup", "lang": "de", "query_type": "food", "confidence": 1.0}
-
-User: "wie zähme ich ihn"
-JSON: {"route": "creature_followup", "lang": "de", "query_type": "taming", "confidence": 1.0}
-
-User: "Erzähl mir was über die Story"
-JSON: {"route": "general", "lang": "de", "entity": {"type": "none", "name": ""}, "confidence": 0.9}
-
-REGELN:
-- "resource_location": WO / Koordinaten / Spots (für RESOURCES).
-- "resource_info": WAS IST / WOZU / WIE BEKOMME (für RESOURCES).
-- "creature_flags": zähmbar? reitbar? züchtbar? was für ein tame? (für CREATURES).
-- "creature_taming": zähmen / füttern / kibble / torpor (für CREATURES).
-- "creature_breeding": züchten / eier / incubation (für CREATURES).
-- "creature_spawn": wo spawnt / biome (für CREATURES).
-- "creature_followup": Follow-up Frage mit Pronomen, KEIN Creature-Name.
-- "general": alles andere.
+WICHTIG:
+- IMMER entity.name extrahieren wenn ein Creature/Resource erwähnt wird
+- entity.name IMMER lowercase
+- Giga = Creature (Kurzform von Giganotosaurus)
+- Bei Follow-ups: query_type = kibble|equipment|torpor|food|taming
 
 USER:
 ${userText}
