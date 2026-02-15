@@ -205,6 +205,33 @@ function parseInfobox($) {
         });
     }
 
+
+    // PRIORITY 1.5: Extract alternative taming foods (meat, berries) from page content
+    // Look for food mentions in links throughout the page
+    const foods = new Set();
+    $("a").each((_, link) => {
+        const foodName = cleanText($(link).text());
+        const lowerFood = foodName.toLowerCase();
+
+        // Collect meat types
+        if ((lowerFood.includes("meat") || lowerFood.includes("fish") || lowerFood.includes("mutton"))
+            && !lowerFood.includes("spoiled") && foodName.length < 40) {
+            foods.add(foodName);
+        }
+        // Collect berry types
+        if ((lowerFood.includes("berry") || lowerFood.includes("berries"))
+            && !lowerFood.includes("spoiled") && foodName.length < 40) {
+            foods.add(foodName);
+        }
+    });
+
+    // Add to infobox if we found any (limit to most common types)
+    if (foods.size > 0) {
+        const foodList = Array.from(foods).slice(0, 6).join(", ");
+        info.push(`Other Taming Foods: ${foodList}`);
+    }
+
+
     // PRIORITY 2: Try portable infobox (general creature info)
     const aside = $("aside.portable-infobox").first();
     if (aside.length) {
