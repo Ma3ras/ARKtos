@@ -4,6 +4,7 @@
 // 2) Wrapped: { creatures: [...] } or { items: [...] } or { data: [...] } or { results: [...] }
 
 import fs from "node:fs";
+import { CREATURE_ALIASES } from "./creature_aliases.js";
 import path from "node:path";
 
 const DB_FILE = path.join(process.cwd(), "data", "creatures_db.json");
@@ -102,13 +103,16 @@ export function findCreatureSmart(userText) {
     const q = norm(userText);
     if (!q) return null;
 
-    const qTokens = toks(q);
+    // Resolve aliases first
+    const resolvedQuery = CREATURE_ALIASES[q] || q;
+
+    const qTokens = toks(resolvedQuery);
 
     // 1) exact key/title match wins
     for (const c of DB) {
         if (!c) continue;
-        if (c.key && norm(c.key) === q) return c;
-        if (c.title && norm(c.title) === q) return c;
+        if (c.key && norm(c.key) === resolvedQuery) return c;
+        if (c.title && norm(c.title) === resolvedQuery) return c;
     }
 
     // 2) single word: only return if unique token match (avoid false matches)
