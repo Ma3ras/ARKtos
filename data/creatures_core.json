@@ -1,0 +1,68 @@
+{
+    "knockout": [
+        {
+            "name": "Rex",
+            "aliases": [
+                "rex"
+            ]
+        },
+        {
+            "name": "Therizinosaur",
+            "aliases": [
+                "therizinosaur",
+                "theri",
+                "therizinosaurus"
+            ]
+        },
+        {
+            "name": "Giganotosaurus",
+            "aliases": [
+                "giganotosaurus",
+                "giga"
+            ]
+        },
+        {
+            "name": "Carcharodontosaurus",
+            "aliases": [
+                "carcharodontosaurus",
+                "carcha",
+                "carch"
+            ]
+        }
+    ],
+    "non_violent": [
+        {
+            "name": "Araneo",
+            "aliases": [
+                "araneo",
+                "spider"
+            ]
+        },
+        {
+            "name": "Arthropluera",
+            "aliases": [
+                "arthropluera",
+                "arthro",
+                "centipede"
+            ]
+        }
+    ],
+    "titan_knockout": [
+        {
+            "name": "Titanosaur",
+            "aliases": [
+                "titanosaur",
+                "titan"
+            ]
+        }
+    ],
+    "untamable": [
+        {
+            "name": "Broodmother Lysrix",
+            "aliases": [
+                "broodmother",
+                "broodmother lysrix"
+            ]
+        }
+    ]
+}
