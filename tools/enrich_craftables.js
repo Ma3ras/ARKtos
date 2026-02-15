@@ -56,11 +56,18 @@ function parseRecipe(html, title) {
     if (ingredientsCaption.length) {
         const ingredientsDiv = ingredientsCaption.next(".info-arkitex.info-X1-100");
 
-        // Parse each ingredient line
-        ingredientsDiv.find("div[style*='padding-left']").each((i, elem) => {
+        // Find the "Resources breakdown" container
+        const resourcesBreakdown = ingredientsDiv.find("div[style*='display:inline-block']").first();
+
+        // IMPORTANT: Only get DIRECT children with padding-left:5px
+        // This excludes nested sub-ingredients (like Sparkpowder inside Gunpowder)
+        resourcesBreakdown.children("div[style*='padding-left:5px']").each((i, elem) => {
             const $elem = $(elem);
-            const text = $elem.text().trim();
-            const link = $elem.find("a").last(); // Last link is the item name
+
+            // Get text ONLY from the <b> tag to avoid nested content
+            const boldTag = $elem.find("> b").first();
+            const text = boldTag.text().trim();
+            const link = boldTag.find("a").last(); // Last link is the item name
 
             // Match pattern: "10 × Item Name"
             const match = text.match(/^(\d+)\s*[×x]\s*(.+)$/);
