@@ -238,6 +238,40 @@ async function main() {
                 // Store context for follow-up questions
                 setUserContext(interaction.user.id, c.key);
 
+                // Check if taming data exists
+                const hasTamingData = c.taming && (c.taming.taming_method || c.taming.preferred_food);
+
+                if (!hasTamingData && c.url) {
+                    // Fallback: Fetch from wiki if no taming data in DB
+                    console.log("  No taming data in DB, fetching from wiki...");
+                    try {
+                        const wikiData = await fetchFandomContext(c.url);
+                        if (wikiData?.infobox) {
+                            // Extract taming info from wiki
+                            const lines = [`**${c.title}**`];
+
+                            if (wikiData.infobox.taming_method) {
+                                lines.push(`- Taming Methode: **${wikiData.infobox.taming_method}**`);
+                            }
+
+                            if (wikiData.infobox.preferred_food && wikiData.infobox.preferred_food.length > 0) {
+                                lines.push(`- Bevorzugte Nahrung: **${wikiData.infobox.preferred_food.join(", ")}**`);
+                            }
+
+                            if (wikiData.infobox.preferred_kibble && wikiData.infobox.preferred_kibble.length > 0) {
+                                lines.push(`- Bevorzugtes Kibble: **${wikiData.infobox.preferred_kibble.join(", ")}**`);
+                            }
+
+                            lines.push(`Quelle: ${c.url}`);
+
+                            await interaction.editReply(lines.join("\n").slice(0, 1900));
+                            return;
+                        }
+                    } catch (err) {
+                        console.error("  Wiki fetch failed:", err.message);
+                    }
+                }
+
                 // zeigt standardmäßig alle 3 (zähmbar/züchtbar/reitbar)
                 const out = formatCreatureAnswer(c, { askTame: true, askBreed: true, askRide: true });
                 console.log("  formatted answer:", out);
