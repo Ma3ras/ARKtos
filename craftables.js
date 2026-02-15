@@ -70,15 +70,31 @@ export function formatCraftableRecipe(item) {
         }
 
         if (item.recipe.crafting_station) {
-            lines.push(`\n**Herstellung:** ${item.recipe.crafting_station}`);
-        }
+            // Filter out dino saddles from crafting station
+            // Keep only known crafting stations, remove dino names + "Saddle"
+            const knownStations = ["Smithy", "Fabricator", "Tek", "Replicator", "Mortar", "Pestle",
+                "Forge", "Cooking", "Pot", "Grill", "Bench", "Chemistry"];
 
-        if (item.recipe.unlock_level) {
-            lines.push(`**Level:** ${item.recipe.unlock_level}`);
-        }
+            const stationWords = item.recipe.crafting_station.split(/\s+/).filter((word, i, arr) => {
+                if (word === "Saddle") return false;
 
-        if (item.recipe.engram_points) {
-            lines.push(`**Engram Punkte:** ${item.recipe.engram_points} EP`);
+                // Keep if it's a known station word
+                if (knownStations.some(station => word.includes(station))) return true;
+
+                // Skip if next word is "Saddle" (dino name)
+                if (arr[i + 1] === "Saddle") return false;
+
+                // Skip if next 2 words lead to "Saddle" (multi-word dino name)
+                if (arr[i + 2] === "Saddle") return false;
+
+                return true;
+            });
+
+            const station = stationWords.join(" ").trim();
+
+            if (station) {
+                lines.push(`\n**Herstellung:** ${station}`);
+            }
         }
 
         if (item.recipe.crafting_time) {
