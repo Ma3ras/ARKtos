@@ -311,7 +311,61 @@ async function main() {
                 return;
             }
 
-            // ---------- CREATURE -> FAN DOM FETCH ----------
+            // ---------- CREATURE TAMING (DB FIRST) ----------
+            if (route.route === "creature_taming") {
+                console.log("🍖 CREATURE TAMING ROUTE");
+                console.log("  route.entity:", route.entity);
+                console.log("  query_type:", route.query_type);
+
+                const name = route.entity?.type === "creature" ? route.entity.name : "";
+                const query = name ? name : frage;
+
+                console.log("  extracted name:", name);
+                console.log("  query for lookup:", query);
+
+                const c = findCreatureSmart(query);
+                console.log("  lookup result:", c ? `Found: ${c.title}` : "NOT FOUND");
+
+                if (!c) {
+                    await interaction.editReply(`Unklar.\n\nTipp: schreibe den Dino-Namen genauer.`);
+                    return;
+                }
+
+                // Store context for follow-up questions
+                setUserContext(interaction.user.id, c.key);
+
+                // Check if we have taming data in DB
+                const hasTamingData = c.taming && (c.taming.taming_method || c.taming.preferred_food || c.taming.preferred_kibble);
+
+                if (hasTamingData) {
+                    // Answer from DB
+                    const lines = [`**${c.title}**`];
+                    const t = c.taming;
+
+                    if (t.taming_method) {
+                        lines.push(`- Taming Methode: **${t.taming_method}**`);
+                    }
+
+                    if (t.preferred_kibble && t.preferred_kibble.length > 0) {
+                        lines.push(`- Bevorzugtes Kibble: **${t.preferred_kibble.join(", ")}**`);
+                    }
+
+                    if (t.preferred_food && t.preferred_food.length > 0) {
+                        lines.push(`- Bevorzugte Nahrung: **${t.preferred_food.join(", ")}**`);
+                    }
+
+                    if (c.url) lines.push(`Quelle: ${c.url}`);
+
+                    console.log("  answered from DB");
+                    await interaction.editReply(lines.join("\n").slice(0, 1900));
+                    return;
+                }
+
+                // No taming data in DB - fall through to Fandom fetch below
+                console.log("  No taming data in DB, will fetch from wiki...");
+            }
+
+            // ---------- CREATURE -> FANDOM FETCH ----------
             if (
                 route.route === "creature_taming" ||
                 route.route === "creature_breeding" ||
