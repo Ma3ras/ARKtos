@@ -156,28 +156,11 @@ export function formatCreatureAnswer(c, kind = {}) {
     const title = c?.title || "Creature";
     const url = c?.url || "";
 
-    const tame = yn(c?.tameable);
-    const breed = yn(c?.breedable);
-    const ride = yn(c?.rideable);
-
     const lines = [`**${title}**`];
 
-    // if user asked specific, keep only that
-    if (kind?.askTame) lines.push(`- Zähmbar: **${tame}**`);
-    if (kind?.askBreed) lines.push(`- Züchtbar: **${breed}**`);
-    if (kind?.askRide) lines.push(`- Reitbar: **${ride}**`);
-
-    // otherwise show all 3
-    if (!kind?.askTame && !kind?.askBreed && !kind?.askRide) {
-        lines.push(`- Zähmbar: **${tame}**`);
-        lines.push(`- Züchtbar: **${breed}**`);
-        lines.push(`- Reitbar: **${ride}**`);
-    }
-
-    // Add taming data if available
+    // Add ESSENTIAL taming data only
     if (c?.taming) {
         const t = c.taming;
-
 
         if (t.taming_method) {
             lines.push(`- Taming Methode: **${t.taming_method}**`);
