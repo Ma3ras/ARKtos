@@ -134,6 +134,13 @@ export function findResourceSmart(userText) {
         if (DB._exactTitle[w]) return DB._exactTitle[w];
         if (DB._exactName[w]) return DB._exactName[w];
 
+        // 1b) check aliasToKey (for German aliases like "metall" -> "metal")
+        const aliasKey = resolveAliasStrict(w);
+        if (aliasKey) {
+            const aliasRes = (DB.resources || []).find((r) => r.key === aliasKey);
+            if (aliasRes) return aliasRes;
+        }
+
         // 1b) if the user typed a word that is itself an alias (like "talon"),
         // we only match it if it uniquely identifies a SINGLE resource by token presence.
         // This supports: "talon" -> "Crystal Talon ..." (if only one talon entry exists).
