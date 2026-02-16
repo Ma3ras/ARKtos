@@ -228,8 +228,5 @@ export function formatResourceAnswer(res) {
         out += `📍 Keine lokalen Spots gespeichert.\n`;
     }
 
-    if (res.blurb) out += `\n🔎 **Wiki (Kurz):** ${res.blurb}\n`;
-    if (res.url) out += `\nQuelle: ${res.url}`;
-
     return out.trim();
 }
