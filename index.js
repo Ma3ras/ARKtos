@@ -458,10 +458,11 @@ async function main() {
                 console.log("🔨 CRAFTING ROUTE");
                 console.log("  route.entity:", route.entity);
 
-                const name = route.entity?.type === "item" ? route.entity.name : "";
-                const query = name ? name : frage;
+                // Extract item name from route.entity
+                const itemName = route.entity?.name || "";
+                console.log("  extracted name:", itemName);
 
-                console.log("  extracted name:", name);
+                const query = itemName || frage;
                 console.log("  query for lookup:", query);
 
                 const item = findCraftableSmart(query);
