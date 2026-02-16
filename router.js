@@ -152,11 +152,12 @@ SCHRITT 3: ROUTE BESTIMMUNG
 Wähle die passende Route basierend auf der Frage:
 
 CREATURE ROUTES:
-- "creature_flags": was für ein tame? zähmbar? reitbar? züchtbar?
-- "creature_taming": wie zähme ich? welches kibble? welche nahrung?
-- "creature_breeding": züchten? eier? incubation?
-- "creature_spawn": wo spawnt? welches biome?
-- "creature_followup": Pronomen (sie/er/ihn) OHNE Creature-Name
+- "creature_flags": "was für ein tame"? "ist X zähmbar"? "kann man X reiten"? "ist X züchtbar"?
+  WICHTIG: Wenn die Frage "was für ein tame" enthält → IMMER creature_flags!
+- "creature_taming": wie zähme ich? welches kibble? welche nahrung? taming effectiveness?
+- "creature_breeding": züchten? eier? incubation? baby stats?
+- "creature_spawn": wo spawnt? welches biome? koordinaten?
+- "creature_followup": Pronomen (sie/er/ihn) OHNE Creature-Name UND Kontext vorhanden
 
 RESOURCE ROUTES:
 - "resource_location": wo gibt es? koordinaten? spots?
@@ -221,6 +222,12 @@ User: "was für kibble bevorzugen sie"
 → Follow-up Frage
 JSON: {"route": "creature_followup", "lang": "de", "query_type": "kibble", "confidence": 1.0}
 
+WICHTIG:
+- Wenn ein Creature-Name in der Frage vorkommt → entity.name = Creature-Name, entity.type = "creature"
+- "was für ein tame" Fragen → IMMER creature_flags Route
+- Pronomen ohne Creature-Name → creature_followup (nur wenn Kontext vorhanden)
+
+Jetzt analysiere die User-Frage:
 WICHTIG:
 - IMMER entity.name extrahieren wenn ein Creature/Resource erwähnt wird
 - entity.name IMMER lowercase
