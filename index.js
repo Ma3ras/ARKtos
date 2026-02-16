@@ -213,17 +213,17 @@ async function main() {
 
                 const res = findResourceSmart(query);
                 if (!res) {
-                    await interaction.editReply(`Unklar.\n\nTipp: nenne die Ressource genauer.`);
+                    // Resource not found - fall through to general handler
+                    console.log(`  Resource "${query}" not found, falling through to general...`);
+                } else {
+                    const out =
+                        route.route === "resource_location"
+                            ? formatResourceAnswer(res)
+                            : formatResourceInfoOnly(res);
+
+                    await interaction.editReply(out.slice(0, 1900));
                     return;
                 }
-
-                const out =
-                    route.route === "resource_location"
-                        ? formatResourceAnswer(res)
-                        : formatResourceInfoOnly(res);
-
-                await interaction.editReply(out.slice(0, 1900));
-                return;
             }
 
             // ---------- CREATURE FLAGS ----------
