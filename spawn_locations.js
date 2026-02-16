@@ -1,40 +1,48 @@
-// Spawn locations lookup functions
+// Spawn locations lookup// spawn_locations.js
 import fs from "node:fs";
 import path from "node:path";
+import { resolveCreatureAlias } from "./creature_aliases.js";
 
-const SPAWN_DB_PATH = path.join(process.cwd(), "data", "spawn_locations.json");
+const SPAWN_DB_FILE = path.join(process.cwd(), "data", "spawn_locations.json");
 
-let cachedSpawnData = null;
+let SPAWN_DB = null;
 
 /**
  * Load spawn locations database
  */
 function loadSpawnDB() {
-    if (cachedSpawnData) return cachedSpawnData;
+    if (SPAWN_DB) return SPAWN_DB;
 
-    if (!fs.existsSync(SPAWN_DB_PATH)) {
+    if (!fs.existsSync(SPAWN_DB_FILE)) {
         console.error("❌ spawn_locations.json not found");
         return null;
     }
 
-    const raw = fs.readFileSync(SPAWN_DB_PATH, "utf-8");
-    cachedSpawnData = JSON.parse(raw);
-    return cachedSpawnData;
+    const raw = fs.readFileSync(SPAWN_DB_FILE, "utf-8");
+    SPAWN_DB = JSON.parse(raw);
+    return SPAWN_DB;
 }
 
 /**
  * Find spawn locations for a creature
- * @param {string} creatureName - Name of the creature
- * @returns {Array|null} Array of spawn locations or null if not found
+ * @param {string} creatureName - Name of the creature (can be alias like "giga")
+ * @returns {Object|null} Spawn data or null if not found
  */
 export function findSpawnLocations(creatureName) {
     const data = loadSpawnDB();
     if (!data?.spawns) return null;
 
-    const name = (creatureName || "").trim();
+    let name = (creatureName || "").trim();
     if (!name) return null;
 
-    // Try exact match first (case-insensitive)
+    // STEP 1: Resolve alias to full name (e.g., "giga" -> "giganotosaurus")
+    const resolved = resolveCreatureAlias(name);
+    if (resolved) {
+        console.log(`  🔄 Alias resolved: "${name}" → "${resolved}"`);
+        name = resolved;
+    }
+
+    // STEP 2: Try exact match (case-insensitive)
     const exactMatch = Object.keys(data.spawns).find(
         key => key.toLowerCase() === name.toLowerCase()
     );
