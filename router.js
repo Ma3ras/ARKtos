@@ -89,6 +89,11 @@ User: "wo gibt es Metall"
 → Frage: "wo gibt es"
 JSON: {"route": "resource_location", "lang": "de", "entity": {"type": "resource", "name": "metall"}, "confidence": 1.0}
 
+User: "wo finde ich gigas"
+→ Entity: "Gigas" (Creature)
+→ Frage: "wo finde ich"
+JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "gigas"}, "confidence": 1.0}
+
 User: "wie crafte ich ein stone hatchet"
 → Entity: "stone hatchet" (Item)
 → Frage: "wie crafte ich"
