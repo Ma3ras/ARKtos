@@ -1,7 +1,6 @@
 {
-  "updated_at": "2026-02-15T18:59:03.443Z",
+  "updated_at": "2026-02-16T14:08:05.833Z",
   "count": 598,
-  "enriched_count": 598,
   "creatures": [
     {
       "key": "aberrant achatina",
@@ -4314,8 +4313,8 @@
       }
     },
     {
-      "key": "eerie achatina",
-      "title": "Eerie Achatina",
+      "key": "achatina",
+      "title": "Achatina",
       "url": "https://ark.fandom.com/wiki/Eerie_Achatina",
       "tameable": true,
       "breedable": true,
@@ -4338,8 +4337,8 @@
       }
     },
     {
-      "key": "eerie allosaurus",
-      "title": "Eerie Allosaurus",
+      "key": "allosaurus",
+      "title": "Allosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Allosaurus",
       "tameable": true,
       "breedable": null,
@@ -4367,8 +4366,8 @@
       }
     },
     {
-      "key": "eerie alpha carno",
-      "title": "Eerie Alpha Carno",
+      "key": "alpha carno",
+      "title": "Alpha Carno",
       "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Carno",
       "tameable": null,
       "breedable": null,
@@ -4385,8 +4384,8 @@
       }
     },
     {
-      "key": "eerie alpha mosasaur",
-      "title": "Eerie Alpha Mosasaur",
+      "key": "alpha mosasaur",
+      "title": "Alpha Mosasaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Mosasaur",
       "tameable": null,
       "breedable": null,
@@ -4404,8 +4403,8 @@
       }
     },
     {
-      "key": "eerie alpha raptor",
-      "title": "Eerie Alpha Raptor",
+      "key": "alpha raptor",
+      "title": "Alpha Raptor",
       "url": "https://ark.fandom.com/wiki/Eerie_Alpha_Raptor",
       "tameable": null,
       "breedable": null,
@@ -4422,8 +4421,8 @@
       }
     },
     {
-      "key": "eerie alpha t rex",
-      "title": "Eerie Alpha T-Rex",
+      "key": "alpha t rex",
+      "title": "Alpha T-Rex",
       "url": "https://ark.fandom.com/wiki/Eerie_Alpha_T-Rex",
       "tameable": null,
       "breedable": null,
@@ -4441,8 +4440,8 @@
       }
     },
     {
-      "key": "eerie ammonite",
-      "title": "Eerie Ammonite",
+      "key": "ammonite",
+      "title": "Ammonite",
       "url": "https://ark.fandom.com/wiki/Eerie_Ammonite",
       "tameable": false,
       "breedable": false,
@@ -4460,8 +4459,8 @@
       }
     },
     {
-      "key": "eerie angler",
-      "title": "Eerie Angler",
+      "key": "angler",
+      "title": "Angler",
       "url": "https://ark.fandom.com/wiki/Eerie_Angler",
       "tameable": true,
       "breedable": null,
@@ -4489,8 +4488,8 @@
       }
     },
     {
-      "key": "eerie ankylo",
-      "title": "Eerie Ankylo",
+      "key": "ankylo",
+      "title": "Ankylo",
       "url": "https://ark.fandom.com/wiki/Eerie_Ankylo",
       "tameable": true,
       "breedable": true,
@@ -4518,8 +4517,8 @@
       }
     },
     {
-      "key": "eerie araneo",
-      "title": "Eerie Araneo",
+      "key": "araneo",
+      "title": "Araneo",
       "url": "https://ark.fandom.com/wiki/Eerie_Araneo",
       "tameable": null,
       "breedable": null,
@@ -4542,8 +4541,8 @@
       }
     },
     {
-      "key": "eerie archaeopteryx",
-      "title": "Eerie Archaeopteryx",
+      "key": "archaeopteryx",
+      "title": "Archaeopteryx",
       "url": "https://ark.fandom.com/wiki/Eerie_Archaeopteryx",
       "tameable": null,
       "breedable": null,
@@ -4568,8 +4567,8 @@
       }
     },
     {
-      "key": "eerie argentavis",
-      "title": "Eerie Argentavis",
+      "key": "argentavis",
+      "title": "Argentavis",
       "url": "https://ark.fandom.com/wiki/Eerie_Argentavis",
       "tameable": true,
       "breedable": true,
@@ -4597,8 +4596,8 @@
       }
     },
     {
-      "key": "eerie arthropluera",
-      "title": "Eerie Arthropluera",
+      "key": "arthropluera",
+      "title": "Arthropluera",
       "url": "https://ark.fandom.com/wiki/Eerie_Arthropluera",
       "tameable": null,
       "breedable": null,
@@ -4621,8 +4620,8 @@
       }
     },
     {
-      "key": "eerie baryonyx",
-      "title": "Eerie Baryonyx",
+      "key": "baryonyx",
+      "title": "Baryonyx",
       "url": "https://ark.fandom.com/wiki/Eerie_Baryonyx",
       "tameable": true,
       "breedable": true,
@@ -4649,8 +4648,8 @@
       }
     },
     {
-      "key": "eerie basilosaurus",
-      "title": "Eerie Basilosaurus",
+      "key": "basilosaurus",
+      "title": "Basilosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Basilosaurus",
       "tameable": true,
       "breedable": null,
@@ -4678,8 +4677,8 @@
       }
     },
     {
-      "key": "eerie beelzebufo",
-      "title": "Eerie Beelzebufo",
+      "key": "beelzebufo",
+      "title": "Beelzebufo",
       "url": "https://ark.fandom.com/wiki/Eerie_Beelzebufo",
       "tameable": true,
       "breedable": true,
@@ -4707,8 +4706,8 @@
       }
     },
     {
-      "key": "eerie bronto",
-      "title": "Eerie Bronto",
+      "key": "bronto",
+      "title": "Bronto",
       "url": "https://ark.fandom.com/wiki/Eerie_Bronto",
       "tameable": true,
       "breedable": true,
@@ -4736,8 +4735,8 @@
       }
     },
     {
-      "key": "eerie carbonemys",
-      "title": "Eerie Carbonemys",
+      "key": "carbonemys",
+      "title": "Carbonemys",
       "url": "https://ark.fandom.com/wiki/Eerie_Carbonemys",
       "tameable": true,
       "breedable": true,
@@ -4765,8 +4764,8 @@
       }
     },
     {
-      "key": "eerie carno",
-      "title": "Eerie Carno",
+      "key": "carno",
+      "title": "Carno",
       "url": "https://ark.fandom.com/wiki/Eerie_Carno",
       "tameable": true,
       "breedable": true,
@@ -4794,8 +4793,8 @@
       }
     },
     {
-      "key": "eerie castoroides",
-      "title": "Eerie Castoroides",
+      "key": "castoroides",
+      "title": "Castoroides",
       "url": "https://ark.fandom.com/wiki/Eerie_Castoroides",
       "tameable": true,
       "breedable": true,
@@ -4823,8 +4822,8 @@
       }
     },
     {
-      "key": "eerie chalicotherium",
-      "title": "Eerie Chalicotherium",
+      "key": "chalicotherium",
+      "title": "Chalicotherium",
       "url": "https://ark.fandom.com/wiki/Eerie_Chalicotherium",
       "tameable": true,
       "breedable": null,
@@ -4848,8 +4847,8 @@
       }
     },
     {
-      "key": "eerie coelacanth",
-      "title": "Eerie Coelacanth",
+      "key": "coelacanth",
+      "title": "Coelacanth",
       "url": "https://ark.fandom.com/wiki/Eerie_Coelacanth",
       "tameable": null,
       "breedable": null,
@@ -4868,8 +4867,8 @@
       }
     },
     {
-      "key": "eerie compy",
-      "title": "Eerie Compy",
+      "key": "compy",
+      "title": "Compy",
       "url": "https://ark.fandom.com/wiki/Eerie_Compy",
       "tameable": null,
       "breedable": null,
@@ -4892,8 +4891,8 @@
       }
     },
     {
-      "key": "eerie daeodon",
-      "title": "Eerie Daeodon",
+      "key": "daeodon",
+      "title": "Daeodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Daeodon",
       "tameable": true,
       "breedable": true,
@@ -4921,8 +4920,8 @@
       }
     },
     {
-      "key": "eerie dilophosaurus",
-      "title": "Eerie Dilophosaurus",
+      "key": "dilophosaurus",
+      "title": "Dilophosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Dilophosaurus",
       "tameable": true,
       "breedable": true,
@@ -4948,8 +4947,8 @@
       }
     },
     {
-      "key": "eerie dimetrodon",
-      "title": "Eerie Dimetrodon",
+      "key": "dimetrodon",
+      "title": "Dimetrodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Dimetrodon",
       "tameable": true,
       "breedable": true,
@@ -4976,8 +4975,8 @@
       }
     },
     {
-      "key": "eerie dimorphodon",
-      "title": "Eerie Dimorphodon",
+      "key": "dimorphodon",
+      "title": "Dimorphodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Dimorphodon",
       "tameable": true,
       "breedable": true,
@@ -5000,8 +4999,8 @@
       }
     },
     {
-      "key": "eerie diplocaulus",
-      "title": "Eerie Diplocaulus",
+      "key": "diplocaulus",
+      "title": "Diplocaulus",
       "url": "https://ark.fandom.com/wiki/Eerie_Diplocaulus",
       "tameable": true,
       "breedable": true,
@@ -5029,8 +5028,8 @@
       }
     },
     {
-      "key": "eerie diplodocus",
-      "title": "Eerie Diplodocus",
+      "key": "diplodocus",
+      "title": "Diplodocus",
       "url": "https://ark.fandom.com/wiki/Eerie_Diplodocus",
       "tameable": true,
       "breedable": true,
@@ -5058,8 +5057,8 @@
       }
     },
     {
-      "key": "eerie dire bear",
-      "title": "Eerie Dire Bear",
+      "key": "dire bear",
+      "title": "Dire Bear",
       "url": "https://ark.fandom.com/wiki/Eerie_Dire_Bear",
       "tameable": true,
       "breedable": null,
@@ -5086,8 +5085,8 @@
       }
     },
     {
-      "key": "eerie dire wolf",
-      "title": "Eerie Dire Wolf",
+      "key": "dire wolf",
+      "title": "Dire Wolf",
       "url": "https://ark.fandom.com/wiki/Eerie_Dire_Wolf",
       "tameable": true,
       "breedable": true,
@@ -5115,8 +5114,8 @@
       }
     },
     {
-      "key": "eerie diseased leech",
-      "title": "Eerie Diseased Leech",
+      "key": "diseased leech",
+      "title": "Diseased Leech",
       "url": "https://ark.fandom.com/wiki/Eerie_Diseased_Leech",
       "tameable": true,
       "breedable": false,
@@ -5135,8 +5134,8 @@
       }
     },
     {
-      "key": "eerie dodo",
-      "title": "Eerie Dodo",
+      "key": "dodo",
+      "title": "Dodo",
       "url": "https://ark.fandom.com/wiki/Eerie_Dodo",
       "tameable": true,
       "breedable": true,
@@ -5163,8 +5162,8 @@
       }
     },
     {
-      "key": "eerie doedicurus",
-      "title": "Eerie Doedicurus",
+      "key": "doedicurus",
+      "title": "Doedicurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Doedicurus",
       "tameable": true,
       "breedable": true,
@@ -5192,8 +5191,8 @@
       }
     },
     {
-      "key": "eerie dung beetle",
-      "title": "Eerie Dung Beetle",
+      "key": "dung beetle",
+      "title": "Dung Beetle",
       "url": "https://ark.fandom.com/wiki/Eerie_Dung_Beetle",
       "tameable": true,
       "breedable": false,
@@ -5215,8 +5214,8 @@
       }
     },
     {
-      "key": "eerie dunkleosteus",
-      "title": "Eerie Dunkleosteus",
+      "key": "dunkleosteus",
+      "title": "Dunkleosteus",
       "url": "https://ark.fandom.com/wiki/Eerie_Dunkleosteus",
       "tameable": true,
       "breedable": null,
@@ -5244,8 +5243,8 @@
       }
     },
     {
-      "key": "eerie equus",
-      "title": "Eerie Equus",
+      "key": "equus",
+      "title": "Equus",
       "url": "https://ark.fandom.com/wiki/Eerie_Equus",
       "tameable": true,
       "breedable": null,
@@ -5273,8 +5272,8 @@
       }
     },
     {
-      "key": "eerie eurypterid",
-      "title": "Eerie Eurypterid",
+      "key": "eurypterid",
+      "title": "Eurypterid",
       "url": "https://ark.fandom.com/wiki/Eerie_Eurypterid",
       "tameable": false,
       "breedable": false,
@@ -5291,8 +5290,8 @@
       }
     },
     {
-      "key": "eerie gallimimus",
-      "title": "Eerie Gallimimus",
+      "key": "gallimimus",
+      "title": "Gallimimus",
       "url": "https://ark.fandom.com/wiki/Eerie_Gallimimus",
       "tameable": true,
       "breedable": true,
@@ -5320,8 +5319,8 @@
       }
     },
     {
-      "key": "eerie giganotosaurus",
-      "title": "Eerie Giganotosaurus",
+      "key": "giganotosaurus",
+      "title": "Giganotosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Giganotosaurus",
       "tameable": true,
       "breedable": true,
@@ -5349,8 +5348,8 @@
       }
     },
     {
-      "key": "eerie gigantopithecus",
-      "title": "Eerie Gigantopithecus",
+      "key": "gigantopithecus",
+      "title": "Gigantopithecus",
       "url": "https://ark.fandom.com/wiki/Eerie_Gigantopithecus",
       "tameable": true,
       "breedable": null,
@@ -5378,8 +5377,8 @@
       }
     },
     {
-      "key": "eerie griffin",
-      "title": "Eerie Griffin",
+      "key": "griffin",
+      "title": "Griffin",
       "url": "https://ark.fandom.com/wiki/Eerie_Griffin",
       "tameable": true,
       "breedable": true,
@@ -5401,8 +5400,8 @@
       }
     },
     {
-      "key": "eerie ichthyosaurus",
-      "title": "Eerie Ichthyosaurus",
+      "key": "ichthyosaurus",
+      "title": "Ichthyosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Ichthyosaurus",
       "tameable": true,
       "breedable": true,
@@ -5430,8 +5429,8 @@
       }
     },
     {
-      "key": "eerie iguanodon",
-      "title": "Eerie Iguanodon",
+      "key": "iguanodon",
+      "title": "Iguanodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Iguanodon",
       "tameable": true,
       "breedable": true,
@@ -5459,8 +5458,8 @@
       }
     },
     {
-      "key": "eerie jerboa",
-      "title": "Eerie Jerboa",
+      "key": "jerboa",
+      "title": "Jerboa",
       "url": "https://ark.fandom.com/wiki/Eerie_Jerboa",
       "tameable": true,
       "breedable": true,
@@ -5484,8 +5483,8 @@
       }
     },
     {
-      "key": "eerie kairuku",
-      "title": "Eerie Kairuku",
+      "key": "kairuku",
+      "title": "Kairuku",
       "url": "https://ark.fandom.com/wiki/Eerie_Kairuku",
       "tameable": true,
       "breedable": true,
@@ -5512,8 +5511,8 @@
       }
     },
     {
-      "key": "eerie kaprosuchus",
-      "title": "Eerie Kaprosuchus",
+      "key": "kaprosuchus",
+      "title": "Kaprosuchus",
       "url": "https://ark.fandom.com/wiki/Eerie_Kaprosuchus",
       "tameable": true,
       "breedable": true,
@@ -5541,8 +5540,8 @@
       }
     },
     {
-      "key": "eerie leech",
-      "title": "Eerie Leech",
+      "key": "leech",
+      "title": "Leech",
       "url": "https://ark.fandom.com/wiki/Eerie_Leech",
       "tameable": true,
       "breedable": false,
@@ -5561,8 +5560,8 @@
       }
     },
     {
-      "key": "eerie leedsichthys",
-      "title": "Eerie Leedsichthys",
+      "key": "leedsichthys",
+      "title": "Leedsichthys",
       "url": "https://ark.fandom.com/wiki/Eerie_Leedsichthys",
       "tameable": null,
       "breedable": null,
@@ -5580,8 +5579,8 @@
       }
     },
     {
-      "key": "eerie liopleurodon",
-      "title": "Eerie Liopleurodon",
+      "key": "liopleurodon",
+      "title": "Liopleurodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Liopleurodon",
       "tameable": true,
       "breedable": null,
@@ -5604,8 +5603,8 @@
       }
     },
     {
-      "key": "eerie lystrosaurus",
-      "title": "Eerie Lystrosaurus",
+      "key": "lystrosaurus",
+      "title": "Lystrosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Lystrosaurus",
       "tameable": true,
       "breedable": true,
@@ -5627,8 +5626,8 @@
       }
     },
     {
-      "key": "eerie mammoth",
-      "title": "Eerie Mammoth",
+      "key": "mammoth",
+      "title": "Mammoth",
       "url": "https://ark.fandom.com/wiki/Eerie_Mammoth",
       "tameable": true,
       "breedable": true,
@@ -5656,8 +5655,8 @@
       }
     },
     {
-      "key": "eerie manta",
-      "title": "Eerie Manta",
+      "key": "manta",
+      "title": "Manta",
       "url": "https://ark.fandom.com/wiki/Eerie_Manta",
       "tameable": true,
       "breedable": true,
@@ -5680,8 +5679,8 @@
       }
     },
     {
-      "key": "eerie megaloceros",
-      "title": "Eerie Megaloceros",
+      "key": "megaloceros",
+      "title": "Megaloceros",
       "url": "https://ark.fandom.com/wiki/Eerie_Megaloceros",
       "tameable": true,
       "breedable": true,
@@ -5709,8 +5708,8 @@
       }
     },
     {
-      "key": "eerie megalodon",
-      "title": "Eerie Megalodon",
+      "key": "megalodon",
+      "title": "Megalodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Megalodon",
       "tameable": true,
       "breedable": true,
@@ -5738,8 +5737,8 @@
       }
     },
     {
-      "key": "eerie megalosaurus",
-      "title": "Eerie Megalosaurus",
+      "key": "megalosaurus",
+      "title": "Megalosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Megalosaurus",
       "tameable": true,
       "breedable": true,
@@ -5767,8 +5766,8 @@
       }
     },
     {
-      "key": "eerie meganeura",
-      "title": "Eerie Meganeura",
+      "key": "meganeura",
+      "title": "Meganeura",
       "url": "https://ark.fandom.com/wiki/Eerie_Meganeura",
       "tameable": null,
       "breedable": null,
@@ -5785,8 +5784,8 @@
       }
     },
     {
-      "key": "eerie megapiranha",
-      "title": "Eerie Megapiranha",
+      "key": "megapiranha",
+      "title": "Megapiranha",
       "url": "https://ark.fandom.com/wiki/Eerie_Megapiranha",
       "tameable": true,
       "breedable": false,
@@ -5805,8 +5804,8 @@
       }
     },
     {
-      "key": "eerie megatherium",
-      "title": "Eerie Megatherium",
+      "key": "megatherium",
+      "title": "Megatherium",
       "url": "https://ark.fandom.com/wiki/Eerie_Megatherium",
       "tameable": true,
       "breedable": null,
@@ -5833,8 +5832,8 @@
       }
     },
     {
-      "key": "eerie mesopithecus",
-      "title": "Eerie Mesopithecus",
+      "key": "mesopithecus",
+      "title": "Mesopithecus",
       "url": "https://ark.fandom.com/wiki/Eerie_Mesopithecus",
       "tameable": true,
       "breedable": true,
@@ -5861,8 +5860,8 @@
       }
     },
     {
-      "key": "eerie mosasaur",
-      "title": "Eerie Mosasaur",
+      "key": "mosasaur",
+      "title": "Mosasaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Mosasaur",
       "tameable": true,
       "breedable": true,
@@ -5890,8 +5889,8 @@
       }
     },
     {
-      "key": "eerie moschops",
-      "title": "Eerie Moschops",
+      "key": "moschops",
+      "title": "Moschops",
       "url": "https://ark.fandom.com/wiki/Eerie_Moschops",
       "tameable": true,
       "breedable": true,
@@ -5913,8 +5912,8 @@
       }
     },
     {
-      "key": "eerie onyc",
-      "title": "Eerie Onyc",
+      "key": "onyc",
+      "title": "Onyc",
       "url": "https://ark.fandom.com/wiki/Eerie_Onyc",
       "tameable": true,
       "breedable": null,
@@ -5937,8 +5936,8 @@
       }
     },
     {
-      "key": "eerie otter",
-      "title": "Eerie Otter",
+      "key": "otter",
+      "title": "Otter",
       "url": "https://ark.fandom.com/wiki/Eerie_Otter",
       "tameable": true,
       "breedable": true,
@@ -5962,8 +5961,8 @@
       }
     },
     {
-      "key": "eerie oviraptor",
-      "title": "Eerie Oviraptor",
+      "key": "oviraptor",
+      "title": "Oviraptor",
       "url": "https://ark.fandom.com/wiki/Eerie_Oviraptor",
       "tameable": true,
       "breedable": true,
@@ -5984,8 +5983,8 @@
       }
     },
     {
-      "key": "eerie pachy",
-      "title": "Eerie Pachy",
+      "key": "pachy",
+      "title": "Pachy",
       "url": "https://ark.fandom.com/wiki/Eerie_Pachy",
       "tameable": true,
       "breedable": true,
@@ -6013,8 +6012,8 @@
       }
     },
     {
-      "key": "eerie pachyrhinosaurus",
-      "title": "Eerie Pachyrhinosaurus",
+      "key": "pachyrhinosaurus",
+      "title": "Pachyrhinosaurus",
       "url": "https://ark.fandom.com/wiki/Eerie_Pachyrhinosaurus",
       "tameable": true,
       "breedable": true,
@@ -6037,8 +6036,8 @@
       }
     },
     {
-      "key": "eerie parasaur",
-      "title": "Eerie Parasaur",
+      "key": "parasaur",
+      "title": "Parasaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Parasaur",
       "tameable": true,
       "breedable": true,
@@ -6064,8 +6063,8 @@
       }
     },
     {
-      "key": "eerie pegomastax",
-      "title": "Eerie Pegomastax",
+      "key": "pegomastax",
+      "title": "Pegomastax",
       "url": "https://ark.fandom.com/wiki/Eerie_Pegomastax",
       "tameable": true,
       "breedable": true,
@@ -6088,8 +6087,8 @@
       }
     },
     {
-      "key": "eerie pelagornis",
-      "title": "Eerie Pelagornis",
+      "key": "pelagornis",
+      "title": "Pelagornis",
       "url": "https://ark.fandom.com/wiki/Eerie_Pelagornis",
       "tameable": true,
       "breedable": true,
@@ -6116,8 +6115,8 @@
       }
     },
     {
-      "key": "eerie phiomia",
-      "title": "Eerie Phiomia",
+      "key": "phiomia",
+      "title": "Phiomia",
       "url": "https://ark.fandom.com/wiki/Eerie_Phiomia",
       "tameable": true,
       "breedable": true,
@@ -6143,8 +6142,8 @@
       }
     },
     {
-      "key": "eerie plesiosaur",
-      "title": "Eerie Plesiosaur",
+      "key": "plesiosaur",
+      "title": "Plesiosaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Plesiosaur",
       "tameable": true,
       "breedable": true,
@@ -6172,8 +6171,8 @@
       }
     },
     {
-      "key": "eerie procoptodon",
-      "title": "Eerie Procoptodon",
+      "key": "procoptodon",
+      "title": "Procoptodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Procoptodon",
       "tameable": true,
       "breedable": true,
@@ -6196,8 +6195,8 @@
       }
     },
     {
-      "key": "eerie pteranodon",
-      "title": "Eerie Pteranodon",
+      "key": "pteranodon",
+      "title": "Pteranodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Pteranodon",
       "tameable": true,
       "breedable": true,
@@ -6225,8 +6224,8 @@
       }
     },
     {
-      "key": "eerie pulmonoscorpius",
-      "title": "Eerie Pulmonoscorpius",
+      "key": "pulmonoscorpius",
+      "title": "Pulmonoscorpius",
       "url": "https://ark.fandom.com/wiki/Eerie_Pulmonoscorpius",
       "tameable": true,
       "breedable": true,
@@ -6252,8 +6251,8 @@
       }
     },
     {
-      "key": "eerie purlovia",
-      "title": "Eerie Purlovia",
+      "key": "purlovia",
+      "title": "Purlovia",
       "url": "https://ark.fandom.com/wiki/Eerie_Purlovia",
       "tameable": true,
       "breedable": null,
@@ -6280,8 +6279,8 @@
       }
     },
     {
-      "key": "eerie quetzal",
-      "title": "Eerie Quetzal",
+      "key": "quetzal",
+      "title": "Quetzal",
       "url": "https://ark.fandom.com/wiki/Eerie_Quetzal",
       "tameable": true,
       "breedable": true,
@@ -6309,8 +6308,8 @@
       }
     },
     {
-      "key": "eerie raptor",
-      "title": "Eerie Raptor",
+      "key": "raptor",
+      "title": "Raptor",
       "url": "https://ark.fandom.com/wiki/Eerie_Raptor",
       "tameable": true,
       "breedable": true,
@@ -6338,8 +6337,8 @@
       }
     },
     {
-      "key": "eerie rex",
-      "title": "Eerie Rex",
+      "key": "rex",
+      "title": "Rex",
       "url": "https://ark.fandom.com/wiki/Eerie_Rex",
       "tameable": true,
       "breedable": true,
@@ -6367,8 +6366,8 @@
       }
     },
     {
-      "key": "eerie sabertooth",
-      "title": "Eerie Sabertooth",
+      "key": "sabertooth",
+      "title": "Sabertooth",
       "url": "https://ark.fandom.com/wiki/Eerie_Sabertooth",
       "tameable": true,
       "breedable": true,
@@ -6396,8 +6395,8 @@
       }
     },
     {
-      "key": "eerie sabertooth salmon",
-      "title": "Eerie Sabertooth Salmon",
+      "key": "sabertooth salmon",
+      "title": "Sabertooth Salmon",
       "url": "https://ark.fandom.com/wiki/Eerie_Sabertooth_Salmon",
       "tameable": true,
       "breedable": false,
@@ -6416,8 +6415,8 @@
       }
     },
     {
-      "key": "eerie sarco",
-      "title": "Eerie Sarco",
+      "key": "sarco",
+      "title": "Sarco",
       "url": "https://ark.fandom.com/wiki/Eerie_Sarco",
       "tameable": true,
       "breedable": true,
@@ -6444,8 +6443,8 @@
       }
     },
     {
-      "key": "eerie spino",
-      "title": "Eerie Spino",
+      "key": "spino",
+      "title": "Spino",
       "url": "https://ark.fandom.com/wiki/Eerie_Spino",
       "tameable": true,
       "breedable": true,
@@ -6472,8 +6471,8 @@
       }
     },
     {
-      "key": "eerie stego",
-      "title": "Eerie Stego",
+      "key": "stego",
+      "title": "Stego",
       "url": "https://ark.fandom.com/wiki/Eerie_Stego",
       "tameable": true,
       "breedable": true,
@@ -6501,8 +6500,8 @@
       }
     },
     {
-      "key": "eerie tapejara",
-      "title": "Eerie Tapejara",
+      "key": "tapejara",
+      "title": "Tapejara",
       "url": "https://ark.fandom.com/wiki/Eerie_Tapejara",
       "tameable": true,
       "breedable": true,
@@ -6530,8 +6529,8 @@
       }
     },
     {
-      "key": "eerie terror bird",
-      "title": "Eerie Terror Bird",
+      "key": "terror bird",
+      "title": "Terror Bird",
       "url": "https://ark.fandom.com/wiki/Eerie_Terror_Bird",
       "tameable": true,
       "breedable": true,
@@ -6559,8 +6558,8 @@
       }
     },
     {
-      "key": "eerie therizinosaur",
-      "title": "Eerie Therizinosaur",
+      "key": "therizinosaur",
+      "title": "Therizinosaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Therizinosaur",
       "tameable": true,
       "breedable": true,
@@ -6588,8 +6587,8 @@
       }
     },
     {
-      "key": "eerie titanoboa",
-      "title": "Eerie Titanoboa",
+      "key": "titanoboa",
+      "title": "Titanoboa",
       "url": "https://ark.fandom.com/wiki/Eerie_Titanoboa",
       "tameable": true,
       "breedable": null,
@@ -6611,8 +6610,8 @@
       }
     },
     {
-      "key": "eerie titanomyrma drone",
-      "title": "Eerie Titanomyrma Drone",
+      "key": "titanomyrma drone",
+      "title": "Titanomyrma Drone",
       "url": "https://ark.fandom.com/wiki/Eerie_Titanomyrma_Drone",
       "tameable": false,
       "breedable": false,
@@ -6629,8 +6628,8 @@
       }
     },
     {
-      "key": "eerie titanomyrma soldier",
-      "title": "Eerie Titanomyrma Soldier",
+      "key": "titanomyrma soldier",
+      "title": "Titanomyrma Soldier",
       "url": "https://ark.fandom.com/wiki/Eerie_Titanomyrma_Soldier",
       "tameable": false,
       "breedable": false,
@@ -6647,8 +6646,8 @@
       }
     },
     {
-      "key": "eerie titanosaur",
-      "title": "Eerie Titanosaur",
+      "key": "titanosaur",
+      "title": "Titanosaur",
       "url": "https://ark.fandom.com/wiki/Eerie_Titanosaur",
       "tameable": true,
       "breedable": null,
@@ -6668,8 +6667,8 @@
       }
     },
     {
-      "key": "eerie triceratops",
-      "title": "Eerie Triceratops",
+      "key": "triceratops",
+      "title": "Triceratops",
       "url": "https://ark.fandom.com/wiki/Eerie_Triceratops",
       "tameable": true,
       "breedable": true,
@@ -6697,8 +6696,8 @@
       }
     },
     {
-      "key": "eerie trilobite",
-      "title": "Eerie Trilobite",
+      "key": "trilobite",
+      "title": "Trilobite",
       "url": "https://ark.fandom.com/wiki/Eerie_Trilobite",
       "tameable": true,
       "breedable": false,
@@ -6717,8 +6716,8 @@
       }
     },
     {
-      "key": "eerie troodon",
-      "title": "Eerie Troodon",
+      "key": "troodon",
+      "title": "Troodon",
       "url": "https://ark.fandom.com/wiki/Eerie_Troodon",
       "tameable": true,
       "breedable": null,
@@ -6739,8 +6738,8 @@
       }
     },
     {
-      "key": "eerie tusoteuthis",
-      "title": "Eerie Tusoteuthis",
+      "key": "tusoteuthis",
+      "title": "Tusoteuthis",
       "url": "https://ark.fandom.com/wiki/Eerie_Tusoteuthis",
       "tameable": true,
       "breedable": true,
@@ -6763,8 +6762,8 @@
       }
     },
     {
-      "key": "eerie woolly rhinoceros",
-      "title": "Eerie Woolly Rhinoceros",
+      "key": "woolly rhinoceros",
+      "title": "Woolly Rhinoceros",
       "url": "https://ark.fandom.com/wiki/Eerie_Woolly_Rhinoceros",
       "tameable": true,
       "breedable": true,
@@ -6792,8 +6791,8 @@
       }
     },
     {
-      "key": "eerie yeti",
-      "title": "Eerie Yeti",
+      "key": "yeti",
+      "title": "Yeti",
       "url": "https://ark.fandom.com/wiki/Eerie_Yeti",
       "tameable": null,
       "breedable": null,

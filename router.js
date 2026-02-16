@@ -32,60 +32,75 @@ function norm(s) {
 
 function detectEntityType(userText) {
     const lookup = loadEntityLookup();
-    const tokens = norm(userText).split(" ").filter(Boolean);
+    // Pre-processing for common voice-to-text errors (merging words, phonetic typos)
+    let processedText = norm(userText);
+
+    const voiceCorrections = [
+        { find: /gigaspons/g, replace: "giga spawns" },
+        { find: /gigasponen/g, replace: "giga spawnen" },
+        { find: /sporenpunkte/g, replace: "spawn punkte" },
+        { find: /spons/g, replace: "spawns" },
+        { find: /sporen/g, replace: "spawns" },
+        { find: /mainwipe/g, replace: "mindwipe" },
+        { find: /main pipe/g, replace: "mindwipe" },
+        { find: /mind wipe/g, replace: "mindwipe" }
+    ];
+
+    for (const correction of voiceCorrections) {
+        processedText = processedText.replace(correction.find, correction.replace);
+    }
+
+    const tokens = processedText.split(" ").filter(Boolean);
 
     // Check each token and multi-token combinations
     for (let i = 0; i < tokens.length; i++) {
-        // Single token
-        if (lookup[tokens[i]]) {
-            let entityName = tokens[i];
-            const entityType = lookup[tokens[i]];
+        // --- Single token ---
+        const token = tokens[i];
 
-            // Resolve alias to canonical name based on type
-            if (entityType === "creature") {
-                const resolved = resolveCreatureAlias(entityName);
-                if (resolved) entityName = resolved;
-            } else if (entityType === "craftable") {
-                const resolved = resolveCraftableAlias(entityName);
-                if (resolved) entityName = resolved;
-            }
-
-            return { name: entityName, type: entityType };
+        // 1. Check Creature Alias FIRST
+        const aliasResolved = resolveCreatureAlias(token);
+        if (aliasResolved) {
+            // If alias points to a valid creature, return it immediately
+            return { name: aliasResolved, type: "creature" };
         }
 
-        // Two tokens
+        // 2. Check Craftable Alias
+        const craftAlias = resolveCraftableAlias(token);
+        if (craftAlias) {
+            return { name: craftAlias, type: "craftable" };
+        }
+
+        // 3. Fallback: Lookup Table
+        if (lookup[token]) {
+            return { name: token, type: lookup[token] };
+        }
+
+        // --- Two tokens ---
         if (i < tokens.length - 1) {
             const twoToken = tokens[i] + " " + tokens[i + 1];
+
+            // 1. Alias Check
+            const twoAlias = resolveCreatureAlias(twoToken);
+            if (twoAlias) return { name: twoAlias, type: "creature" };
+
+            // 2. Lookup Check
             if (lookup[twoToken]) {
-                let entityName = twoToken;
-                const entityType = lookup[twoToken];
-
-                if (entityType === "creature") {
-                    const resolved = resolveAlias(entityName);
-                    if (resolved) {
-                        entityName = resolved;
-                    }
-                }
-
-                return { name: entityName, type: entityType };
+                const type = lookup[twoToken];
+                // Resolve alias if found in lookup but might be an alias key there too (unlikely if unique)
+                const resolved = (type === "creature") ? resolveCreatureAlias(twoToken) : null;
+                return { name: resolved || twoToken, type };
             }
         }
 
-        // Three tokens
+        // --- Three tokens ---
         if (i < tokens.length - 2) {
             const threeToken = tokens[i] + " " + tokens[i + 1] + " " + tokens[i + 2];
+
+            const threeAlias = resolveCreatureAlias(threeToken);
+            if (threeAlias) return { name: threeAlias, type: "creature" };
+
             if (lookup[threeToken]) {
-                let entityName = threeToken;
-                const entityType = lookup[threeToken];
-
-                if (entityType === "creature") {
-                    const resolved = resolveAlias(entityName);
-                    if (resolved) {
-                        entityName = resolved;
-                    }
-                }
-
-                return { name: entityName, type: entityType };
+                return { name: threeToken, type: lookup[threeToken] };
             }
         }
     }
@@ -118,6 +133,25 @@ export async function routeQuery(userText) {
     if (detected) {
         console.log(`  🔍 Pre-detected: "${detected.name}" → ${detected.type}`);
         entityHint = `\n\nIMPORTANT: "${detected.name}" is a known ${detected.type.toUpperCase()}. Use entity.type = "${detected.type}" and entity.name = "${detected.name}".`;
+    }
+
+    // Normalize text for LLM prompt
+    let processedText = norm(userText);
+    const voiceCorrections = [
+        { find: /gigaspons/g, replace: "giga spawns" },
+        { find: /gigasponen/g, replace: "giga spawnen" },
+        { find: /sporenpunkte/g, replace: "spawn punkte" },
+        { find: /spons/g, replace: "spawns" },
+        { find: /sporen/g, replace: "spawns" },
+        { find: /mainwipe/g, replace: "mindwipe" },
+        { find: /main pipe/g, replace: "mindwipe" },
+        { find: /mind wipe/g, replace: "mindwipe" },
+        { find: /giger/g, replace: "giga" },
+        { find: /geiger/g, replace: "giga" },
+        { find: /gigaf/g, replace: "giga" }
+    ];
+    for (const correction of voiceCorrections) {
+        processedText = processedText.replace(correction.find, correction.replace);
     }
 
     // HARTE JSON-SCHEMA: Keine Prosa
@@ -153,10 +187,10 @@ Wähle die passende Route basierend auf der Frage:
 
 CREATURE ROUTES:
 - "creature_flags": "was für ein tame"? "ist X zähmbar"? "kann man X reiten"? "ist X züchtbar"?
-  WICHTIG: Wenn die Frage "was für ein tame" enthält → IMMER creature_flags!
-- "creature_taming": wie zähme ich? welches kibble? welche nahrung? taming effectiveness?
+  WICHTIG: "was für ein tame" → creature_flags. ABER: "wie täme ich" → creature_taming!
+- "creature_taming": wie täme ich? wie zähme ich? welches kibble? welche nahrung? taming effectiveness? was frisst er?
 - "creature_breeding": züchten? eier? incubation? baby stats?
-- "creature_spawn": wo spawnt? welches biome? koordinaten?
+- "creature_spawn": wo spawnt? welches biome? koordinaten? spons? sporen? sporenpunkte? (phonetisch ähnlich zu spawn)
 - "creature_followup": Pronomen (sie/er/ihn) OHNE Creature-Name UND Kontext vorhanden
 
 RESOURCE ROUTES:
@@ -192,6 +226,11 @@ User: "wie tame ich einen Baryonyx"
 → Frage: "wie tame ich"
 JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
 
+User: "wie täme ich einen Giga"
+→ Entity: "Giga" (Creature)
+→ Frage: "wie täme ich"
+JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+
 User: "wo gibt es Metall"
 → Entity: "Metall" (Resource)
 → Frage: "wo gibt es"
@@ -201,6 +240,21 @@ User: "wo finde ich gigas"
 → Entity: "Gigas" (Creature)
 → Frage: "wo finde ich"
 JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "gigas"}, "confidence": 1.0}
+
+User: "wo finde ich gigas"
+→ Entity: "Gigas" (Creature)
+→ Frage: "wo finde ich"
+JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "gigas"}, "confidence": 1.0}
+
+User: "was sind alle giga spons"
+→ Entity: "Giga" (Creature)
+→ Frage: "spons" (phonetisch für spawns)
+JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+
+User: "ich möchte alle sporenpunkte"
+→ Entity: Keine (Follow-up möglich)
+→ Frage: "sporenpunkte" (phonetisch für spawnpunkte)
+JSON: {"route": "creature_spawn", "lang": "de", "confidence": 0.9}
 
 User: "wie crafte ich ein stone hatchet"
 → Entity: "stone hatchet" (Item)
@@ -226,16 +280,14 @@ WICHTIG:
 - Wenn ein Creature-Name in der Frage vorkommt → entity.name = Creature-Name, entity.type = "creature"
 - "was für ein tame" Fragen → IMMER creature_flags Route
 - Pronomen ohne Creature-Name → creature_followup (nur wenn Kontext vorhanden)
-
-Jetzt analysiere die User-Frage:
-WICHTIG:
-- IMMER entity.name extrahieren wenn ein Creature/Resource erwähnt wird
 - entity.name IMMER lowercase
 - Giga = Creature (Kurzform von Giganotosaurus)
 - Bei Follow-ups: query_type = kibble|equipment|torpor|food|taming
 
+Jetzt analysiere die User-Frage:
+
 USER:
-${userText}
+${processedText}
 ${entityHint}
 `.trim();
 
@@ -270,7 +322,35 @@ ${entityHint}
     }
 
     // Normalize keys (LLM sometimes uses 'response' or 'action' instead of 'route')
-    const routeVal = obj?.route || obj?.response || obj?.action || "general";
+    let routeVal = obj?.route || obj?.response || obj?.action || "general";
+
+    // Handle nested response object (common with some models)
+    if (typeof routeVal === 'object' && routeVal !== null) {
+        // If routeVal is an object, it might contain the actual data
+        const nested = routeVal;
+        obj = { ...obj, ...nested }; // Merge nested into main obj
+        routeVal = nested.route || nested.response || nested.action || "general";
+    }
+
+    // Fix common route hallucinations
+    if (obj?.query_type === "taming" && (routeVal === "creature_flags" || routeVal === "general")) {
+        routeVal = "creature_taming";
+    }
+
+    // REGEX FALLBACK: Taming (Strong Signal)
+    const tamingRegex = /(wie|womit)\s+(tame|täme|taeme|zähme|zähm|fütter|fuetter)|(taming|tamen|zähmen|kibble|nahrung|futter|frisst)/i;
+    if (tamingRegex.test(userText) && (detected?.type === "creature" || obj?.entity?.type === "creature")) {
+        // Force taming route if keywords are present and we have a creature
+        routeVal = "creature_taming";
+    }
+
+    if (routeVal === "spawn_location") {
+        if (detected?.type === "creature" || obj?.entity?.type === "creature") {
+            routeVal = "creature_spawn";
+        } else if (detected?.type === "resource" || obj?.entity?.type === "resource") {
+            routeVal = "resource_location";
+        }
+    }
 
     if (!obj || !routeVal) {
         return {
@@ -297,6 +377,13 @@ ${entityHint}
         query_type: obj.query_type || undefined,
         confidence: Math.max(0, Math.min(1, Number(obj.confidence ?? 0))),
     };
+
+    // FALLBACK: If LLM failed to extract entity but we pre-detected one, use it!
+    if (detected && (out.entity.type === "none" || !out.entity.name)) {
+        console.log(`  🔄 Fallback to pre-detected entity: "${detected.name}" (${detected.type})`);
+        out.entity.type = detected.type;
+        out.entity.name = detected.name;
+    }
 
     return out;
 }

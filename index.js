@@ -39,12 +39,20 @@ import {
     REST,
     Routes,
     SlashCommandBuilder,
+    ChannelType,
 } from "discord.js";
 import dotenv from "dotenv";
 import fs from "node:fs";
 import path from "node:path";
 
-/* ---------------- COMMAND ---------------- */
+// Voice imports
+import { joinChannel, leaveChannel, isConnected } from "./voice_manager.js";
+import { handleUserSpeaking } from "./voice_handler.js";
+import { isWhisperAvailable } from "./stt_service.js";
+import { isPiperAvailable } from "./tts_service.js";
+
+/* ---------------- COMMANDS ---------------- */
+
 
 const ASK_COMMAND = new SlashCommandBuilder()
     .setName("ask")
@@ -52,6 +60,18 @@ const ASK_COMMAND = new SlashCommandBuilder()
     .addStringOption(o =>
         o.setName("frage").setDescription("Deine ARK Frage").setRequired(true)
     );
+
+const JOIN_COMMAND = new SlashCommandBuilder()
+    .setName("join")
+    .setDescription("Bot tritt deinem Voice-Channel bei.");
+
+const LEAVE_COMMAND = new SlashCommandBuilder()
+    .setName("leave")
+    .setDescription("Bot verlässt den Voice-Channel.");
+
+const SPEAK_COMMAND = new SlashCommandBuilder()
+    .setName("speak")
+    .setDescription("Sprich eine Frage (Bot hört 10 Sekunden zu).");
 
 /* ---------------- SMALL HELPERS ---------------- */
 
@@ -174,10 +194,10 @@ async function deployCommands() {
             process.env.DISCORD_CLIENT_ID,
             process.env.GUILD_ID
         ),
-        { body: [ASK_COMMAND.toJSON()] }
+        { body: [ASK_COMMAND.toJSON(), JOIN_COMMAND.toJSON(), LEAVE_COMMAND.toJSON(), SPEAK_COMMAND.toJSON()] }
     );
 
-    console.log("✅ Slash command /ask deployed.");
+    console.log("✅ Slash commands deployed: /ask, /join, /leave, /speak");
 }
 
 /* ---------------- MAIN ---------------- */
@@ -190,7 +210,12 @@ async function main() {
 
     await deployCommands();
 
-    const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+    const client = new Client({
+        intents: [
+            GatewayIntentBits.Guilds,
+            GatewayIntentBits.GuildVoiceStates,  // For voice channel events
+        ]
+    });
 
     client.once("clientReady", () => {
         console.log(`🤖 Logged in as ${client.user.tag}`);
@@ -198,6 +223,105 @@ async function main() {
 
     client.on("interactionCreate", async (interaction) => {
         if (!interaction.isChatInputCommand()) return;
+
+        // Handle /join command
+        if (interaction.commandName === "join") {
+            await interaction.deferReply();
+
+            try {
+                const member = interaction.member;
+                const voiceChannel = member?.voice?.channel;
+
+                if (!voiceChannel) {
+                    await interaction.editReply("❌ Du musst in einem Voice-Channel sein!");
+                    return;
+                }
+
+                if (voiceChannel.type !== ChannelType.GuildVoice) {
+                    await interaction.editReply("❌ Das ist kein Voice-Channel!");
+                    return;
+                }
+
+                // Check if voice tools are available
+                if (!isWhisperAvailable()) {
+                    await interaction.editReply("❌ Whisper.cpp ist nicht verfügbar! Bitte setup durchführen.");
+                    return;
+                }
+
+                if (!isPiperAvailable()) {
+                    await interaction.editReply("❌ Piper TTS ist nicht verfügbar! Bitte setup durchführen.");
+                    return;
+                }
+
+                // Join the channel
+                const connection = joinChannel(voiceChannel);
+
+                await interaction.editReply(`✅ Ich bin jetzt in **${voiceChannel.name}**! Sprich einfach und ich höre zu.`);
+
+            } catch (error) {
+                console.error("❌ Error joining voice:", error);
+                await interaction.editReply("❌ Fehler beim Beitreten des Voice-Channels.");
+            }
+            return;
+        }
+
+        // Handle /leave command
+        if (interaction.commandName === "leave") {
+            await interaction.deferReply();
+
+            try {
+                const guildId = interaction.guildId;
+
+                if (!isConnected(guildId)) {
+                    await interaction.editReply("❌ Ich bin nicht in einem Voice-Channel!");
+                    return;
+                }
+
+                leaveChannel(guildId);
+                await interaction.editReply("👋 Ich habe den Voice-Channel verlassen.");
+
+            } catch (error) {
+                console.error("❌ Error leaving voice:", error);
+                await interaction.editReply("❌ Fehler beim Verlassen des Voice-Channels.");
+            }
+            return;
+        }
+
+        // Handle /speak command
+        if (interaction.commandName === "speak") {
+            await interaction.deferReply();
+
+            try {
+                const guildId = interaction.guildId;
+                const member = interaction.member;
+                const userId = member.user.id;
+                const username = member.user.username;
+
+                // Check if bot is in voice
+                if (!isConnected(guildId)) {
+                    await interaction.editReply("❌ Ich bin nicht in einem Voice-Channel! Nutze `/join` zuerst.");
+                    return;
+                }
+
+                // Check if user is in voice
+                if (!member.voice?.channel) {
+                    await interaction.editReply("❌ Du musst im gleichen Voice-Channel sein!");
+                    return;
+                }
+
+                await interaction.editReply("🎤 **Ich höre zu!** Sprich jetzt deine Frage (10 Sekunden)...");
+
+                // Trigger voice handler
+                handleUserSpeaking(userId, guildId, username);
+
+            } catch (error) {
+                console.error("❌ Error in /speak command:", error);
+                await interaction.editReply("❌ Fehler beim Verarbeiten deiner Anfrage.");
+            }
+            return;
+        }
+
+        // Handle /ask command
         if (interaction.commandName !== "ask") return;
 
         const frage = interaction.options.getString("frage", true);
@@ -533,10 +657,38 @@ async function main() {
         }
     });
 
+    // Voice State Update - Listen for users speaking
+    client.on("voiceStateUpdate", async (oldState, newState) => {
+        const userId = newState.id;
+        const guildId = newState.guild.id;
+        const member = newState.member;
+
+        // Check if bot is connected to voice in this guild
+        if (!isConnected(guildId)) {
+            return;
+        }
+
+        // Check if user started speaking (joined channel or unmuted)
+        const wasInChannel = oldState.channelId !== null;
+        const isInChannel = newState.channelId !== null;
+        const wasMuted = oldState.selfMute || oldState.serverMute;
+        const isMuted = newState.selfMute || newState.serverMute;
+
+        // User joined channel or unmuted
+        if ((!wasInChannel && isInChannel) || (wasMuted && !isMuted)) {
+            // Don't process bot's own state changes
+            if (member.user.bot) return;
+
+            console.log(`🎤 User ${member.user.username} is ready to speak in voice`);
+
+            // Start listening for this user
+            // The actual recording will be triggered by the voice receiver
+            // when the user actually starts speaking
+            handleUserSpeaking(userId, guildId, member.user.username);
+        }
+    });
+
     await client.login(DISCORD_TOKEN);
 }
 
-main().catch((e) => {
-    console.error(e);
-    process.exit(1);
-});
+main().catch(console.error);

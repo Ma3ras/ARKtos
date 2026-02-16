@@ -13,10 +13,13 @@ export const CREATURE_ALIASES = {
     // Tyrannosaurus Rex
     "t-rex": "rex",
     "trex": "rex",
+    "tyrannosaurus": "rex",
+    "tyrannosaurus rex": "rex",
 
     // Argentavis
     "argy": "argentavis",
     "argent": "argentavis",
+    "argentavis": "argentavis", // Self-map to be safe
 
     // Pteranodon
     "ptera": "pteranodon",
@@ -44,8 +47,10 @@ export const CREATURE_ALIASES = {
     "thylo": "thylacoleo",
 
     // Therizinosaurus
-    "therizino": "therizinosaurus",
-    "theri": "therizinosaurus",
+    "therizino": "therizinosaur",
+    "theri": "therizinosaur",
+    "thery": "therizinosaur", // Voice typo
+    "therizinosaurus": "therizinosaur", // DB has "Therizinosaur"
 
     // Ankylosaurus
     "anky": "ankylosaurus",

@@ -2,3 +2,14 @@ node_modules/
 .env
 
 data/cache/
+temp_*.wav
+test_*.wav
+ffmpeg/
+piper/
+whisper.cpp/
+reproduce_*.js
+cleanup_*.js
+verify_*.js
+test_*.js
+download_*.bat
+move_*.bat

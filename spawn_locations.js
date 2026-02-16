@@ -46,23 +46,37 @@ export function findSpawnLocations(creatureName) {
     const exactMatch = Object.keys(data.spawns).find(
         key => key.toLowerCase() === name.toLowerCase()
     );
-    if (exactMatch) {
-        return {
-            creature: exactMatch,
-            map: data.map,
-            locations: data.spawns[exactMatch]
-        };
+    // Helper to get biome name from coordinates (simple approximation)
+    function getBiome(lat, lon) {
+        if (lat < 20 && lon < 20) return "Nord-West Küste";
+        if (lat < 20 && lon > 80) return "Nord-Ost Insel";
+        if (lat > 80 && lon < 20) return "Süd-West Inseln";
+        if (lat > 80 && lon > 80) return "Herbivore Island";
+        if (lat < 30) return "Schneegebiet";
+        if (lat > 30 && lat < 60 && lon > 30 && lon < 60) return "Redwoods / Vulkan";
+        if (lon < 20 || lon > 80 || lat > 80) return "Küste";
+        return "Inland";
     }
 
     // Try partial match
     const partialMatch = Object.keys(data.spawns).find(
         key => key.toLowerCase().includes(name.toLowerCase())
     );
-    if (partialMatch) {
+
+    const match = exactMatch || partialMatch;
+
+    if (match) {
+        // Enriched location data with biome names
+        const locations = data.spawns[match].map(loc => ({
+            lat: loc.lat,
+            lon: loc.lon,
+            biome: getBiome(loc.lat, loc.lon) // Add biome name
+        }));
+
         return {
-            creature: partialMatch,
+            creature: match,
             map: data.map,
-            locations: data.spawns[partialMatch]
+            locations: locations
         };
     }
 
