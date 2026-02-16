@@ -1,12 +1,13 @@
 // Voice Handler
 // Orchestrates voice interactions: recording → transcription → processing → synthesis → playback
 
-import { recordUser } from './audio_processor.js';
+import { recordUser, recordShortClip } from './audio_processor.js';
 import { transcribe } from './stt_service.js';
 import { speak } from './tts_service.js';
 import { optimizeForTTS } from './tts_corrections.js';
 import { routeQuery } from './router.js';
 import { getConnection } from './voice_manager.js';
+import { containsWakeWord, removeWakeWord, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION } from './wake_word_config.js';
 
 // Import all handlers (same as text bot)
 import { findCreatureSmart } from './creatures.js';
@@ -18,7 +19,7 @@ import { findBestMultiResourceLocation, formatMultiResourceLocation } from './mu
 const userSpeakingState = new Map(); // userId -> boolean
 
 /**
- * Handle user speaking in voice channel
+ * Handle user speaking in voice channel (STAGE 1: Wake Word Detection)
  * @param {string} userId - User ID
  * @param {string} guildId - Guild ID
  * @param {string} username - Username for logging
@@ -26,7 +27,7 @@ const userSpeakingState = new Map(); // userId -> boolean
 export async function handleUserSpeaking(userId, guildId, username) {
     // Prevent multiple simultaneous recordings for same user
     if (userSpeakingState.get(userId)) {
-        console.log(`⚠️ User ${username} is already being recorded, skipping`);
+        console.log(`⚠️ User ${username} is already being processed, skipping`);
         return;
     }
 
@@ -39,30 +40,75 @@ export async function handleUserSpeaking(userId, guildId, username) {
             return;
         }
 
-        console.log(`👤 ${username} started speaking`);
+        console.log(`👂 ${username} started speaking - listening for wake word...`);
 
-        // Record audio
-        const audioBuffer = await recordUser(userId, connection);
+        // STAGE 1: Record short clip for wake word detection
+        const clipBuffer = await recordShortClip(userId, connection, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION);
 
-        if (!audioBuffer) {
-            console.log(`⚠️ No audio recorded for ${username}`);
+        if (!clipBuffer) {
+            console.log(`⚠️ No audio in wake word clip for ${username}`);
             return;
         }
 
-        // Transcribe speech to text
-        console.log(`🎤 Transcribing speech from ${username}...`);
-        const transcription = await transcribe(audioBuffer);
+        // Quick transcription to check for wake word
+        console.log(`🔍 Checking for wake word...`);
+        const clipTranscription = await transcribe(clipBuffer);
 
-        if (!transcription || transcription.trim().length === 0) {
-            console.log(`⚠️ Empty transcription for ${username}`);
-            await speak(connection, "Entschuldigung, ich habe nichts verstanden.");
+        if (!clipTranscription || clipTranscription.trim().length === 0) {
+            console.log(`⚠️ Empty wake word transcription for ${username}`);
             return;
         }
 
-        console.log(`📝 Transcription: "${transcription}"`);
+        console.log(`📝 Wake word check: "${clipTranscription}"`);
+
+        // Check if wake word is present
+        if (!containsWakeWord(clipTranscription)) {
+            console.log(`❌ No wake word detected, ignoring speech from ${username}`);
+            return;
+        }
+
+        console.log(`✅ Wake word detected! Processing query from ${username}`);
+
+        // STAGE 2: Process full query
+        // Check if query was in the same clip
+        const queryAfterWakeWord = removeWakeWord(clipTranscription).trim();
+
+        let fullQuery = queryAfterWakeWord;
+
+        // If no query after wake word, record additional audio
+        if (!fullQuery || fullQuery.length < 3) {
+            console.log(`🎤 Recording full query from ${username}...`);
+
+            // Optional: Play acknowledgment beep here
+            // await speak(connection, "Ja?");
+
+            const queryBuffer = await recordUser(userId, connection, 10000); // 10s max
+
+            if (!queryBuffer) {
+                console.log(`⚠️ No query recorded after wake word`);
+                await speak(connection, "Ich habe nichts gehört.");
+                return;
+            }
+
+            const queryTranscription = await transcribe(queryBuffer);
+
+            if (!queryTranscription || queryTranscription.trim().length === 0) {
+                console.log(`⚠️ Empty query transcription`);
+                await speak(connection, "Entschuldigung, ich habe nichts verstanden.");
+                return;
+            }
+
+            fullQuery = queryTranscription;
+        }
+
+        console.log(`📝 Full query: "${fullQuery}"`);
+
+        // Remove wake word from query before processing
+        const cleanedQuery = removeWakeWord(fullQuery);
+        console.log(`🧹 Cleaned query: "${cleanedQuery}"`);
 
         // Process the question (same as text bot)
-        const response = await processQuestion(transcription);
+        const response = await processQuestion(cleanedQuery);
 
         console.log(`💬 Response: "${response.substring(0, 100)}..."`);
 

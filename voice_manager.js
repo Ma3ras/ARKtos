@@ -79,7 +79,9 @@ export function joinChannel(channel) {
         guildId: guildId,
         adapterCreator: channel.guild.voiceAdapterCreator,
         selfDeaf: false,
-        selfMute: false
+        selfMute: false,
+        // Fix for Discord voice encryption changes
+        encryptionMode: 'xsalsa20_poly1305_lite'
     });
 
     // Set up audio receiver using helper function

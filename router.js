@@ -123,20 +123,10 @@ function clampStr(s, max = 80) {
     return s;
 }
 
-export async function routeQuery(userText) {
-    const model = process.env.OLLAMA_ROUTER_MODEL || process.env.OLLAMA_MODEL || "mistral:7b-instruct";
+export async function routeQuery(rawUserText) {
+    // 1. Normalize & Correct Text FIRST
+    let processedText = norm(rawUserText);
 
-    // PRE-CHECK: Detect entity type from lookup
-    const detected = detectEntityType(userText);
-    let entityHint = "";
-
-    if (detected) {
-        console.log(`  🔍 Pre-detected: "${detected.name}" → ${detected.type}`);
-        entityHint = `\n\nIMPORTANT: "${detected.name}" is a known ${detected.type.toUpperCase()}. Use entity.type = "${detected.type}" and entity.name = "${detected.name}".`;
-    }
-
-    // Normalize text for LLM prompt
-    let processedText = norm(userText);
     const voiceCorrections = [
         { find: /gigaspons/g, replace: "giga spawns" },
         { find: /gigasponen/g, replace: "giga spawnen" },
@@ -148,10 +138,44 @@ export async function routeQuery(userText) {
         { find: /mind wipe/g, replace: "mindwipe" },
         { find: /giger/g, replace: "giga" },
         { find: /geiger/g, replace: "giga" },
-        { find: /gigaf/g, replace: "giga" }
+        { find: /gigaf/g, replace: "giga" },
+        { find: /\bmac\b/gi, replace: "mek" }, // Fix "Mac" -> "Mek"
+        { find: /\bmeck\b/gi, replace: "mek" }
     ];
+
     for (const correction of voiceCorrections) {
         processedText = processedText.replace(correction.find, correction.replace);
+    }
+
+    const userText = processedText; // Use corrected text for everything else
+
+    // 2. PRE-CHECK: Detect entity type from lookup (now using corrected text)
+    let detected = detectEntityType(userText);
+
+    // INTELLIGENT OVERRIDE: Check for "für [Item]" or "for [Item]" pattern
+    // This fixes "wie viel Metall brauche ich für einen Mek" -> prioritizing "Mek" over "Metall"
+    // Also handling encoding glitches: "f r", "fr", "fur"
+    // Added more robust regex for encoding artifacts
+    const forRegex = /(?:für|fuer|for|f.r|f\s+r|f\W+r)\s+(?:einen|eine|ein|a|an|the)?\s*([a-z0-9\s]+)/i;
+    const forMatch = userText.match(forRegex) || rawUserText.match(forRegex); // Try both corrected and raw
+
+    if (forMatch && forMatch[1]) {
+        // Check if the part after "for" is a known entity
+        const potentialEntity = forMatch[1].trim();
+        // Try to detect just this part
+        const specificDetect = detectEntityType(potentialEntity);
+        if (specificDetect) {
+            console.log(`  🎯 Context Override: Found "${specificDetect.name}" after 'for', prioritizing over "${detected?.name}"`);
+            detected = specificDetect;
+        }
+    }
+
+    let entityHint = "";
+    // let entity = null; // Unused
+
+    if (detected) {
+        console.log(`  🔍 Pre-detected: "${detected.name}" → ${detected.type}`);
+        entityHint = `\n\nIMPORTANT: "${detected.name}" is a known ${detected.type.toUpperCase()}. Use entity.type = "${detected.type}" and entity.name = "${detected.name}".`;
     }
 
     // HARTE JSON-SCHEMA: Keine Prosa
@@ -187,7 +211,7 @@ Wähle die passende Route basierend auf der Frage:
 
 CREATURE ROUTES:
 - "creature_flags": "was für ein tame"? "ist X zähmbar"? "kann man X reiten"? "ist X züchtbar"?
-  WICHTIG: "was für ein tame" → creature_flags. ABER: "wie täme ich" → creature_taming!
+    WICHTIG: "was für ein tame" → creature_flags. ABER: "wie täme ich" → creature_taming!
 - "creature_taming": wie täme ich? wie zähme ich? welches kibble? welche nahrung? taming effectiveness? was frisst er?
 - "creature_breeding": züchten? eier? incubation? baby stats?
 - "creature_spawn": wo spawnt? welches biome? koordinaten? spons? sporen? sporenpunkte? (phonetisch ähnlich zu spawn)
@@ -209,72 +233,82 @@ BEISPIELE:
 User: "was ist ein Rex für ein tame"
 → Entity: "Rex" (Creature)
 → Frage: "was für ein tame"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "rex"}, "confidence": 1.0}
+JSON: { "route": "creature_flags", "lang": "de", "entity": { "type": "creature", "name": "rex" }, "confidence": 1.0 }
 
 User: "was für ein tame ist ein thylacoleo"
 → Entity: "thylacoleo" (Creature)
 → Frage: "was für ein tame"
-JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "thylacoleo"}, "confidence": 1.0}
+JSON: { "route": "creature_flags", "lang": "de", "entity": { "type": "creature", "name": "thylacoleo" }, "confidence": 1.0 }
 
 User: "welches Kibble benötigt ein Giga"
 → Entity: "Giga" (Creature)
 → Frage: "welches Kibble"
-JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+JSON: { "route": "creature_taming", "lang": "de", "entity": { "type": "creature", "name": "giga" }, "confidence": 1.0 }
 
 User: "wie tame ich einen Baryonyx"
 → Entity: "Baryonyx" (Creature)
 → Frage: "wie tame ich"
-JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "baryonyx"}, "confidence": 1.0}
+JSON: { "route": "creature_taming", "lang": "de", "entity": { "type": "creature", "name": "baryonyx" }, "confidence": 1.0 }
+
+User: "wie zähme ich einen Giga"
+→ Entity: "Giga" (Creature)
+→ Frage: "wie zähme ich"
+JSON: { "route": "creature_taming", "lang": "de", "entity": { "type": "creature", "name": "giga" }, "confidence": 1.0 }
 
 User: "wie täme ich einen Giga"
 → Entity: "Giga" (Creature)
 → Frage: "wie täme ich"
-JSON: {"route": "creature_taming", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+JSON: { "route": "creature_taming", "lang": "de", "entity": { "type": "creature", "name": "giga" }, "confidence": 1.0 }
 
 User: "wo gibt es Metall"
 → Entity: "Metall" (Resource)
 → Frage: "wo gibt es"
-JSON: {"route": "resource_location", "lang": "de", "entity": {"type": "resource", "name": "metall"}, "confidence": 1.0}
+JSON: { "route": "resource_location", "lang": "de", "entity": { "type": "resource", "name": "metall" }, "confidence": 1.0 }
 
 User: "wo finde ich gigas"
 → Entity: "Gigas" (Creature)
 → Frage: "wo finde ich"
-JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "gigas"}, "confidence": 1.0}
+JSON: { "route": "creature_spawn", "lang": "de", "entity": { "type": "creature", "name": "gigas" }, "confidence": 1.0 }
 
 User: "wo finde ich gigas"
 → Entity: "Gigas" (Creature)
 → Frage: "wo finde ich"
-JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "gigas"}, "confidence": 1.0}
+JSON: { "route": "creature_spawn", "lang": "de", "entity": { "type": "creature", "name": "gigas" }, "confidence": 1.0 }
+
+User: "wo spawnt ein Giga"
+→ Entity: "Giga" (Creature)
+→ Frage: "wo spawnt"
+JSON: { "route": "creature_spawn", "lang": "de", "entity": { "type": "creature", "name": "giga" }, "confidence": 1.0 }
 
 User: "was sind alle giga spons"
 → Entity: "Giga" (Creature)
 → Frage: "spons" (phonetisch für spawns)
-JSON: {"route": "creature_spawn", "lang": "de", "entity": {"type": "creature", "name": "giga"}, "confidence": 1.0}
+JSON: { "route": "creature_spawn", "lang": "de", "entity": { "type": "creature", "name": "giga" }, "confidence": 1.0 }
 
 User: "ich möchte alle sporenpunkte"
 → Entity: Keine (Follow-up möglich)
 → Frage: "sporenpunkte" (phonetisch für spawnpunkte)
-JSON: {"route": "creature_spawn", "lang": "de", "confidence": 0.9}
+JSON: { "route": "creature_spawn", "lang": "de", "confidence": 0.9 }
 
 User: "wie crafte ich ein stone hatchet"
 → Entity: "stone hatchet" (Item)
 → Frage: "wie crafte ich"
-JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "item", "name": "stone hatchet"}, "confidence": 1.0}
+JSON: { "route": "crafting_recipe", "lang": "de", "entity": { "type": "item", "name": "stone hatchet" }, "confidence": 1.0 }
 
 User: "was brauche ich für einen fabricator"
 → Entity: "fabricator" (Item)
 → Frage: "was brauche ich für"
-JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "craftable", "name": "fabricator"}, "confidence": 1.0}
+JSON: { "route": "crafting_recipe", "lang": "de", "entity": { "type": "craftable", "name": "fabricator" }, "confidence": 1.0 }
 
 User: "was brauche ich für ein metal pickaxe"
 → Entity: "metal pickaxe" (Item)
 → Frage: "was brauche ich"
-JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "item", "name": "metal pickaxe"}, "confidence": 1.0}
+JSON: { "route": "crafting_recipe", "lang": "de", "entity": { "type": "item", "name": "metal pickaxe" }, "confidence": 1.0 }
 
 User: "was für kibble bevorzugen sie"
 → Pronomen: "sie", kein Entity
 → Follow-up Frage
-JSON: {"route": "creature_followup", "lang": "de", "query_type": "kibble", "confidence": 1.0}
+JSON: { "route": "creature_followup", "lang": "de", "query_type": "kibble", "confidence": 1.0 }
 
 WICHTIG:
 - Wenn ein Creature-Name in der Frage vorkommt → entity.name = Creature-Name, entity.type = "creature"
@@ -282,7 +316,7 @@ WICHTIG:
 - Pronomen ohne Creature-Name → creature_followup (nur wenn Kontext vorhanden)
 - entity.name IMMER lowercase
 - Giga = Creature (Kurzform von Giganotosaurus)
-- Bei Follow-ups: query_type = kibble|equipment|torpor|food|taming
+- Bei Follow-ups: query_type = kibble | equipment | torpor | food | taming
 
 Jetzt analysiere die User-Frage:
 
@@ -290,6 +324,9 @@ USER:
 ${processedText}
 ${entityHint}
 `.trim();
+
+    // LLM model configuration
+    const model = process.env.OLLAMA_ROUTER_MODEL || "llama3.2:3b";
 
     const r = await fetch("http://127.0.0.1:11434/api/generate", {
         method: "POST",
@@ -338,9 +375,17 @@ ${entityHint}
     }
 
     // REGEX FALLBACK: Taming (Strong Signal)
-    const tamingRegex = /(wie|womit)\s+(tame|täme|taeme|zähme|zähm|fütter|fuetter)|(taming|tamen|zähmen|kibble|nahrung|futter|frisst)/i;
-    if (tamingRegex.test(userText) && (detected?.type === "creature" || obj?.entity?.type === "creature")) {
+    // Match "wie zähme", "wie täme", "wie tame", "was frisst", "welches kibble"
+    // Also catch common transcription errors: "ziemlich" (for "zähme ich")
+    const tamingRegex = /(wie|womit)\s*(tame|täme|taeme|zähme|zähm|ziemlich|fütter|fuetter)|was\s+frisst|welches\s+kibble|taming|kibble|nahrung|futter/i;
+    const normalizedText = norm(userText);
+
+    console.log(`  🔍 Taming check: userText = "${userText}", normalized = "${normalizedText}", route = "${routeVal}"`);
+
+    if ((tamingRegex.test(userText) || tamingRegex.test(normalizedText)) && (detected?.type === "creature" || obj?.entity?.type === "creature")) {
         // Force taming route if keywords are present and we have a creature
+        // Override even if route is creature_followup or creature_flags
+        console.log(`  🔧 Taming keyword detected, forcing route to creature_taming`);
         routeVal = "creature_taming";
     }
 

@@ -5,6 +5,8 @@ export const CREATURE_ALIASES = {
     // Giganotosaurus
     "giga": "giganotosaurus",
     "gigas": "giganotosaurus",
+    "giger": "giganotosaurus",       // Voice transcription
+    "gika": "giganotosaurus",        // Voice transcription
 
     // Carcharodontosaurus
     "carchar": "carcharodontosaurus",
@@ -13,13 +15,16 @@ export const CREATURE_ALIASES = {
     // Tyrannosaurus Rex
     "t-rex": "rex",
     "trex": "rex",
+    "rex": "rex",
+    "reks": "rex",                   // Voice transcription
     "tyrannosaurus": "rex",
     "tyrannosaurus rex": "rex",
 
     // Argentavis
     "argy": "argentavis",
+    "argi": "argentavis",           // Voice transcription
     "argent": "argentavis",
-    "argentavis": "argentavis", // Self-map to be safe
+    "argentavis": "argentavis",
 
     // Pteranodon
     "ptera": "pteranodon",
@@ -33,12 +38,18 @@ export const CREATURE_ALIASES = {
 
     // Carnotaurus
     "carno": "carnotaurus",
+    "karno": "carnotaurus",          // Voice transcription
 
     // Allosaurus
     "allo": "allosaurus",
+    "alo": "allosaurus",
+    "alu": "allosaurus",             // Voice transcription
+    "allu": "allosaurus",            // Voice transcription
+    "alut": "allosaurus",            // Voice transcription
 
     // Spinosaurus
     "spino": "spinosaurus",
+    "spinu": "spinosaurus",          // Voice transcription
 
     // Megalosaurus
     "megalo": "megalosaurus",
@@ -49,11 +60,16 @@ export const CREATURE_ALIASES = {
     // Therizinosaurus
     "therizino": "therizinosaur",
     "theri": "therizinosaur",
-    "thery": "therizinosaur", // Voice typo
+    "thery": "therizinosaur",        // Voice typo
+    "teeri": "therizinosaur",        // Voice transcription
+    "teri": "therizinosaur",         // Voice transcription
+    "terry": "therizinosaur",        // Voice transcription
     "therizinosaurus": "therizinosaur", // DB has "Therizinosaur"
+    "theory": "therizinosaur",       // Voice typo
 
     // Ankylosaurus
     "anky": "ankylosaurus",
+    "anki": "ankylosaurus",          // Voice transcription
 
     // Doedicurus
     "doedi": "doedicurus",
@@ -79,6 +95,7 @@ export const CREATURE_ALIASES = {
 
     // Managarmr
     "mana": "managarmr",
+    "manna": "managarmr",            // Voice transcription
 
     // Velonasaur
     "velo": "velonasaur",

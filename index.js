@@ -48,7 +48,7 @@ import path from "node:path";
 // Voice imports
 import { joinChannel, leaveChannel, isConnected } from "./voice_manager.js";
 import { handleUserSpeaking } from "./voice_handler.js";
-import { isWhisperAvailable } from "./stt_service.js";
+import { isWhisperAvailable, warmupModel } from "./stt_service.js";
 import { isPiperAvailable } from "./tts_service.js";
 
 /* ---------------- COMMANDS ---------------- */
@@ -244,7 +244,7 @@ async function main() {
 
                 // Check if voice tools are available
                 if (!isWhisperAvailable()) {
-                    await interaction.editReply("❌ Whisper.cpp ist nicht verfügbar! Bitte setup durchführen.");
+                    await interaction.editReply("❌ Faster-Whisper ist nicht verfügbar! Bitte setup durchführen.");
                     return;
                 }
 
@@ -689,6 +689,9 @@ async function main() {
     });
 
     await client.login(DISCORD_TOKEN);
+
+    // Warm up Whisper model (preload into GPU)
+    await warmupModel();
 }
 
 main().catch(console.error);

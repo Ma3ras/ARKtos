@@ -127,6 +127,91 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
 }
 
 /**
+ * Record a short audio clip for wake word detection
+ * @param {string} userId - User ID
+ * @param {VoiceConnection} connection - Voice connection
+ * @param {number} duration - Clip duration in ms (default: 2500ms)
+ * @param {number} silenceDuration - Silence duration to stop (default: 800ms)
+ * @returns {Promise<Buffer>} - Audio buffer (WAV format)
+ */
+export async function recordShortClip(userId, connection, duration = 2500, silenceDuration = 800) {
+    return new Promise((resolve, reject) => {
+        console.log(`🎧 Recording short clip for wake word detection (${duration}ms)`);
+
+        const receiver = connection.receiver;
+        const audioStream = receiver.subscribe(userId, {
+            end: {
+                behavior: 'manual'
+            },
+        });
+
+        const chunks = [];
+        let silenceTimeout = null;
+        let maxDurationTimeout = null;
+        let hasReceivedData = false;
+
+        // Opus decoder
+        const opusDecoder = new prism.opus.Decoder({
+            frameSize: 960,
+            channels: 1,
+            rate: 48000,
+        });
+
+        // Collect audio chunks
+        opusDecoder.on('data', (chunk) => {
+            if (!hasReceivedData) {
+                hasReceivedData = true;
+            }
+            chunks.push(chunk);
+
+            // Reset silence timeout on new audio
+            if (silenceTimeout) {
+                clearTimeout(silenceTimeout);
+            }
+
+            // Stop after silence
+            silenceTimeout = setTimeout(() => {
+                audioStream.destroy();
+                opusDecoder.end();
+            }, silenceDuration);
+        });
+
+        opusDecoder.on('end', () => {
+            clearTimeout(silenceTimeout);
+            clearTimeout(maxDurationTimeout);
+
+            if (chunks.length === 0) {
+                resolve(null);
+                return;
+            }
+
+            // Concatenate all chunks
+            const pcmBuffer = Buffer.concat(chunks);
+
+            // Convert PCM to WAV
+            const wavBuffer = pcmToWav(pcmBuffer, 48000, 1);
+            resolve(wavBuffer);
+        });
+
+        opusDecoder.on('error', (error) => {
+            console.error(`❌ Opus decoder error (short clip):`, error);
+            clearTimeout(silenceTimeout);
+            clearTimeout(maxDurationTimeout);
+            reject(error);
+        });
+
+        // Pipe audio stream through decoder
+        audioStream.pipe(opusDecoder);
+
+        // Max duration timeout
+        maxDurationTimeout = setTimeout(() => {
+            audioStream.destroy();
+            opusDecoder.end();
+        }, duration);
+    });
+}
+
+/**
  * Stop recording a user
  * @param {string} userId - User ID
  */

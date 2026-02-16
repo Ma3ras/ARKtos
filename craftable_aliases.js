@@ -38,7 +38,7 @@ export const CRAFTABLE_ALIASES = {
     "fab": "fabricator",
     "tek rep": "tek replicator",
     "replicator": "tek replicator",
-    "gen": "tek generator",
+    "tek gen": "tek generator",
     "generator": "electrical generator",
     "ac": "air conditioner",
     "fridge": "refrigerator",
@@ -54,6 +54,14 @@ export const CRAFTABLE_ALIASES = {
     "quetz saddle": "quetzal saddle",
     "platform saddle": "platform saddle",
 
+    // Tek Creatures/Items
+    "mek": "mek",
+    "mac": "mek",           // Voice transcription error
+    "meck": "mek",         // Phonetic variation
+    "enforcer": "enforcer",
+    "tek rex": "tek rex",
+    "tek raptor": "tek raptor",
+
     // Consumables
     "stim": "stimulant",
     "med brew": "medical brew",
@@ -62,6 +70,10 @@ export const CRAFTABLE_ALIASES = {
     "lazarus": "lazarus chowder",
     "calien": "calien soup",
     "shadow steak": "shadow steak saute",
+    "mindwipe": "mindwipe tonic",
+    "mindwarp": "mindwipe tonic",    // Voice transcription error
+    "mind wipe": "mindwipe tonic",
+    "mind warp": "mindwipe tonic",
 
     // Ammo
     "adv bullet": "advanced bullet",
