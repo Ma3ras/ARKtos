@@ -7,7 +7,7 @@ import { speak } from './tts_service.js';
 import { optimizeForTTS } from './tts_corrections.js';
 import { routeQuery } from './router.js';
 import { getConnection } from './voice_manager.js';
-import { containsWakeWord, removeWakeWord, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION } from './wake_word_config.js';
+import { containsWakeWord, removeWakeWord, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION, ENABLE_WAKE_WORD } from './wake_word_config.js';
 
 // Import all handlers (same as text bot)
 import { findCreatureSmart } from './creatures.js';
@@ -19,12 +19,19 @@ import { findBestMultiResourceLocation, formatMultiResourceLocation } from './mu
 const userSpeakingState = new Map(); // userId -> boolean
 
 /**
- * Handle user speaking in voice channel (STAGE 1: Wake Word Detection)
+ * Handle user speaking in voice channel (Auto-Wake Word Detection)
  * @param {string} userId - User ID
  * @param {string} guildId - Guild ID
  * @param {string} username - Username for logging
  */
 export async function handleUserSpeaking(userId, guildId, username) {
+    // 1. Check if Wake Word is enabled
+    if (!ENABLE_WAKE_WORD) {
+        // If wake word is disabled, we ignore passive speaking.
+        // User must use /listen command.
+        return;
+    }
+
     // Prevent multiple simultaneous recordings for same user
     if (userSpeakingState.get(userId)) {
         console.log(`⚠️ User ${username} is already being processed, skipping`);
@@ -35,108 +42,132 @@ export async function handleUserSpeaking(userId, guildId, username) {
 
     try {
         const connection = getConnection(guildId);
-        if (!connection) {
-            console.log(`❌ No voice connection for guild ${guildId}`);
-            return;
-        }
+        if (!connection) return;
 
         console.log(`👂 ${username} started speaking - listening for wake word...`);
 
         // STAGE 1: Record short clip for wake word detection
         const clipBuffer = await recordShortClip(userId, connection, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION);
 
-        if (!clipBuffer) {
-            console.log(`⚠️ No audio in wake word clip for ${username}`);
-            return;
-        }
+        if (!clipBuffer) return;
 
         // Quick transcription to check for wake word
-        console.log(`🔍 Checking for wake word...`);
         const clipTranscription = await transcribe(clipBuffer);
 
-        if (!clipTranscription || clipTranscription.trim().length === 0) {
-            console.log(`⚠️ Empty wake word transcription for ${username}`);
+        if (!clipTranscription || !containsWakeWord(clipTranscription)) {
+            // No wake word, ignore
             return;
         }
 
-        console.log(`📝 Wake word check: "${clipTranscription}"`);
+        console.log(`✅ Wake word detected from ${username}: "${clipTranscription}"`);
 
-        // Check if wake word is present
-        if (!containsWakeWord(clipTranscription)) {
-            console.log(`❌ No wake word detected, ignoring speech from ${username}`);
-            return;
-        }
-
-        console.log(`✅ Wake word detected! Processing query from ${username}`);
-
-        // STAGE 2: Process full query
         // Check if query was in the same clip
         const queryAfterWakeWord = removeWakeWord(clipTranscription).trim();
-
         let fullQuery = queryAfterWakeWord;
 
         // If no query after wake word, record additional audio
         if (!fullQuery || fullQuery.length < 3) {
             console.log(`🎤 Recording full query from ${username}...`);
-
-            // Optional: Play acknowledgment beep here
-            // await speak(connection, "Ja?");
+            // await speak(connection, "Ja?"); // Optional ack
 
             const queryBuffer = await recordUser(userId, connection, 10000); // 10s max
-
-            if (!queryBuffer) {
-                console.log(`⚠️ No query recorded after wake word`);
-                await speak(connection, "Ich habe nichts gehört.");
-                return;
-            }
+            if (!queryBuffer) return;
 
             const queryTranscription = await transcribe(queryBuffer);
-
-            if (!queryTranscription || queryTranscription.trim().length === 0) {
-                console.log(`⚠️ Empty query transcription`);
-                await speak(connection, "Entschuldigung, ich habe nichts verstanden.");
-                return;
-            }
+            if (!queryTranscription) return;
 
             fullQuery = queryTranscription;
         }
 
-        console.log(`📝 Full query: "${fullQuery}"`);
-
-        // Remove wake word from query before processing
-        const cleanedQuery = removeWakeWord(fullQuery);
-        console.log(`🧹 Cleaned query: "${cleanedQuery}"`);
-
-        // Process the question (same as text bot)
-        const response = await processQuestion(cleanedQuery);
-
-        console.log(`💬 Response: "${response.substring(0, 100)}..."`);
-
-        // Synthesize and play response
-        const optimizedResponse = optimizeForTTS(response);
-        await speak(connection, optimizedResponse);
+        // Process the final query
+        await processVoiceQuery(fullQuery, userId, guildId, connection);
 
     } catch (error) {
-        console.error(`❌ Error handling voice for ${username}:`, error);
-
-        // Try to send error message via voice
-        try {
-            const connection = getConnection(guildId);
-            if (connection) {
-                await speak(connection, "Entschuldigung, es gab einen Fehler.");
-            }
-        } catch (e) {
-            console.error(`❌ Failed to send error message:`, e);
-        }
+        console.error(`❌ Error handling voice for ${username}:`, error.message);
     } finally {
         userSpeakingState.delete(userId);
     }
 }
 
 /**
+ * Manually trigger listening for a user (via /speak command)
+ * Bypass Wake Word detection.
+ */
+export async function triggerManualListening(userId, guildId, username) {
+    if (userSpeakingState.get(userId)) {
+        console.log(`⚠️ User ${username} is already being processed, skipping`);
+        return false;
+    }
+
+    console.log(`🎤 Manual activation for ${username}`);
+    userSpeakingState.set(userId, true);
+
+    try {
+        const connection = getConnection(guildId);
+        if (!connection) {
+            console.log(`❌ No voice connection`);
+            return false;
+        }
+
+        // Optional: Play "Listening" sound
+        // await speak(connection, "Ich höre."); 
+
+        // Record User directly (no wake word check)
+        // 7 seconds should be enough for most queries
+        const queryBuffer = await recordUser(userId, connection, 7000);
+
+        if (!queryBuffer) {
+            console.log(`⚠️ No audio recorded`);
+            return false;
+        }
+
+        const transcription = await transcribe(queryBuffer);
+        if (!transcription || transcription.trim().length === 0) {
+            await speak(connection, "Ich habe nichts gehört.");
+            return true;
+        }
+
+        console.log(`📝 Manual Transcription: "${transcription}"`);
+
+        // Process
+        await processVoiceQuery(transcription, userId, guildId, connection);
+        return true;
+
+    } catch (error) {
+        console.error(`❌ Error in manual listening for ${username}:`, error);
+        return false;
+    } finally {
+        userSpeakingState.delete(userId);
+    }
+}
+
+/**
+ * Common logic to process a transcribed voice query
+ */
+async function processVoiceQuery(rawText, userId, guildId, connection) {
+    try {
+        // Clean wake word if present (just in case user said it anyway)
+        const cleanedQuery = removeWakeWord(rawText);
+        console.log(`🧹 Processing Query: "${cleanedQuery}"`);
+
+        // Process the question (Logic from processQuestion)
+        const response = await processQuestion(cleanedQuery);
+
+        console.log(`💬 Response: "${response.substring(0, 50)}..."`);
+
+        // Synthesize and play response
+        const optimizedResponse = optimizeForTTS(response);
+        await speak(connection, optimizedResponse);
+
+    } catch (error) {
+        console.error(`❌ Error processing voice query:`, error);
+        await speak(connection, "Fehler bei der Verarbeitung.");
+    }
+}
+
+/**
  * Process a question using the existing bot logic
- * @param {string} question - User question
- * @returns {Promise<string>} - Response text
+ * (Refactored logic from original file)
  */
 async function processQuestion(question) {
     try {
@@ -145,7 +176,7 @@ async function processQuestion(question) {
 
         console.log(`🎯 Route: ${route.route}`);
 
-        // Handle based on route (simplified version of index.js logic)
+        // Handle based on route
         switch (route.route) {
             case 'creature_flags':
             case 'creature_taming':
@@ -159,9 +190,7 @@ async function processQuestion(question) {
                 }
 
                 if (route.route === 'creature_spawn') {
-                    // Use creature.title as the name property doesn't exist
                     const spawnData = findSpawnLocations(creature.title);
-
                     if (spawnData && spawnData.locations && spawnData.locations.length > 0) {
                         const topLocation = spawnData.locations[0];
                         return `${creature.title} spawnt hauptsächlich in ${topLocation.biome}. Die besten Koordinaten sind ${topLocation.lat}, ${topLocation.lon}.`;
@@ -175,7 +204,6 @@ async function processQuestion(question) {
                         const parts = [];
                         if (t.taming_method) parts.push(`Die Methode ist ${t.taming_method}`);
                         if (t.preferred_food && t.preferred_food.length > 0) parts.push(`Am liebsten frisst er ${t.preferred_food.join(', ')}`);
-
                         if (parts.length > 0) return parts.join('. ');
                     }
                     return `Ich habe keine spezifischen Taming-Infos für ${creature.title}, aber er ist ${creature.tameable ? 'zähmbar' : 'nicht zähmbar'}.`;
@@ -196,10 +224,7 @@ async function processQuestion(question) {
             case 'resource_location': {
                 const resourceName = route.entity?.name || question;
                 const resource = findResourceSmart(resourceName);
-
-                if (!resource) {
-                    return `Ich konnte keine Informationen über ${resourceName} finden.`;
-                }
+                if (!resource) return `Ich konnte keine Informationen über ${resourceName} finden.`;
 
                 if (resource.locations && resource.locations.length > 0) {
                     const topLocation = resource.locations[0];
@@ -211,24 +236,19 @@ async function processQuestion(question) {
             case 'crafting_recipe': {
                 const itemName = route.entity?.name || question;
                 const item = findCraftableSmart(itemName);
-
-                if (!item || !item.recipe) {
-                    return `Ich konnte kein Rezept für ${itemName} finden.`;
-                }
+                if (!item || !item.recipe) return `Ich konnte kein Rezept für ${itemName} finden.`;
 
                 const materials = item.recipe.materials.map(m => `${m.quantity} ${m.item}`).join(', ');
                 return `Für ${item.title} brauchst du: ${materials}.`;
             }
 
             case 'general': {
-                // Check for multi-resource query
                 if (question.includes('und') || question.includes(',')) {
                     const result = findBestMultiResourceLocation(question);
                     if (result && result.resources && result.resources.length > 0) {
                         return formatMultiResourceLocation(result);
                     }
                 }
-
                 return "Entschuldigung, ich habe deine Frage nicht verstanden. Bitte frage nach Kreaturen, Ressourcen oder Crafting-Rezepten.";
             }
 
@@ -241,11 +261,6 @@ async function processQuestion(question) {
     }
 }
 
-/**
- * Check if user is currently being processed
- * @param {string} userId - User ID
- * @returns {boolean}
- */
 export function isUserSpeaking(userId) {
     return userSpeakingState.get(userId) || false;
 }

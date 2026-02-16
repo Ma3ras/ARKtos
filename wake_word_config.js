@@ -6,6 +6,7 @@
  * These are checked case-insensitively
  * Includes phonetic variations for speech recognition
  */
+export const ENABLE_WAKE_WORD = false; // Set to true to enable passive listening
 export const WAKE_WORDS = [
     // Primary variations
     "beacon",

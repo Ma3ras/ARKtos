@@ -47,7 +47,7 @@ import path from "node:path";
 
 // Voice imports
 import { joinChannel, leaveChannel, isConnected } from "./voice_manager.js";
-import { handleUserSpeaking } from "./voice_handler.js";
+import { handleUserSpeaking, triggerManualListening } from "./voice_handler.js";
 import { isWhisperAvailable, warmupModel } from "./stt_service.js";
 import { isPiperAvailable } from "./tts_service.js";
 import { cleanupTempFiles } from "./cleanup_temp.js";
@@ -72,7 +72,7 @@ const LEAVE_COMMAND = new SlashCommandBuilder()
 
 const SPEAK_COMMAND = new SlashCommandBuilder()
     .setName("speak")
-    .setDescription("Sprich eine Frage (Bot hört 10 Sekunden zu).");
+    .setDescription("Aktiviere Spracherkennung manuell (für 7 Sekunden).");
 
 /* ---------------- SMALL HELPERS ---------------- */
 
@@ -310,10 +310,10 @@ async function main() {
                     return;
                 }
 
-                await interaction.editReply("🎤 **Ich höre zu!** Sprich jetzt deine Frage (10 Sekunden)...");
+                await interaction.editReply("🎤 **Ich höre zu!** Sprich jetzt deine Frage (7 Sekunden)...");
 
-                // Trigger voice handler
-                handleUserSpeaking(userId, guildId, username);
+                // Trigger voice handler directly (manual activation)
+                await triggerManualListening(userId, guildId, username);
 
             } catch (error) {
                 console.error("❌ Error in /speak command:", error);
