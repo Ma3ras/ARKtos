@@ -19,6 +19,11 @@ import {
     formatCraftableRecipe,
 } from "./craftables.js";
 
+import {
+    findSpawnLocations,
+    formatSpawnLocations,
+} from "./spawn_locations.js";
+
 import { fetchFandomContext } from "./tools/fandom_fetch.js";
 
 import { setUserContext, getUserContext } from "./context.js";
@@ -389,11 +394,35 @@ async function main() {
                 console.log("  No taming data in DB, will fetch from wiki...");
             }
 
+            // ---------- CREATURE SPAWN LOCATIONS ----------
+            if (route.route === "creature_spawn") {
+                console.log("📍 CREATURE SPAWN ROUTE");
+                console.log("  route.entity:", route.entity);
+
+                const name = route.entity?.type === "creature" ? route.entity.name : "";
+                const query = name ? name : frage;
+
+                console.log("  extracted name:", name);
+                console.log("  query for spawn lookup:", query);
+
+                const spawnData = findSpawnLocations(query);
+                console.log("  spawn lookup result:", spawnData ? `Found: ${spawnData.creature}` : "NOT FOUND");
+
+                if (!spawnData) {
+                    await interaction.editReply(`Keine Spawn-Locations für "${query}" gefunden.\n\nTipp: Versuche einen anderen Namen.`);
+                    return;
+                }
+
+                const out = formatSpawnLocations(spawnData);
+                console.log("  formatted spawn answer");
+                await interaction.editReply(out.slice(0, 1900));
+                return;
+            }
+
             // ---------- CREATURE -> FANDOM FETCH ----------
             if (
                 route.route === "creature_taming" ||
-                route.route === "creature_breeding" ||
-                route.route === "creature_spawn"
+                route.route === "creature_breeding"
             ) {
                 const name = route.entity?.type === "creature" ? route.entity.name : "";
                 const query = name ? name : frage;
@@ -407,9 +436,7 @@ async function main() {
                 const intent =
                     route.route === "creature_taming"
                         ? "taming"
-                        : route.route === "creature_breeding"
-                            ? "breeding"
-                            : "spawn";
+                        : "breeding";
 
                 const ctx = await fetchFandomContext(c.url, { intent });
 
