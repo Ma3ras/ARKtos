@@ -7,6 +7,7 @@ import {
     entersState,
     getVoiceConnection
 } from '@discordjs/voice';
+import { ENABLE_WAKE_WORD } from './wake_word_config.js';
 
 const connections = new Map(); // guildId -> connection
 
@@ -24,6 +25,8 @@ function setupAudioReceiver(connection, channel, guildId) {
 
     // Set up audio receiver - subscribe to all users in channel
     connection.receiver.speaking.on('start', (userId) => {
+        if (!ENABLE_WAKE_WORD) return;
+
         console.log(`🎤 User ${userId} started speaking (speaking event)`);
 
         // Subscribe to user's audio stream
