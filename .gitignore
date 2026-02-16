@@ -12,4 +12,9 @@ cleanup_*.js
 verify_*.js
 test_*.js
 download_*.bat
-move_*.bat
+
+# Generated / Temp Files
+*.html
+temp_*
+media_*
+*.log

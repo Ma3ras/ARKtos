@@ -50,6 +50,7 @@ import { joinChannel, leaveChannel, isConnected } from "./voice_manager.js";
 import { handleUserSpeaking } from "./voice_handler.js";
 import { isWhisperAvailable, warmupModel } from "./stt_service.js";
 import { isPiperAvailable } from "./tts_service.js";
+import { cleanupTempFiles } from "./cleanup_temp.js";
 
 /* ---------------- COMMANDS ---------------- */
 
@@ -687,6 +688,9 @@ async function main() {
             handleUserSpeaking(userId, guildId, member.user.username);
         }
     });
+
+    // Cleanup temporary files
+    cleanupTempFiles();
 
     await client.login(DISCORD_TOKEN);
 
