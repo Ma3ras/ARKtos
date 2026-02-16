@@ -144,7 +144,7 @@ export async function triggerManualListening(userId, guildId, username) {
 /**
  * Common logic to process a transcribed voice query
  */
-async function processVoiceQuery(rawText, userId, guildId, connection) {
+export async function processVoiceQuery(rawText, userId, guildId, connection) {
     try {
         // Clean wake word if present (just in case user said it anyway)
         const cleanedQuery = removeWakeWord(rawText);

@@ -46,8 +46,8 @@ import fs from "node:fs";
 import path from "node:path";
 
 // Voice imports
-import { joinChannel, leaveChannel, isConnected } from "./voice_manager.js";
-import { handleUserSpeaking, triggerManualListening } from "./voice_handler.js";
+import { joinChannel, leaveChannel, isConnected, getConnection } from "./voice_manager.js";
+import { handleUserSpeaking, triggerManualListening, processVoiceQuery } from "./voice_handler.js";
 import { isWhisperAvailable, warmupModel } from "./stt_service.js";
 import { isPiperAvailable } from "./tts_service.js";
 import { cleanupTempFiles } from "./cleanup_temp.js";
@@ -72,7 +72,11 @@ const LEAVE_COMMAND = new SlashCommandBuilder()
 
 const SPEAK_COMMAND = new SlashCommandBuilder()
     .setName("speak")
-    .setDescription("Aktiviere Spracherkennung manuell (für 7 Sekunden).");
+    .setDescription("Sprich eine Frage oder tippe Text für Sprachantwort.")
+    .addStringOption(option =>
+        option.setName('text')
+            .setDescription('Optional: Text für Sprachantwort')
+            .setRequired(false));
 
 /* ---------------- SMALL HELPERS ---------------- */
 
@@ -298,6 +302,8 @@ async function main() {
                 const userId = member.user.id;
                 const username = member.user.username;
 
+                const textInput = interaction.options.getString('text');
+
                 // Check if bot is in voice
                 if (!isConnected(guildId)) {
                     await interaction.editReply("❌ Ich bin nicht in einem Voice-Channel! Nutze `/join` zuerst.");
@@ -310,10 +316,18 @@ async function main() {
                     return;
                 }
 
-                await interaction.editReply("🎤 **Ich höre zu!** Sprich jetzt deine Frage (7 Sekunden)...");
-
-                // Trigger voice handler directly (manual activation)
-                await triggerManualListening(userId, guildId, username);
+                if (textInput) {
+                    // Manual Text Mode (TTS Response)
+                    await interaction.editReply(`🗣️ **Ich antworte auf:** "${textInput}"`);
+                    const connection = getConnection(guildId);
+                    if (connection) {
+                        await processVoiceQuery(textInput, userId, guildId, connection);
+                    }
+                } else {
+                    // Manual Voice Mode
+                    await interaction.editReply("🎤 **Ich höre zu!** Sprich jetzt deine Frage (7 Sekunden)...");
+                    await triggerManualListening(userId, guildId, username);
+                }
 
             } catch (error) {
                 console.error("❌ Error in /speak command:", error);
