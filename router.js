@@ -176,6 +176,48 @@ export async function routeQuery(rawUserText) {
     if (detected) {
         console.log(`  🔍 Pre-detected: "${detected.name}" → ${detected.type}`);
         entityHint = `\n\nIMPORTANT: "${detected.name}" is a known ${detected.type.toUpperCase()}. Use entity.type = "${detected.type}" and entity.name = "${detected.name}".`;
+
+        // ------------------ BYPASS LLM IF INTENT IS CLEAR ------------------
+        const intentChecks = [
+            // Crafting
+            {
+                pattern: /(?:wie|rezept|recipe|bau|crafte|herstell|mache|brauche|benötige|zutaten|material)/i,
+                validType: ['craftable', 'item', 'structure', 'weapon', 'armor'],
+                route: 'crafting_recipe'
+            },
+            // Taming
+            {
+                pattern: /(?:wie|womit|tame|täme|taeme|zähme|zähm|zuecht|fütter|frisst|kibble|nahrung|futter|bevorzug)/i,
+                validType: ['creature'],
+                route: 'creature_taming'
+            },
+            // Spawn
+            {
+                pattern: /(?:wo|finde|spawnt|spons|sporen|gibt es|habitat|biome|locations|orte)/i,
+                validType: ['creature', 'resource'],
+                route: detected.type === 'creature' ? 'creature_spawn' : 'resource_location'
+            },
+            // Flags/Info
+            {
+                pattern: /(?:was ist|was fuer|was für|zähmbar|reitbar|züchtbar|breedable|rideable|tameable)/i,
+                validType: ['creature'],
+                route: 'creature_flags'
+            }
+        ];
+
+        for (const check of intentChecks) {
+            const isValidType = check.validType.includes(detected.type) || (check.validType.includes('item') && detected.type === 'craftable');
+            if (isValidType && check.pattern.test(userText)) {
+                console.log(`  🚀 Rule-Based Bypass: Intent "${check.route}" detected for "${detected.name}"`);
+                return {
+                    route: check.route,
+                    lang: "de", // Default to DE for now
+                    entity: { type: detected.type, name: detected.name },
+                    confidence: 1.0,
+                    query_type: check.route === 'creature_taming' && /kibble/i.test(userText) ? 'kibble' : undefined
+                };
+            }
+        }
     }
 
     // HARTE JSON-SCHEMA: Keine Prosa
