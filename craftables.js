@@ -96,10 +96,6 @@ export function formatCraftableRecipe(item) {
                 lines.push(`\n**Herstellung:** ${station}`);
             }
         }
-
-        if (item.recipe.crafting_time) {
-            lines.push(`**Herstellungszeit:** ${item.recipe.crafting_time}s`);
-        }
     } else {
         lines.push("\nKeine Rezept-Informationen verfügbar.");
     }
