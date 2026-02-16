@@ -163,7 +163,7 @@ RESOURCE ROUTES:
 - "resource_info": was ist? wozu? wie bekomme ich?
 
 CRAFTING ROUTES:
-- "crafting_recipe": wie crafte ich? rezept? was brauche ich?
+- "crafting_recipe": wie crafte ich? rezept? was brauche ich? was brauche ich für?
 - "crafting_info": welches level? engram punkte?
 
 ANDERE:
@@ -200,6 +200,11 @@ User: "wie crafte ich ein stone hatchet"
 → Entity: "stone hatchet" (Item)
 → Frage: "wie crafte ich"
 JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "item", "name": "stone hatchet"}, "confidence": 1.0}
+
+User: "was brauche ich für einen fabricator"
+→ Entity: "fabricator" (Item)
+→ Frage: "was brauche ich für"
+JSON: {"route": "crafting_recipe", "lang": "de", "entity": {"type": "craftable", "name": "fabricator"}, "confidence": 1.0}
 
 User: "was brauche ich für ein metal pickaxe"
 → Entity: "metal pickaxe" (Item)
