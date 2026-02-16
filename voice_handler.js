@@ -11,7 +11,7 @@ import { containsWakeWord, removeWakeWord, CLIP_DURATION, WAKE_WORD_SILENCE_DURA
 
 // Import all handlers (same as text bot)
 import { findCreatureSmart } from './creatures.js';
-import { findResourceSmart } from './resources.js';
+import { findResourceSmart, findResourceLocations } from './resources.js';
 import { findCraftableSmart } from './craftables.js';
 import { findSpawnLocations } from './spawn_locations.js';
 import { findBestMultiResourceLocation, formatMultiResourceLocation } from './multi_resource_locations.js';
@@ -226,11 +226,14 @@ async function processQuestion(question) {
                 const resource = findResourceSmart(resourceName);
                 if (!resource) return `Ich konnte keine Informationen über ${resourceName} finden.`;
 
-                if (resource.locations && resource.locations.length > 0) {
-                    const topLocation = resource.locations[0];
-                    return `${resource.name} findest du hauptsächlich in ${topLocation.biome}. Die besten Koordinaten sind ${topLocation.lat}, ${topLocation.lon}.`;
+                const locations = findResourceLocations(resource);
+                const displayName = resource.title || resource.name || resourceName;
+
+                if (locations && locations.length > 0) {
+                    const topLocation = locations[0];
+                    return `${displayName} findest du hauptsächlich in ${topLocation.biome}. Die besten Koordinaten sind ${topLocation.lat}, ${topLocation.lon}.`;
                 }
-                return `Ich habe keine Standort-Informationen für ${resource.name}.`;
+                return `Ich habe keine Standort-Informationen für ${displayName}.`;
             }
 
             case 'crafting_recipe': {

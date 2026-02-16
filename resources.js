@@ -209,6 +209,13 @@ export function findResourceSmart(userText) {
 
 /* ---------------- OUTPUT ---------------- */
 
+// NEW EXPORT: Raw locations Access
+export function findResourceLocations(res) {
+    load();
+    const key = (res?.key && LOC?.[res.key]) || (res?.title && LOC?.[res.title]);
+    return key?.locations || [];
+}
+
 export function formatResourceAnswer(res) {
     load();
 
