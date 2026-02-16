@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-02-16T00:44:58.078Z",
+  "updated_at": "2026-02-16T00:56:39.640Z",
   "total_entries": 4438,
   "breakdown": {
-    "creatures": 627,
+    "creatures": 628,
     "resources": 523,
     "craftables": 1330
   },
@@ -606,6 +606,7 @@
     "zombie wyvern": "creature",
     "zomdodo": "creature",
     "giga": "creature",
+    "gigas": "creature",
     "carchar": "creature",
     "carcharo": "creature",
     "t rex": "creature",
@@ -3085,7 +3086,6 @@
     "zombie poison wyverns": "creature",
     "zombie wyverns": "creature",
     "zomdodos": "creature",
-    "gigas": "creature",
     "carchars": "creature",
     "carcharos": "creature",
     "t rexs": "creature",

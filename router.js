@@ -1,7 +1,8 @@
 import fetch from "node-fetch";
 import fs from "node:fs";
 import path from "node:path";
-import { resolveAlias } from "./creature_aliases.js";
+import { resolveAlias as resolveCreatureAlias } from "./creature_aliases.js";
+import { resolveAlias as resolveCraftableAlias } from "./craftable_aliases.js";
 
 const ENTITY_LOOKUP_FILE = path.join(process.cwd(), "data", "entity_lookup.json");
 let ENTITY_LOOKUP = null;
@@ -40,12 +41,13 @@ function detectEntityType(userText) {
             let entityName = tokens[i];
             const entityType = lookup[tokens[i]];
 
-            // If it's a creature, try to resolve alias to canonical name
+            // Resolve alias to canonical name based on type
             if (entityType === "creature") {
-                const resolved = resolveAlias(entityName);
-                if (resolved) {
-                    entityName = resolved;
-                }
+                const resolved = resolveCreatureAlias(entityName);
+                if (resolved) entityName = resolved;
+            } else if (entityType === "craftable") {
+                const resolved = resolveCraftableAlias(entityName);
+                if (resolved) entityName = resolved;
             }
 
             return { name: entityName, type: entityType };
