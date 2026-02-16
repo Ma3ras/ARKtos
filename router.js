@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 import fs from "node:fs";
 import path from "node:path";
+import { resolveAlias } from "./creature_aliases.js";
 
 const ENTITY_LOOKUP_FILE = path.join(process.cwd(), "data", "entity_lookup.json");
 let ENTITY_LOOKUP = null;
@@ -36,14 +37,35 @@ function detectEntityType(userText) {
     for (let i = 0; i < tokens.length; i++) {
         // Single token
         if (lookup[tokens[i]]) {
-            return { name: tokens[i], type: lookup[tokens[i]] };
+            let entityName = tokens[i];
+            const entityType = lookup[tokens[i]];
+
+            // If it's a creature, try to resolve alias to canonical name
+            if (entityType === "creature") {
+                const resolved = resolveAlias(entityName);
+                if (resolved) {
+                    entityName = resolved;
+                }
+            }
+
+            return { name: entityName, type: entityType };
         }
 
         // Two tokens
         if (i < tokens.length - 1) {
             const twoToken = tokens[i] + " " + tokens[i + 1];
             if (lookup[twoToken]) {
-                return { name: twoToken, type: lookup[twoToken] };
+                let entityName = twoToken;
+                const entityType = lookup[twoToken];
+
+                if (entityType === "creature") {
+                    const resolved = resolveAlias(entityName);
+                    if (resolved) {
+                        entityName = resolved;
+                    }
+                }
+
+                return { name: entityName, type: entityType };
             }
         }
 
@@ -51,7 +73,17 @@ function detectEntityType(userText) {
         if (i < tokens.length - 2) {
             const threeToken = tokens[i] + " " + tokens[i + 1] + " " + tokens[i + 2];
             if (lookup[threeToken]) {
-                return { name: threeToken, type: lookup[threeToken] };
+                let entityName = threeToken;
+                const entityType = lookup[threeToken];
+
+                if (entityType === "creature") {
+                    const resolved = resolveAlias(entityName);
+                    if (resolved) {
+                        entityName = resolved;
+                    }
+                }
+
+                return { name: entityName, type: entityType };
             }
         }
     }
