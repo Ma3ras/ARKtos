@@ -11,7 +11,7 @@ const pipelineAsync = promisify(pipeline);
 const activeRecordings = new Map(); // userId -> recording data
 
 /**
- * Start recording a user's audio
+ * Start recording a user's audio (with Server-Side VAD)
  * @param {string} userId - User ID
  * @param {VoiceConnection} connection - Voice connection
  * @param {number} maxDuration - Max recording duration in ms (default: 30s)
@@ -25,7 +25,7 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
         const audioStream = receiver.subscribe(userId, {
             end: {
                 behavior: EndBehaviorType.AfterSilence,
-                duration: 1000, // Stop after 1s of silence
+                duration: 1000,
             },
         });
 
@@ -45,6 +45,23 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
 
         console.log(`🔧 Opus decoder created`);
 
+        // Helper to stop recording safely
+        let isResolved = false;
+        const resolveRecording = () => {
+            if (isResolved) return;
+            isResolved = true;
+
+            if (audioStream && !audioStream.destroyed) audioStream.destroy();
+
+            // Check if already ended
+            try {
+                if (opusDecoder && !opusDecoder.destroyed) opusDecoder.end();
+            } catch (e) { console.error("Opus decoder end error:", e); }
+
+            clearTimeout(maxDurationTimeout);
+            clearTimeout(silenceTimeout);
+        };
+
         // Collect audio chunks
         opusDecoder.on('data', (chunk) => {
             if (!hasReceivedData) {
@@ -53,17 +70,37 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
             }
             chunks.push(chunk);
 
-            // Reset silence timeout on new audio
-            if (silenceTimeout) {
-                clearTimeout(silenceTimeout);
+            // Simple Software VAD (Voice Activity Detection)
+            // Calculate RMS (Root Mean Square) volume of the chunk
+            let sum = 0;
+            for (let i = 0; i < chunk.length; i += 2) {
+                const sample = chunk.readInt16LE(i);
+                sum += sample * sample;
             }
+            const rms = Math.sqrt(sum / (chunk.length / 2));
+            const SILENCE_THRESHOLD = 1500; // Calibrate if needed (Background noise usually ~500-1000)
 
-            // Stop after 1s of silence
-            silenceTimeout = setTimeout(() => {
-                console.log(`🔇 Silence detected, stopping recording`);
-                audioStream.destroy();
-                opusDecoder.end(); // Explicitly end the decoder
-            }, 1000);
+            // Reset silence timeout ONLY if volume is above threshold (active speech)
+            if (rms > SILENCE_THRESHOLD) {
+                if (silenceTimeout) {
+                    clearTimeout(silenceTimeout);
+                }
+
+                // Set silence timeout (Stop after 1.5s of "software silence")
+                silenceTimeout = setTimeout(() => {
+                    console.log(`🔇 Silence detected (Server VAD), stopping recording`);
+                    resolveRecording();
+                }, 1500);
+            } else {
+                // If silent chunk received, but timeout is NOT set (start of silence sequence)
+                // We start counting down ONLY if it wasn't already set
+                if (!silenceTimeout) {
+                    silenceTimeout = setTimeout(() => {
+                        console.log(`🔇 Silence detected (Initial Silence), stopping recording`);
+                        resolveRecording();
+                    }, 1500);
+                }
+            }
         });
 
         opusDecoder.on('end', () => {
@@ -95,28 +132,19 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
         });
 
         // Audio stream events
-        audioStream.on('data', (data) => {
-            console.log(`📥 Raw audio data received: ${data.length} bytes`);
-        });
-
-        audioStream.on('end', () => {
-            console.log(`🔚 Audio stream ended`);
-        });
-
         audioStream.on('error', (error) => {
             console.error(`❌ Audio stream error:`, error);
         });
 
-        // Pipe audio stream through decoder
-        audioStream.pipe(opusDecoder);
-        console.log(`🔗 Audio stream piped to decoder`);
-
         // Max duration timeout
         maxDurationTimeout = setTimeout(() => {
             console.log(`⏱️ Max duration reached, stopping recording`);
-            audioStream.destroy();
-            opusDecoder.end(); // Explicitly end the decoder
+            resolveRecording();
         }, maxDuration);
+
+        // Pipe audio stream through decoder
+        audioStream.pipe(opusDecoder);
+        console.log(`🔗 Audio stream piped to decoder`);
 
         activeRecordings.set(userId, {
             stream: audioStream,
