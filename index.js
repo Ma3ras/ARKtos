@@ -484,16 +484,23 @@ async function main() {
             const hasMultipleResources = multiResourceKeywords.some(kw => frage.includes(kw));
 
             if (hasMultipleResources) {
-                // Try to extract resource names
-                const resourceKeywords = ["zitronen", "lemon", "karotten", "carrot", "kartoffeln", "potato",
-                    "metall", "metal", "crystal", "kristall", "öl", "oil", "perlen", "pearls"];
+                // Map German/English keywords to resource keys
+                const keywordMap = {
+                    "zitronen": "lemon", "lemon": "lemon", "citronal": "lemon",
+                    "karotten": "carrot", "karrotten": "carrot", "carrot": "carrot", "rockarrot": "carrot",
+                    "kartoffeln": "potato", "potato": "potato", "savoroot": "potato",
+                    "metall": "metal", "metal": "metal",
+                    "crystal": "crystal", "kristall": "crystal",
+                    "öl": "oil", "oil": "oil",
+                    "perlen": "pearls", "pearls": "pearls", "silica": "pearls"
+                };
 
                 const foundResources = [];
                 const lowerQuery = frage.toLowerCase();
 
-                for (const keyword of resourceKeywords) {
-                    if (lowerQuery.includes(keyword)) {
-                        foundResources.push(keyword);
+                for (const [keyword, resourceKey] of Object.entries(keywordMap)) {
+                    if (lowerQuery.includes(keyword) && !foundResources.includes(resourceKey)) {
+                        foundResources.push(resourceKey);
                     }
                 }
 
