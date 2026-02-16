@@ -89,3 +89,22 @@ export const CREATURE_ALIASES = {
     // Rock Drake
     "drake": "rock drake",
 };
+
+/**
+ * Resolve a creature alias to its full name
+ * @param {string} alias - Alias or name to resolve
+ * @returns {string|null} Full creature name or null if not found
+ */
+export function resolveAlias(alias) {
+    if (!alias) return null;
+
+    const normalized = alias.toLowerCase().trim();
+
+    // Check if it's an alias
+    if (CREATURE_ALIASES[normalized]) {
+        return CREATURE_ALIASES[normalized];
+    }
+
+    // Not an alias, return null (will use original name)
+    return null;
+}
