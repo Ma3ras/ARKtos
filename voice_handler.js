@@ -231,7 +231,8 @@ async function processQuestion(question) {
 
                 if (locations && locations.length > 0) {
                     const topLocation = locations[0];
-                    return `${displayName} findest du hauptsächlich in ${topLocation.biome}. Die besten Koordinaten sind ${topLocation.lat}, ${topLocation.lon}.`;
+                    const locDesc = topLocation.note ? `bei ${topLocation.note}` : `bei den Koordinaten`;
+                    return `${displayName} findest du ${locDesc} ${topLocation.lat}, ${topLocation.lon}.`;
                 }
                 return `Ich habe keine Standort-Informationen für ${displayName}.`;
             }
