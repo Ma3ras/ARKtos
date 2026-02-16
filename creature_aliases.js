@@ -4,6 +4,7 @@
 export const CREATURE_ALIASES = {
     // Giganotosaurus
     "giga": "giganotosaurus",
+    "gigas": "giganotosaurus",
 
     // Carcharodontosaurus
     "carchar": "carcharodontosaurus",
