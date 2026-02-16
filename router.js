@@ -1,4 +1,63 @@
 import fetch from "node-fetch";
+import fs from "node:fs";
+import path from "node:path";
+
+const ENTITY_LOOKUP_FILE = path.join(process.cwd(), "data", "entity_lookup.json");
+let ENTITY_LOOKUP = null;
+
+function loadEntityLookup() {
+    if (ENTITY_LOOKUP) return ENTITY_LOOKUP;
+    if (fs.existsSync(ENTITY_LOOKUP_FILE)) {
+        const data = JSON.parse(fs.readFileSync(ENTITY_LOOKUP_FILE, "utf-8"));
+        ENTITY_LOOKUP = data.entities || {};
+    } else {
+        ENTITY_LOOKUP = {};
+    }
+    return ENTITY_LOOKUP;
+}
+
+function norm(s) {
+    if (!s) return "";
+    return String(s)
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[_\-]/g, " ")
+        .replace(/[^\p{L}\p{N}\s]/gu, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function detectEntityType(userText) {
+    const lookup = loadEntityLookup();
+    const tokens = norm(userText).split(" ").filter(Boolean);
+
+    // Check each token and multi-token combinations
+    for (let i = 0; i < tokens.length; i++) {
+        // Single token
+        if (lookup[tokens[i]]) {
+            return { name: tokens[i], type: lookup[tokens[i]] };
+        }
+
+        // Two tokens
+        if (i < tokens.length - 1) {
+            const twoToken = tokens[i] + " " + tokens[i + 1];
+            if (lookup[twoToken]) {
+                return { name: twoToken, type: lookup[twoToken] };
+            }
+        }
+
+        // Three tokens
+        if (i < tokens.length - 2) {
+            const threeToken = tokens[i] + " " + tokens[i + 1] + " " + tokens[i + 2];
+            if (lookup[threeToken]) {
+                return { name: threeToken, type: lookup[threeToken] };
+            }
+        }
+    }
+
+    return null;
+}
 
 function safeJsonParse(s) {
     try {
@@ -17,6 +76,15 @@ function clampStr(s, max = 80) {
 
 export async function routeQuery(userText) {
     const model = process.env.OLLAMA_ROUTER_MODEL || process.env.OLLAMA_MODEL || "mistral:7b-instruct";
+
+    // PRE-CHECK: Detect entity type from lookup
+    const detected = detectEntityType(userText);
+    let entityHint = "";
+
+    if (detected) {
+        console.log(`  🔍 Pre-detected: "${detected.name}" → ${detected.type}`);
+        entityHint = `\n\nIMPORTANT: "${detected.name}" is a known ${detected.type.toUpperCase()}. Use entity.type = "${detected.type}" and entity.name = "${detected.name}".`;
+    }
 
     // HARTE JSON-SCHEMA: Keine Prosa
     const prompt = `
@@ -117,6 +185,7 @@ WICHTIG:
 
 USER:
 ${userText}
+${entityHint}
 `.trim();
 
     const r = await fetch("http://127.0.0.1:11434/api/generate", {
