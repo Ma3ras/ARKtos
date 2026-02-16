@@ -24,6 +24,11 @@ import {
     formatSpawnLocations,
 } from "./spawn_locations.js";
 
+import {
+    findBestMultiResourceLocation,
+    formatMultiResourceLocation,
+} from "./multi_resource_locations.js";
+
 import { fetchFandomContext } from "./tools/fandom_fetch.js";
 
 import { setUserContext, getUserContext } from "./context.js";
