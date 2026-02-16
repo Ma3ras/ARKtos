@@ -479,6 +479,37 @@ async function main() {
             }
 
             // ---------- GENERAL ----------
+            // Check if this is a multi-resource query
+            const multiResourceKeywords = ["und", "and", ","];
+            const hasMultipleResources = multiResourceKeywords.some(kw => frage.includes(kw));
+
+            if (hasMultipleResources) {
+                // Try to extract resource names
+                const resourceKeywords = ["zitronen", "lemon", "karotten", "carrot", "kartoffeln", "potato",
+                    "metall", "metal", "crystal", "kristall", "öl", "oil", "perlen", "pearls"];
+
+                const foundResources = [];
+                const lowerQuery = frage.toLowerCase();
+
+                for (const keyword of resourceKeywords) {
+                    if (lowerQuery.includes(keyword)) {
+                        foundResources.push(keyword);
+                    }
+                }
+
+                if (foundResources.length >= 2) {
+                    console.log(`  Detected multi-resource query: ${foundResources.join(", ")}`);
+                    const result = findBestMultiResourceLocation(foundResources);
+
+                    if (result && result.found) {
+                        const out = formatMultiResourceLocation(result);
+                        await interaction.editReply(out.slice(0, 1900));
+                        return;
+                    }
+                }
+            }
+
+            // Fallback to Ollama for general questions
             const general = await askOllamaGeneral(frage);
             await interaction.editReply((general || "Unklar.").slice(0, 1900));
         } catch (e) {
