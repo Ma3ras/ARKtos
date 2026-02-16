@@ -1,7 +1,7 @@
-// Spawn locations lookup// spawn_locations.js
+// spawn_locations.js
 import fs from "node:fs";
 import path from "node:path";
-import { resolveCreatureAlias } from "./creature_aliases.js";
+import { resolveAlias } from "./creature_aliases.js";
 
 const SPAWN_DB_FILE = path.join(process.cwd(), "data", "spawn_locations.json");
 
@@ -36,7 +36,7 @@ export function findSpawnLocations(creatureName) {
     if (!name) return null;
 
     // STEP 1: Resolve alias to full name (e.g., "giga" -> "giganotosaurus")
-    const resolved = resolveCreatureAlias(name);
+    const resolved = resolveAlias(name);
     if (resolved) {
         console.log(`  🔄 Alias resolved: "${name}" → "${resolved}"`);
         name = resolved;
