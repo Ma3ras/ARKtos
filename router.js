@@ -176,6 +176,11 @@ User: "was ist ein Rex für ein tame"
 → Frage: "was für ein tame"
 JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "rex"}, "confidence": 1.0}
 
+User: "was für ein tame ist ein thylacoleo"
+→ Entity: "thylacoleo" (Creature)
+→ Frage: "was für ein tame"
+JSON: {"route": "creature_flags", "lang": "de", "entity": {"type": "creature", "name": "thylacoleo"}, "confidence": 1.0}
+
 User: "welches Kibble benötigt ein Giga"
 → Entity: "Giga" (Creature)
 → Frage: "welches Kibble"
