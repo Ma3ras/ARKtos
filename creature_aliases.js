@@ -31,6 +31,11 @@ export const CREATURE_ALIASES = {
     // Anglerfish
     "anglerfisch": "anglerfish",     // German name
 
+    // Archaeopteryx
+    "archäopteryx": "archaeopteryx",  // German spelling
+    "archopteryx": "archaeopteryx",   // Voice transcription
+    "arch opteryx": "archaeopteryx",  // Normalization issue
+
     // Pteranodon
     "ptera": "pteranodon",
     "pt": "pteranodon",
