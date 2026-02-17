@@ -119,7 +119,7 @@ async function detectEntityTypeWithLLM(userText) {
     if (entity) return entity;
 
     // LLM fallback for semantic queries (5+ words)
-    const wordCount = userText.trim().split(/\\s+/).length;
+    const wordCount = userText.trim().split(/\s+/).length;
     if (wordCount < 5) return null; // Too short for LLM
 
     console.log(`🔍 Entity not found via exact/alias, trying LLM fallback...`);
