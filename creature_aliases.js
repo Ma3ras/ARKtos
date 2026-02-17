@@ -11,6 +11,8 @@ export const CREATURE_ALIASES = {
     // Carcharodontosaurus
     "carchar": "carcharodontosaurus",
     "carcharo": "carcharodontosaurus",
+    "carcha": "carcharodontosaurus",
+    "karcher": "carcharodontosaurus",  // Voice transcription
 
     // Tyrannosaurus Rex
     "t-rex": "rex",
