@@ -36,6 +36,9 @@ export const CREATURE_ALIASES = {
     "archopteryx": "archaeopteryx",   // Voice transcription
     "arch opteryx": "archaeopteryx",  // Normalization issue
 
+    // Arthropluera
+    "artopleura": "arthropluera",     // Voice transcription
+
     // Pteranodon
     "ptera": "pteranodon",
     "pt": "pteranodon",
