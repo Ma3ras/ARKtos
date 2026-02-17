@@ -7,7 +7,7 @@ import path from 'node:path';
 
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
 const MODEL = process.env.OLLAMA_ROUTER_MODEL || 'llama3.2:3b';
-const TIMEOUT_MS = 2000; // 2 second timeout
+const TIMEOUT_MS = 5000; // 5 second timeout (increased from 2s for slower systems)
 const MIN_QUERY_WORDS = 5; // Only use LLM for queries with 5+ words (semantic descriptions)
 
 // Simple in-memory cache
