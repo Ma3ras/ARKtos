@@ -63,6 +63,7 @@ export const PHONETIC_REPLACEMENTS = {
     "Amarberry": "Amar-berri",
     "Sweet Vegetable Cake": "Swiet Ved-sche-tabel Keik",
     "Crops": "Gemüse",
+    "Fresh Tea Leaves": "Frische Tee-Blätter",
     "Wyvern Milk": "Wei-wern Milk",
     "Nameless Venom": "Neim-less Venom",
     "Reaper Pheromone": "Rieper Fero-mon",
