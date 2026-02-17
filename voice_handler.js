@@ -14,6 +14,7 @@ import { findCreatureSmart } from './creatures.js';
 import { findResourceSmart, findResourceLocations } from './resources.js';
 import { findCraftableSmart } from './craftables.js';
 import { findSpawnLocations } from './spawn_locations.js';
+import { resolveLLMEntity } from './llm_entity_resolver.js';
 import { findBestMultiResourceLocation, formatMultiResourceLocation } from './multi_resource_locations.js';
 
 const userSpeakingState = new Map(); // userId -> boolean
@@ -194,7 +195,17 @@ async function processQuestion(question) {
             case 'creature_breeding':
             case 'creature_spawn': {
                 const creatureName = route.entity?.name || question;
-                const creature = await findCreatureSmart(creatureName);
+                let creature = await findCreatureSmart(creatureName);
+
+                // FALLBACK: If creature not found, try LLM to extract correct name from original query
+                if (!creature) {
+                    console.log(`⚠️ Creature "${creatureName}" not found, trying LLM extraction...`);
+                    const llmEntityName = await resolveLLMEntity(question, 'creature');
+                    if (llmEntityName) {
+                        console.log(`🤖 LLM extracted: "${llmEntityName}"`);
+                        creature = await findCreatureSmart(llmEntityName);
+                    }
+                }
 
                 if (!creature) {
                     return `Ich konnte keine Informationen über ${creatureName} finden.`;
