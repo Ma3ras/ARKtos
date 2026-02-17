@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import { CREATURE_ALIASES } from "./creature_aliases.js";
 import { findBestMatch } from "./string_similarity.js";
+import { resolveLLMEntity } from "./llm_entity_resolver.js";
 import path from "node:path";
 
 const DB_FILE = path.join(process.cwd(), "data", "creatures_db.json");
@@ -99,7 +100,7 @@ function scoreCandidate(query, cand) {
     return -999;
 }
 
-export function findCreatureSmart(userText) {
+export async function findCreatureSmart(userText) {
     load();
     const q = norm(userText);
     if (!q) return null;
@@ -156,6 +157,16 @@ export function findCreatureSmart(userText) {
             const matched = DB.find(c => c?.title === fuzzyMatch.match);
             if (matched) {
                 console.log(`🔍 Fuzzy match: "${userText}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+                return matched;
+            }
+        }
+
+        // FALLBACK 2: Try LLM for semantic queries (5+ words)
+        // Example: "großer Dino mit Krallen" -> "Therizinosaurus"
+        const llmMatch = await resolveLLMEntity(userText, 'creature');
+        if (llmMatch) {
+            const matched = DB.find(c => c?.title === llmMatch);
+            if (matched) {
                 return matched;
             }
         }

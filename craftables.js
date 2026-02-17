@@ -1,6 +1,7 @@
 // Craftables lookup and formatting functions
 import fs from "node:fs";
 import { findBestMatch } from "./string_similarity.js";
+import { resolveLLMEntity } from "./llm_entity_resolver.js";
 import path from "node:path";
 
 const DB_PATH = path.join(process.cwd(), "data", "craftables_db.json");
@@ -27,7 +28,7 @@ function loadDB() {
  * Smart search for craftable items
  * Supports partial matching and common variations
  */
-export function findCraftableSmart(query) {
+export async function findCraftableSmart(query) {
     const data = loadDB();
     if (!data?.items) return null;
 
@@ -63,6 +64,15 @@ export function findCraftableSmart(query) {
         const matched = data.items.find(item => item.title === fuzzyMatch.match);
         if (matched) {
             console.log(`🔍 Fuzzy match (craftable): "${query}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+            return matched;
+        }
+    }
+
+    // 5) FALLBACK 2: LLM for semantic queries (5+ words)
+    const llmMatch = await resolveLLMEntity(query, 'craftable');
+    if (llmMatch) {
+        const matched = data.items.find(item => item.title === llmMatch);
+        if (matched) {
             return matched;
         }
     }

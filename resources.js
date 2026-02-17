@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import { findBestMatch } from "./string_similarity.js";
+import { resolveLLMEntity } from "./llm_entity_resolver.js";
 import path from "node:path";
 
 const DB_FILE = path.join(process.cwd(), "data", "resources_db.json");
@@ -104,7 +105,7 @@ function resolveAliasStrict(qNorm) {
 
 /* ---------------- FIND ---------------- */
 
-export function findResourceSmart(userText) {
+export async function findResourceSmart(userText) {
     load();
     const q = norm(userText);
     if (!q) return null;
@@ -214,6 +215,15 @@ export function findResourceSmart(userText) {
             const matched = (DB.resources || []).find(r => r.title === fuzzyMatch.match);
             if (matched) {
                 console.log(`🔍 Fuzzy match (resource): "${userText}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+                return matched;
+            }
+        }
+
+        // FALLBACK 2: LLM for semantic queries (5+ words)
+        const llmMatch = await resolveLLMEntity(userText, 'resource');
+        if (llmMatch) {
+            const matched = (DB.resources || []).find(r => r.title === llmMatch);
+            if (matched) {
                 return matched;
             }
         }
