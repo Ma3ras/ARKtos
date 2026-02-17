@@ -62,23 +62,9 @@ export const CREATURE_ALIASES = {
 
     // Spinosaurus
     "spino": "spinosaurus",
-    "spinu": "spinosaurus",          // Voice transcription
 
-    // Megalosaurus
-    "megalo": "megalosaurus",
-
-    // Thylacoleo
-    "thylo": "thylacoleo",
-
-    // Therizinosaurus
-    "therizino": "therizinosaur",
-    "theri": "therizinosaur",
-    "thery": "therizinosaur",        // Voice typo
-    "teeri": "therizinosaur",        // Voice transcription
-    "teri": "therizinosaur",         // Voice transcription
-    "terry": "therizinosaur",        // Voice transcription
-    "therizinosaurus": "therizinosaur", // DB has "Therizinosaur"
-    "theory": "therizinosaur",       // Voice typo
+    // Stegosaurus
+    "stego": "stegosaurus",
 
     // Ankylosaurus
     "anky": "ankylosaurus",
@@ -110,9 +96,40 @@ export const CREATURE_ALIASES = {
     "sarco": "sarcosuchus",
     "sarko": "sarcosuchus",          // Voice transcription
 
+    // Beelzebufo
+    "belzebufo": "beelzebufo",       // Common misspelling (one 'e')
+
     // Managarmr
     "mana": "managarmr",
     "manna": "managarmr",            // Voice transcription
+
+    // Thylacoleo
+    "thylo": "thylacoleo",
+
+    // Therizinosaurus
+    "therizino": "therizinosaur",
+    "theri": "therizinosaur",
+    "thery": "therizinosaur",        // Voice typo
+    "teeri": "therizinosaur",        // Voice transcription
+    "teri": "therizinosaur",         // Voice transcription
+    "terry": "therizinosaur",        // Voice transcription
+    "therizinosaurus": "therizinosaur", // DB has "Therizinosaur"
+    "theory": "therizinosaur",       // Voice typo
+
+    // Wyvern
+    "wyvern": "wyvern",
+    "wyv": "wyvern",
+
+    // Rock Drake
+    "drake": "rock drake",
+
+    // Reaper
+    "reaper": "reaper",
+
+    // Mek
+    "mek": "mek",
+    "meck": "mek",
+    "mac": "mek",                    // Voice transcription
 
     // Velonasaur
     "velo": "velonasaur",
@@ -120,31 +137,24 @@ export const CREATURE_ALIASES = {
     // Gacha
     "gacha": "gacha",
 
-    // Griffin
-    "griff": "griffin",
+    // Magmasaur
+    "magma": "magmasaur",
 
-    // Wyvern variants
-    "wyvern": "wyvern",
+    // Astrocetus
+    "astro": "astrocetus",
 
-    // Rock Drake
-    "drake": "rock drake",
+    // Bloodstalker
+    "blood": "bloodstalker",
+
+    // Shadowmane
+    "shadow": "shadowmane",
+
+    // Maewing
+    "mae": "maewing"
 };
 
-/**
- * Resolve a creature alias to its full name
- * @param {string} alias - Alias or name to resolve
- * @returns {string|null} Full creature name or null if not found
- */
-export function resolveAlias(alias) {
-    if (!alias) return null;
-
-    const normalized = alias.toLowerCase().trim();
-
-    // Check if it's an alias
-    if (CREATURE_ALIASES[normalized]) {
-        return CREATURE_ALIASES[normalized];
-    }
-
-    // Not an alias, return null (will use original name)
-    return null;
+export function resolveAlias(userInput) {
+    if (!userInput) return null;
+    const normalized = String(userInput).toLowerCase().trim();
+    return CREATURE_ALIASES[normalized] || null;
 }
