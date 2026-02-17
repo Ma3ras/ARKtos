@@ -226,8 +226,8 @@ export async function recordShortClip(userId, connection, duration = 2500, silen
             }
 
             // FILTER: If max volume was too low (just noise), optimize by skipping transcription
-            if (maxRms < 1200) { // Slight lower threshold for wake word to be safe
-                // console.log(`🔇 Wake Word clip discarded (RMS: ${maxRms.toFixed(0)} < 1200)`);
+            if (maxRms < 600) { // Lowered from 1200 to catch softer "Beacon"
+                // console.log(`🔇 Wake Word clip discarded (RMS: ${maxRms.toFixed(0)} < 600)`);
                 resolve(null);
                 return;
             }

@@ -65,18 +65,19 @@ export async function handleUserSpeaking(userId, guildId, username) {
         const queryAfterWakeWord = removeWakeWord(clipTranscription).trim();
         let fullQuery = queryAfterWakeWord;
 
-        // If no query after wake word, record additional audio
-        if (!fullQuery || fullQuery.length < 3) {
-            console.log(`🎤 Recording full query from ${username}...`);
+        // If no query after wake word OR query is very short (incomplete sentence), record additional audio
+        if (!fullQuery || fullQuery.length < 15) {
+            console.log(`🎤 Recording full query from ${username}... (previous: "${fullQuery}")`);
             // await speak(connection, "Ja?"); // Optional ack
 
-            const queryBuffer = await recordUser(userId, connection, 10000); // 10s max
-            if (!queryBuffer) return;
-
-            const queryTranscription = await transcribe(queryBuffer);
-            if (!queryTranscription) return;
-
-            fullQuery = queryTranscription;
+            const queryBuffer = await recordUser(userId, connection, 7500); // 7.5s max
+            if (queryBuffer) {
+                const queryTranscription = await transcribe(queryBuffer);
+                if (queryTranscription) {
+                    // Append new transcription to previous one
+                    fullQuery = fullQuery ? `${fullQuery} ${queryTranscription}` : queryTranscription;
+                }
+            }
         }
 
         // Process the final query
