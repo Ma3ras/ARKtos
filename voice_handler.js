@@ -184,7 +184,7 @@ async function processQuestion(question) {
             case 'creature_breeding':
             case 'creature_spawn': {
                 const creatureName = route.entity?.name || question;
-                const creature = findCreatureSmart(creatureName);
+                const creature = await findCreatureSmart(creatureName);
 
                 if (!creature) {
                     return `Ich konnte keine Informationen über ${creatureName} finden.`;
@@ -224,7 +224,7 @@ async function processQuestion(question) {
 
             case 'resource_location': {
                 const resourceName = route.entity?.name || question;
-                const resource = findResourceSmart(resourceName);
+                const resource = await findResourceSmart(resourceName);
                 if (!resource) return `Ich konnte keine Informationen über ${resourceName} finden.`;
 
                 const locations = findResourceLocations(resource);
@@ -240,7 +240,7 @@ async function processQuestion(question) {
 
             case 'crafting_recipe': {
                 const itemName = route.entity?.name || question;
-                const item = findCraftableSmart(itemName);
+                const item = await findCraftableSmart(itemName);
                 if (!item || !item.recipe) return `Ich konnte kein Rezept für ${itemName} finden.`;
 
                 const materials = item.recipe.materials.map(m => `${m.quantity} ${m.item}`).join(', ');

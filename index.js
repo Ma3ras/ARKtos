@@ -355,7 +355,7 @@ async function main() {
                 const name = route.entity?.type === "resource" ? route.entity.name : "";
                 const query = name ? name : frage;
 
-                const res = findResourceSmart(query);
+                const res = await findResourceSmart(query);
                 if (!res) {
                     // Resource not found - fall through to general handler
                     console.log(`  Resource "${query}" not found, falling through to general...`);
@@ -381,7 +381,7 @@ async function main() {
                 console.log("  extracted name:", name);
                 console.log("  query for lookup:", query);
 
-                const c = findCreatureSmart(query);
+                const c = await findCreatureSmart(query);
                 console.log("  lookup result:", c ? `Found: ${c.title}` : "NOT FOUND");
 
                 if (!c) {
@@ -449,7 +449,7 @@ async function main() {
                 console.log("  context creature:", lastCreatureKey);
 
                 // Find the creature
-                const c = findCreatureSmart(lastCreatureKey);
+                const c = await findCreatureSmart(lastCreatureKey);
 
                 if (!c) {
                     await interaction.editReply("Ich kann das Creature nicht mehr finden. 😕");
@@ -477,7 +477,7 @@ async function main() {
                 console.log("  extracted name:", name);
                 console.log("  query for lookup:", query);
 
-                const c = findCreatureSmart(query);
+                const c = await findCreatureSmart(query);
                 console.log("  lookup result:", c ? `Found: ${c.title}` : "NOT FOUND");
 
                 if (!c) {
@@ -571,7 +571,7 @@ async function main() {
                 const name = route.entity?.type === "creature" ? route.entity.name : "";
                 const query = name ? name : frage;
 
-                const c = findCreatureSmart(query);
+                const c = await findCreatureSmart(query);
                 if (!c?.url) {
                     await interaction.editReply(`Unklar.\n\nTipp: schreibe den Dino-Namen genauer.`);
                     return;
@@ -604,7 +604,7 @@ async function main() {
                 const query = itemName || frage;
                 console.log("  query for lookup:", query);
 
-                const item = findCraftableSmart(query);
+                const item = await findCraftableSmart(query);
                 console.log("  lookup result:", item ? `Found: ${item.title}` : "NOT FOUND");
 
                 if (!item) {
