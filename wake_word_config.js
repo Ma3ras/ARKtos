@@ -12,6 +12,11 @@ export const WAKE_WORDS = [
     "beacon",
     "beakon",      // Phonetic variation
     "biekon",      // German pronunciation
+    "bieken",      // Often misheard by German Whisper
+    "biken",       // Phonetic variation
+    "peaken",      // Possible misinterpretation
+    "becken",      // German word (Pushen)
+    "bacon",       // Very common misinterpretation
     "bikon",       // Phonetic variation
 
     // Compound variations
