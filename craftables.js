@@ -1,5 +1,6 @@
 // Craftables lookup and formatting functions
 import fs from "node:fs";
+import { findBestMatch } from "./string_similarity.js";
 import path from "node:path";
 
 const DB_PATH = path.join(process.cwd(), "data", "craftables_db.json");
@@ -51,8 +52,22 @@ export function findCraftableSmart(query) {
         const cleanTitle = item.title.toLowerCase().replace(/[^a-z0-9]/g, "");
         return cleanTitle === cleanQ || cleanTitle.includes(cleanQ);
     });
+    if (found) return found;
 
-    return found;
+    // 4) FALLBACK: Fuzzy matching for phonetic errors
+    // Example: "flag legends" -> "flak leggings"
+    const allTitles = data.items.map(item => item.title).filter(Boolean);
+    const fuzzyMatch = findBestMatch(q, allTitles, 70);
+
+    if (fuzzyMatch && fuzzyMatch.score >= 70) {
+        const matched = data.items.find(item => item.title === fuzzyMatch.match);
+        if (matched) {
+            console.log(`🔍 Fuzzy match (craftable): "${query}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+            return matched;
+        }
+    }
+
+    return null;
 }
 
 /**

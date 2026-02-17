@@ -5,6 +5,7 @@
 
 import fs from "node:fs";
 import { CREATURE_ALIASES } from "./creature_aliases.js";
+import { findBestMatch } from "./string_similarity.js";
 import path from "node:path";
 
 const DB_FILE = path.join(process.cwd(), "data", "creatures_db.json");
@@ -144,7 +145,23 @@ export function findCreatureSmart(userText) {
         }
     }
 
-    if (!best || bestScore < 800) return null;
+    if (!best || bestScore < 800) {
+        // FALLBACK: Try fuzzy matching for phonetic errors
+        // Example: "tiri" -> "therizinosaurus", "giger" -> "giganotosaurus"
+        const allTitles = DB.map(c => c?.title).filter(Boolean);
+        const fuzzyMatch = findBestMatch(resolvedQuery, allTitles, 70);
+
+        if (fuzzyMatch && fuzzyMatch.score >= 70) {
+            // Find the creature with this title
+            const matched = DB.find(c => c?.title === fuzzyMatch.match);
+            if (matched) {
+                console.log(`🔍 Fuzzy match: "${userText}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+                return matched;
+            }
+        }
+
+        return null;
+    }
     return best;
 }
 

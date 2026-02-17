@@ -1,6 +1,7 @@
 // resources.js (optimized for: exact name priority, "crystal" != "crystal talon", german-friendly normalize)
 
 import fs from "node:fs";
+import { findBestMatch } from "./string_similarity.js";
 import path from "node:path";
 
 const DB_FILE = path.join(process.cwd(), "data", "resources_db.json");
@@ -203,7 +204,22 @@ export function findResourceSmart(userText) {
     }
 
     // Threshold: require at least substring/all-tokens match quality
-    if (!best || bestScore < 900) return null;
+    if (!best || bestScore < 900) {
+        // FALLBACK: Fuzzy matching for phonetic errors
+        // Example: "mettal" -> "metal", "cristal" -> "crystal"
+        const allTitles = (DB.resources || []).map(r => r.title).filter(Boolean);
+        const fuzzyMatch = findBestMatch(q, allTitles, 70);
+
+        if (fuzzyMatch && fuzzyMatch.score >= 70) {
+            const matched = (DB.resources || []).find(r => r.title === fuzzyMatch.match);
+            if (matched) {
+                console.log(`🔍 Fuzzy match (resource): "${userText}" -> "${fuzzyMatch.match}" (${fuzzyMatch.score.toFixed(0)}% similar)`);
+                return matched;
+            }
+        }
+
+        return null;
+    }
     return best;
 }
 
