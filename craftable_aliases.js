@@ -23,7 +23,11 @@ export const CRAFTABLE_ALIASES = {
     "whip": "whip",
 
     // Armor
-    "flak": "flak armor",
+    "flak": "flak leggings", // Most common default
+    "flak armor": "flak leggings", // Or generic
+    "flag legends": "flak leggings", // Phonetic error
+    "flag leggings": "flak leggings",
+    "black leggings": "flak leggings", // Phonetic error
     "riot": "riot armor",
     "ghillie": "ghillie armor",
     "scuba": "scuba gear",
