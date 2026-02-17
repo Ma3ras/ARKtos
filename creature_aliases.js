@@ -99,6 +99,7 @@ export const CREATURE_ALIASES = {
     // Beelzebufo
     "belzebufo": "beelzebufo",       // Common misspelling (one 'e')
     "belzebuffer": "beelzebufo",     // Voice transcription error
+    "pelzebufo": "beelzebufo",       // Voice transcription (P instead of B)
 
     // Managarmr
     "mana": "managarmr",
