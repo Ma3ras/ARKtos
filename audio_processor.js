@@ -185,12 +185,23 @@ export async function recordShortClip(userId, connection, duration = 2500, silen
             rate: 48000,
         });
 
+        let maxRms = 0;
+
         // Collect audio chunks
         opusDecoder.on('data', (chunk) => {
             if (!hasReceivedData) {
                 hasReceivedData = true;
             }
             chunks.push(chunk);
+
+            // RMS Check - track loudest part of clip
+            let sum = 0;
+            for (let i = 0; i < chunk.length; i += 2) {
+                const sample = chunk.readInt16LE(i);
+                sum += sample * sample;
+            }
+            const rms = Math.sqrt(sum / (chunk.length / 2));
+            if (rms > maxRms) maxRms = rms;
 
             // Reset silence timeout on new audio
             if (silenceTimeout) {
@@ -199,8 +210,9 @@ export async function recordShortClip(userId, connection, duration = 2500, silen
 
             // Stop after silence
             silenceTimeout = setTimeout(() => {
-                audioStream.destroy();
-                opusDecoder.end();
+                // Safe destroy
+                if (audioStream && !audioStream.destroyed) audioStream.destroy();
+                if (opusDecoder && !opusDecoder.destroyed) opusDecoder.end();
             }, silenceDuration);
         });
 
@@ -209,6 +221,13 @@ export async function recordShortClip(userId, connection, duration = 2500, silen
             clearTimeout(maxDurationTimeout);
 
             if (chunks.length === 0) {
+                resolve(null);
+                return;
+            }
+
+            // FILTER: If max volume was too low (just noise), optimize by skipping transcription
+            if (maxRms < 1200) { // Slight lower threshold for wake word to be safe
+                // console.log(`🔇 Wake Word clip discarded (RMS: ${maxRms.toFixed(0)} < 1200)`);
                 resolve(null);
                 return;
             }
