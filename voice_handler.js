@@ -49,13 +49,17 @@ export async function handleUserSpeaking(userId, guildId, username) {
         // STAGE 1: Record short clip for wake word detection
         const clipBuffer = await recordShortClip(userId, connection, CLIP_DURATION, WAKE_WORD_SILENCE_DURATION);
 
-        if (!clipBuffer) return;
+        if (!clipBuffer) {
+            userSpeakingState.delete(userId);
+            return;
+        }
 
         // Quick transcription to check for wake word
         const clipTranscription = await transcribe(clipBuffer);
 
         if (!clipTranscription || !containsWakeWord(clipTranscription)) {
             // No wake word, ignore
+            userSpeakingState.delete(userId);
             return;
         }
 
