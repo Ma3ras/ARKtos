@@ -8,25 +8,14 @@
  */
 export const ENABLE_WAKE_WORD = true; // Set to true to enable passive listening
 export const WAKE_WORDS = [
-    // Primary variations
-    "beacon",
-    "beakon",      // Phonetic variation
-    "biekon",      // German pronunciation
-    "bieken",      // Often misheard by German Whisper
-    "biken",       // Phonetic variation
-    "peaken",      // Possible misinterpretation
-    "becken",      // German word (Pushen)
-    "bacon",       // Very common misinterpretation
-    "bikon",       // Phonetic variation
-    "econ",        // User requested variation
-    "iken",        // User requested variation
-    "eken",        // User requested variation
+    // Primary
+    "omega",
+    "o mega",
+    "amega", // Phonetic variation
 
     // Compound variations
-    "hey beacon",
-    "hey beakon",
-    "beacon bot",
-    "beakon bot"
+    "hey omega",
+    "omega bot"
 ];
 
 /**
