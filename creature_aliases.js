@@ -28,6 +28,9 @@ export const CREATURE_ALIASES = {
     "argent": "argentavis",
     "argentavis": "argentavis",
 
+    // Anglerfish
+    "anglerfisch": "anglerfish",     // German name
+
     // Pteranodon
     "ptera": "pteranodon",
     "pt": "pteranodon",
