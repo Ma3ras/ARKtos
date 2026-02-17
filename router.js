@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { resolveAlias as resolveCreatureAlias } from "./creature_aliases.js";
 import { resolveAlias as resolveCraftableAlias } from "./craftable_aliases.js";
+import { resolveLLMEntity } from "./llm_entity_resolver.js";
 
 const ENTITY_LOOKUP_FILE = path.join(process.cwd(), "data", "entity_lookup.json");
 let ENTITY_LOOKUP = null;
@@ -108,6 +109,34 @@ function detectEntityType(userText) {
     return null;
 }
 
+/**
+ * Async entity detection with LLM fallback
+ * Tries exact/alias matching first, then LLM for semantic queries
+ */
+async function detectEntityTypeWithLLM(userText) {
+    // Try fast methods first
+    const entity = detectEntityType(userText);
+    if (entity) return entity;
+
+    // LLM fallback for semantic queries (5+ words)
+    const wordCount = userText.trim().split(/\\s+/).length;
+    if (wordCount < 5) return null; // Too short for LLM
+
+    console.log(`🔍 Entity not found via exact/alias, trying LLM fallback...`);
+
+    // Try each entity type
+    const types = ['creature', 'craftable', 'resource'];
+    for (const type of types) {
+        const resolved = await resolveLLMEntity(userText, type);
+        if (resolved) {
+            console.log(`✅ LLM detected ${type}: "${resolved}"`);
+            return { name: resolved, type };
+        }
+    }
+
+    return null;
+}
+
 function safeJsonParse(s) {
     try {
         return JSON.parse(s);
@@ -150,7 +179,7 @@ export async function routeQuery(rawUserText) {
     const userText = processedText; // Use corrected text for everything else
 
     // 2. PRE-CHECK: Detect entity type from lookup (now using corrected text)
-    let detected = detectEntityType(userText);
+    let detected = await detectEntityTypeWithLLM(userText);
 
     // INTELLIGENT OVERRIDE: Check for "für [Item]" or "for [Item]" pattern
     // This fixes "wie viel Metall brauche ich für einen Mek" -> prioritizing "Mek" over "Metall"
@@ -163,7 +192,7 @@ export async function routeQuery(rawUserText) {
         // Check if the part after "for" is a known entity
         const potentialEntity = forMatch[1].trim();
         // Try to detect just this part
-        const specificDetect = detectEntityType(potentialEntity);
+        const specificDetect = await detectEntityTypeWithLLM(potentialEntity);
         if (specificDetect) {
             console.log(`  🎯 Context Override: Found "${specificDetect.name}" after 'for', prioritizing over "${detected?.name}"`);
             detected = specificDetect;
