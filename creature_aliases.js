@@ -53,6 +53,9 @@ export const CREATURE_ALIASES = {
     "carno": "carnotaurus",
     "karno": "carnotaurus",          // Voice transcription
 
+    // Castoroides
+    "biber": "castoroides",          // German name for beaver
+
     // Allosaurus
     "allo": "allosaurus",
     "alo": "allosaurus",
