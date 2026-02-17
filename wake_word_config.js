@@ -20,6 +20,7 @@ export const WAKE_WORDS = [
     "bikon",       // Phonetic variation
     "econ",        // User requested variation
     "iken",        // User requested variation
+    "eken",        // User requested variation
 
     // Compound variations
     "hey beacon",
