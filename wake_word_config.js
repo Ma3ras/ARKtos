@@ -18,6 +18,8 @@ export const WAKE_WORDS = [
     "becken",      // German word (Pushen)
     "bacon",       // Very common misinterpretation
     "bikon",       // Phonetic variation
+    "econ",        // User requested variation
+    "iken",        // User requested variation
 
     // Compound variations
     "hey beacon",
