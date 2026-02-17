@@ -24,10 +24,10 @@ function norm(s) {
     return String(s)
         .toLowerCase()
         .normalize("NFKD")
-        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[\u0300-\u036f]/g, "") // Remove diacritics (ä → a, not space)
         .replace(/[_\-]/g, " ")
-        .replace(/[^\p{L}\p{N}\s]/gu, " ")
-        .replace(/\s+/g, " ")
+        .replace(/[^\p{L}\p{N}\s]/gu, "") // Remove non-alphanumeric except spaces
+        .replace(/\s+/g, " ") // Collapse multiple spaces
         .trim();
 }
 

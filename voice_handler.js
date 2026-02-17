@@ -57,7 +57,13 @@ export async function handleUserSpeaking(userId, guildId, username) {
         // Quick transcription to check for wake word
         const clipTranscription = await transcribe(clipBuffer);
 
-        if (!clipTranscription || !containsWakeWord(clipTranscription)) {
+        if (!clipTranscription) {
+            // Empty transcription (Opus error, silence, etc.)
+            userSpeakingState.delete(userId);
+            return;
+        }
+
+        if (!containsWakeWord(clipTranscription)) {
             // No wake word, ignore
             userSpeakingState.delete(userId);
             return;
