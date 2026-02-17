@@ -125,10 +125,10 @@ export async function recordUser(userId, connection, maxDuration = 30000) {
         });
 
         opusDecoder.on('error', (error) => {
-            console.error(`❌ Opus decoder error:`, error);
-            clearTimeout(silenceTimeout);
-            clearTimeout(maxDurationTimeout);
-            reject(error);
+            // Opus decoder errors are common at stream start (corrupted frames)
+            // Log but don't abort - continue processing remaining audio
+            console.warn(`⚠️ Opus decoder error (continuing):`, error.message);
+            // Don't reject - let the stream continue
         });
 
         // Audio stream events
@@ -241,10 +241,10 @@ export async function recordShortClip(userId, connection, duration = 2500, silen
         });
 
         opusDecoder.on('error', (error) => {
-            console.error(`❌ Opus decoder error (short clip):`, error);
-            clearTimeout(silenceTimeout);
-            clearTimeout(maxDurationTimeout);
-            reject(error);
+            // Opus decoder errors are common at stream start (corrupted frames)
+            // Log but don't abort - continue processing remaining audio
+            console.warn(`⚠️ Opus decoder error (short clip, continuing):`, error.message);
+            // Don't reject - let the stream continue
         });
 
         // Pipe audio stream through decoder
