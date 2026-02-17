@@ -382,7 +382,7 @@ export const PHONETIC_REPLACEMENTS = {
     "Baby": "Beibi",
     "Torpor": "Tor-por",
     "Knockout": "Nock-aut",
-    "Passive": "Päss-iv",
+    "Passive": "passief",
     "Kibble": "Kib-bl",
     "Saddle": "Säddl",
     "Engram": "En-gramm",
