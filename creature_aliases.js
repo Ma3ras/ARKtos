@@ -95,6 +95,10 @@ export const CREATURE_ALIASES = {
     // Basilosaurus
     "basilo": "basilosaurus",
 
+    // Sarcosuchus
+    "sarco": "sarcosuchus",
+    "sarko": "sarcosuchus",          // Voice transcription
+
     // Managarmr
     "mana": "managarmr",
     "manna": "managarmr",            // Voice transcription
